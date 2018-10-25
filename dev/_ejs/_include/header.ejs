@@ -1,0 +1,41 @@
+<header class="siteHeader">
+	<div class="wrap">
+		<% if( $active=='top' ){ %>
+		<p class="siteHeader__logo">
+			<img src="<%- $path %>img/common/logo.svg" width="100" alt="AKIM">
+		</p>
+		<% } else { %>
+		<p class="siteHeader__logo">
+			<img src="<%- $path %>img/common/logo.svg" width="50" alt="AKIM">
+		</p>
+		<% } %>
+		<nav class="siteHeader__nav">
+			<div class="siteHeader__mainNav">
+				<div class="navtoggle navtoggle--close">
+					<i></i>
+					<span class="navtoggle__label">CLOSE</span>
+				</div>
+				<nav>
+					<ul>
+						<li <% if($active=='top' ){ %>class="current-menu-item"
+							<% } %>><a href="<%- $path %>a">会社案内</a></li>
+						<li <% if($active=='omoi' ){ %>class="current-menu-item"
+							<% } %>>
+								<a href="<%- $path %>a">製品情報</a>
+						</li>
+						<li <% if($active=='members' ){ %>class="current-menu-item"
+							<% } %>><a href="<%- $path %>a">採用情報</a></li>
+						<li <% if($active=='about' ){ %>class="current-menu-item"
+							<% } %>><a href="<%- $path %>a">お知らせ</a></li>
+						<li><a href="<%- $path %>a">お問い合わせ</a></li>
+					</ul>
+					<div class="language"><a href=""><span class="language__label">Global</span><span>EN</span></a></div>
+				</nav>
+			</div>
+			<div class="navtoggle navtoggle--open">
+				<span class="navtoggle__label">MENU</span>
+				<i></i>
+			</div>
+		</nav>
+	</div>
+</header>

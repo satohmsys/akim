@@ -1,0 +1,185 @@
+@charset "UTF-8";
+//////////////////////////////////////////
+
+//utilitie classes
+
+//include by style.scss
+
+//////////////////////////////////////////
+
+
+//////////////////
+
+// block level
+
+//////////////////
+
+%inner{
+	max-width: $innerWidth;
+	margin-left: auto;
+	margin-right: auto;
+	box-sizing: border-box;
+}
+
+.wrap{
+	max-width: $outerWidth;
+	padding-left: 50px;
+	padding-right: 50px;
+	margin-left: auto;
+	margin-right: auto;	
+	// box-sizing: border-box;
+	
+	@include mq( tab ){
+			padding-left: 8%;
+			padding-right: 8%;
+	}//max 580	
+	@include mq( sp ){
+			padding-left: 8%;
+			padding-right: 8%;
+	}//max 580		
+}
+
+.contain{
+	@extend %inner;
+}
+
+.inner{
+	@extend %inner;
+}
+
+
+.clearfix{
+	@include clearfix();
+}
+
+
+
+//////////////////
+
+// responsive
+
+//////////////////
+
+
+////////スマホで非表示
+
+.-only-sp{
+	display: none!important;
+}
+@include mq( sp ){
+	.-no-sp{
+		display: none!important;	
+	}
+	.-only-sp{
+		display: inherit!important;
+	}
+} //max 580
+
+.-only-tab{
+	display: none!important;
+}
+@include mq( tab ){
+	.-no-tab{
+		display: none!important;	
+	}
+	.-only-tab{
+		display: inherit!important;
+	}
+} //max 780
+
+
+
+
+
+
+//////////////////
+
+// status
+
+//////////////////
+
+.-notActive{
+	pointer-events:none;
+}
+
+// .active{
+// 	font-weight: bold;
+// }
+
+.js-effect{
+	transition: transition( );
+}
+
+
+
+//////////////////
+
+// typography
+
+//////////////////
+
+.xxlarge{ font-size: $fontsize_xxlarge;}
+.xlarge{ font-size: $fontsize_xlarge;}
+.large{ font-size: $fontsize_large;}
+.small{ font-size: $fontsize_small; }
+
+.strong{
+	font-weight: bold;
+}
+
+
+
+//////////////////
+
+// icon
+
+//////////////////
+.icon-mouse{
+
+	width: 17px;
+	height: 27px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	display: block;
+	border: solid 1px #fff;
+	border-radius: 5px;
+	
+	&:after{
+		content: " ";
+		display: block;
+		width: 3px;
+		height: 3px;
+		margin-right: auto;
+		margin-left: auto;
+		position: absolute;
+		top: 5px;
+		right: 0;
+		left: 0;
+		animation: mouseScroll 2s ease-in-out 0.8s infinite normal forwards;
+		border-radius: 100%;
+		background-color: #fff;
+		
+	}
+
+}
+
+
+.icon-arrow{
+	&:after{
+		content: ">";
+		margin-left: 3px;
+		display: inline-block;
+		vertical-align: middle;
+		
+	}	
+}
+.icon-arrow--prev{
+	&:before{
+		content: "<";
+		margin-right: 3px;
+		display: inline-block;
+		vertical-align: middle;
+
+	}
+}
