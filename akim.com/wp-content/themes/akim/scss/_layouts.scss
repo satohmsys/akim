@@ -12,3 +12,26 @@
 	}	
 }
 
+
+.horizontalCard{
+	display: flex;
+
+	&__img,
+	&__fill{
+		width: 50%;
+	}
+
+	&__img{
+		line-height: 0;
+	}
+
+	&__fill{
+		padding: 60px;
+		background-color: #ffffff;
+		display: flex;
+		flex-direction: column;
+		// align-items: ;
+		justify-content: center;
+	}
+}
+

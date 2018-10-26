@@ -39,10 +39,12 @@ html{
 		top: 0;
 		right: 0;
 		left: 0;
+		box-sizing: border-box;
+		opacity: 0.2;
 	}
 
 	&:before{
-		width: 50%;
+		width: 50vw;
 		border-right: 1px solid $red;
 		border-left: 1px solid $red;
 		z-index: -1;
@@ -142,7 +144,7 @@ a
 	}
 	
 	@include mouseOver(){
-		opacity: 0.7;
+		opacity: 0.75;
 		// color: darken($link , 15);
 	}	
 	img{		

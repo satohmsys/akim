@@ -118,10 +118,10 @@
 
 //////////////////
 
-.xxlarge{ font-size: $fontsize_xxlarge;}
-.xlarge{ font-size: $fontsize_xlarge;}
-.large{ font-size: $fontsize_large;}
-.small{ font-size: $fontsize_small; }
+// .xxlarge{ font-size: $fontsize_xxlarge;}
+// .xlarge{ font-size: $fontsize_xlarge;}
+.large{ font-size: $fontsize_l;}
+.small{ font-size: $fontsize_s; }
 
 .strong{
 	font-weight: bold;
@@ -182,4 +182,33 @@
 		vertical-align: middle;
 
 	}
+}
+
+.triangle{
+	line-height: 1;
+	border-style: solid;
+	width: 0;
+	height: 0;
+
+	&--left{
+		@extend %tl
+	}
+
+	&--right{
+		@extend %tr;
+	}
+
+}
+
+
+
+
+//////////////////
+
+// section 
+
+//////////////////
+
+.section--painted{
+	background-color: #ffffff;
 }

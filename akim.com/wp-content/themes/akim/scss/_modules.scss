@@ -33,6 +33,7 @@
 
 
 	.wrap{
+		max-width: percentage( 1300/ 1400 );
 		display: flex;
 		justify-content: space-between;
 		
@@ -97,7 +98,7 @@
 			width: 80%;
 			height: 100vh;
 			flex-direction: column;
-			transition: transition();
+			transition: transition(all,0.5s);
 			transform: translateX( 100vw );
 			position: fixed;
 			z-index: 10;
