@@ -129,11 +129,11 @@ gulp.task("ejs", function(){
      gulp.src(
       ejsDir.template
     )
+    .pipe(plumber())
     .pipe(ejs(/*{}, {ext: '.html'}*/))
     .pipe( rename({
       extname: '.html'      
     }) )
-    .pipe(plumber())
     .pipe(gulp.dest(dir.top + dir.below ));
 });
 gulp.task('ejsWatch', ['browserSync'], function(){
