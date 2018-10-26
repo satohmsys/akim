@@ -52,9 +52,9 @@ $fontsize_s : #{ (12/15) }em;
 
 /////////////////////
 
-$space_s_sp: 20px;
-$space_m_sp: 40px;
-$space_l_sp: 20px;
+$space_s_sp: 30px;
+$space_m_sp: 50px;
+$space_l_sp: 80px;
 $space_s: 40px;
 $space_m: 80px;
 $space_l: 100px;
@@ -77,10 +77,17 @@ $outerWidth: 1200px;
 	border-width: 25vw 25vw 0px 0;
 	border-color:$red transparent transparent transparent;
 
+	@media screen and ( max-width: 480px ) {
+		border-width: 50vw 50vw 0px 0;
+	}
 }
 %tr{
 	border-width: 25vw 25vw 0px 0;
 	border-color: transparent $red transparent transparent;
+
+	@media screen and ( max-width: 480px ) {
+		border-width: 50vw 50vw 0px 0;
+	}
 }
 
 
