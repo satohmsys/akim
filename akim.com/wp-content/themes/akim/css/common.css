@@ -1049,6 +1049,14 @@ button
     height: 100%;
     padding: 10px 30px;
 }
+@media screen and (max-width: 1024px)
+{
+    .siteHeader__mainNav li > a
+    {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
 @media screen and (max-width: 780px)
 {
     .siteHeader__mainNav li > a
@@ -1129,7 +1137,8 @@ button
     }
     .navtoggle i
     {
-        position: relative; 
+        position: relative;
+        bottom: 3px; 
 
         display: inline-block;
     }
@@ -1275,6 +1284,104 @@ button
 
     color: #ccc;
     background-color: #333;
+}
+
+.subpageMv
+{
+    line-height: 1;
+
+    display: -ms-flexbox;
+    display: flex;
+
+    height: 200px;
+
+    background-repeat: no-repeat;
+    background-size: cover; 
+
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+.subpageMv__copy
+{
+    font-size: 2.4em;
+    font-weight: bold;
+
+    display: inline-block;
+
+    min-width: 500px;
+    padding: 30px;
+
+    letter-spacing: .1em;
+
+    color: #d31323;
+    background-color: #fff;
+}
+@media screen and (max-width: 414px)
+{
+    .subpageMv__copy
+    {
+        font-size: 2.1rem; 
+
+        min-width: 250px;
+        padding: 15px;
+    }
+}
+.subpageMv .wrap,
+.subpageMv .inner
+{
+    position: relative; 
+
+    width: 1000px;
+}
+
+.breadcrumbSection
+{
+    font-size: .8em; 
+    line-height: 1;
+
+    margin-bottom: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    background-color: #fff;
+}
+@media screen and (max-width: 414px)
+{
+    .breadcrumbSection
+    {
+        margin-bottom: 50px;
+    }
+}
+.breadcrumbSection .wrap
+{
+    max-width: 1000px;
+}
+.breadcrumbSection .breadcrumb li
+{
+    display: inline-block;
+}
+.breadcrumbSection .breadcrumb li a
+{
+    color: inherit;
+}
+.breadcrumbSection .breadcrumb li:not(:last-child):after
+{
+    display: inline-block;
+
+    margin-right: 1em;
+    margin-left: 1em;
+
+    content: ' | ';
+    vertical-align: middle; 
+
+    color: #ddd;
+}
+
+.subpageIntro
+{
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .productsNav
