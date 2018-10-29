@@ -15,7 +15,7 @@
     position: relative;
 
     &--maintopic .wrap{
-        @include mq( sp,min ){
+        @include mq( tab,min ){
             max-width: 100%;
             padding-right: 0;
             padding-left: 0;
@@ -28,12 +28,16 @@
         // height: 1em;
         line-height: 1em;
         position: absolute;
-        top: -2em;
+        top: -1.5em;
         z-index: 3;
         // transform: rotate(90deg);
         font-size: $fontsize_xl;
         color: $red;
         font-family: $fontFamily_en;
+
+        @include mq( sp ){
+            font-size: $fontsize_xl_sp;
+        } 
 
         img{
             // max-width: auto;
@@ -67,11 +71,16 @@
     .section__img{
         width: 50vw;
         line-height: 0;
-
         position: relative;
         z-index: 1;
         // position: absolute;
         // right: 0;
+
+        @include mq( tab ){
+            width: 100%;
+        }
+
+
         img{
             width: 100%;
         }
@@ -95,8 +104,17 @@
         padding-bottom: #{( 100/1400 * 100 )}vw;
         background-color: #ffffff;
         box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         position: absolute;
         top: 10%;
+
+        @include mq( tab ) {
+            width: 100%;
+            padding: $space_s_sp;
+            position: static;
+        }
 
 
         &__index{
@@ -104,13 +122,26 @@
             margin-bottom: $space_s;
             font-weight: bold;
             font-size: $fontsize_m;
+
+            @include mq( 1024 ) {
+                margin-bottom: $space_s_sp;
+            }
+            @include mq( sp ) {
+                font-size: $fontsize_m_sp;
+            }
         }
         &__content{
             margin-bottom: $space_s;
+
+            @include mq( 1024 ) {
+                margin-bottom: $space_s_sp;
+            }
         }
 
         .button{
-            width: 100%;
+            @include mq( 768,min ){
+                width: 100%;
+            }
         }
     }
     &:nth-child( odd ) .section__detail{
@@ -118,11 +149,40 @@
         padding-right: calc( 25vw + 10% );
         padding-left: 12.5vw;
 
+        // @include mq(tab) {
+        //     padding-right: calc(20vw + 10%);
+        //     padding-left: 7.5vw;
+        // }
+        
+        @include mq( 1024 ){
+            padding-right: calc(25vw + 5%);
+            padding-left: 5vw;
+        }
+        @include mq( tab ){
+            padding-right: $space_s_sp;
+            padding-left: $space_s_sp;
+        }
     }
     &:nth-child( even ) .section__detail{
         right: 0;
         padding-left: calc( 25vw + 10% );
         padding-right: 12.5vw;
+
+        // @include mq( tab ) {
+        //     padding-left: calc(20vw + 10%);
+        //     padding-right: 7.5vw;
+        // }
+
+        @include mq(1024) {
+            padding-right: 5vw;
+            padding-left: calc( 25vw + 5% );
+        }
+
+        @include mq( tab ) {
+            padding-right: $space_s_sp;
+            padding-left: $space_s_sp;
+        }
+
 
     }
 
@@ -130,16 +190,24 @@
     .triangle{
         position: absolute;
         z-index: 2;
+
+        @include mq(tab) {
+            z-index: -1;
+        }
+
     }
     &:nth-child( odd ) .triangle{
         right: 0;
-        bottom: -80px;
-        @extend %tr
+        bottom: -10vw;
+        @extend %tr;
+
+        @include mq(tab) {
+        }
     }
     &:nth-child( even ) .triangle{
         top: 100%;
         left: 0;
-        @extend %tl
+        @extend %tl;
     }
 
 
@@ -148,17 +216,30 @@
     &__gallery{
         // padding-top: $space_l;
         // padding-bottom: $space_l;
-        padding-top: #{100/1400 * 100}vw;
-        padding-bottom: #{50/1400 * 100}vw;        
+        padding-top: #{120/1400 * 100}vw;
+        padding-bottom: #{60/1400 * 100}vw;     
+
+        @include mq( tab ){
+            padding-top: $space_l_sp;
+            padding-bottom: $space_l_sp;
+        }   
 
         .inner{
             max-width: 72.5%;
             // max-width: #{(50 + (150 / 1400 )*2)}%;
             display: flex;
+
+            @include mq( sp ) {
+                max-width: 84%;
+            }
          }
 
         &__img{
             max-width: percentage( 300/1000 );
+
+            @include mq( sp ) {
+                max-width: 49%;
+            }
 
             img{
                 width: 100%;
@@ -166,6 +247,11 @@
 
             &:not( :last-child ){
                 margin-right: percentage( 50/1000 );
+
+                @include mq(sp) {
+                    margin-right: 2%;
+                }
+
             }
         }
     }
@@ -176,8 +262,10 @@
     }
     &:nth-child( even ) .section__gallery{
         .inner{
-            margin-left: auto;
-            justify-content: flex-end;   
+            @include mq(sp,min) {
+                margin-left: auto;
+                justify-content: flex-end; 
+            }
         }
     }    
 }
@@ -188,6 +276,12 @@
     padding-top: $space_l;
     padding-bottom: $space_l;
 
+    @include mq( sp ){
+        padding-top: $space_l_sp;
+        padding-bottom: $space_l_sp;
+    }
+
+
     &:nth-of-type( odd ){
         background-color: #ffffff;
     }
@@ -195,11 +289,23 @@
     &__heading{
         margin-bottom: $space_m;
         text-align: center;
+
+        @include mq(sp) {
+            margin-bottom: $space_s_sp;
+        }
+        
     }
     &__index{
+        line-height: 1;
+        margin-bottom: $space_s;
         font-size: $fontsize_l;
         color: $red;
         font-weight: bold;
+
+        @include mq(sp) {
+            margin-bottom: $space_s_sp;
+            font-size: $fontsize_l_sp;
+        }
     }    
 }
 
@@ -208,6 +314,10 @@
 .siteHeader{
     &__logo{
         margin-top: 40px;
+
+        @include mq(sp) {
+         margin-top: 0;
+        }
     }
 }
 
@@ -223,19 +333,26 @@
 ////////// mv
 .mv{
 
-    margin-bottom: 10vw;
-
+    margin-bottom: 12vw;
     position: relative;
+
+    @include mq( sp ){
+        margin-bottom: $space_l_sp;
+    }
+
     
     .wrap{
-        width: 75vw;
         margin-right: auto;
         margin-left: auto;
         position: absolute;
         top: 10vw;
         right: 0;
-        left: -5vw;
+        left: 0;
 
+        @include mq(sp + 1px, min) {
+            width: 75vw;
+            left: -5vw;
+        }
         @include mq( 1921,min ){
             left: -20vw;
         }
@@ -255,6 +372,10 @@
             line-height: 1;
             margin-top: 0;
             margin-bottom: 60px;
+
+            @include mq( sp ){
+                margin-bottom: $space_s_sp;
+            }            
         }
 
         &__ja{
@@ -264,16 +385,22 @@
             font-size: 1.1em;
             color: $red;
             writing-mode: vertical-rl;
+
+            @include mq(sp) {
+               font-size: 1.2rem;
+            }
+            
         }
     }
 
     &__img{
-        width: 74.5vw;
+        width: 75vw;
+        // width: 74.5vw;
         margin-left: auto;
         margin-right: 0;
-        @include mq( 1921,min ){
-            width: 74.69vw;
-        }
+        // @include mq( 1921,min ){
+        //     width: 74.69vw;
+        // }
 
         img{
             width: 100%;
@@ -286,6 +413,12 @@
 
 ////////// products
 .productsBlock{
+    padding-bottom: 20px;
+
+    @include mq(sp) {
+        padding-bottom: 40px;
+    }
+
 }
 
 
@@ -296,9 +429,12 @@
 
     
     .wrap{
-
-        @include mq( tab,min ){
+        max-width: 1000px;
+        @include mq(1920, min) {
             max-width: 50%;
+        }
+        @include mq( tab ) {
+            max-width: 84%;
         }
     }
     &__copy{
@@ -323,6 +459,10 @@
         top: 0;
         right: 0;
         transform: rotateY( 180deg );
+
+        @include mq(sp) {
+            display: none;
+        }
     }
 }
 
@@ -343,6 +483,10 @@
 
             &:not( :last-child ){
                 margin-bottom: $space_s;
+
+                @include mq(sp) {
+                    margin-bottom: $space_s_sp - 10px  ;
+                }
             }
         }
 
@@ -354,15 +498,28 @@
             display: table;
             border-collapse: collapse;
 
+            @include mq(sp) {
+               display: block;
+            }
+
             &__time{
                 display: table-cell;
                 font-weight: 500;
                 padding-right: 50px;
+
+                @include mq(sp) {
+                    display: block;
+                    margin-bottom: 0.5em;
+                }
             }
 
             &__index{
                 display: table-cell;
                 line-height: 1.75;  
+
+                @include mq(sp) {
+                    display: block;
+                }
             }
         }
     }

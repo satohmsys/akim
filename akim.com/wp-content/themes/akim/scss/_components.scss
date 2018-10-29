@@ -20,6 +20,11 @@
 	line-height: 1;
 	display: inline-block;
 
+    @include mq( sp ) {
+		min-width: 100px;
+    }
+
+
 
 	a{
 		text-align: center;
