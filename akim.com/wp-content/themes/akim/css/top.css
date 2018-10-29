@@ -40,7 +40,7 @@
 .section__index
 {
     font-family: 'Din', sans-serif; 
-    font-size: 4.66667em;
+    font-size: 4.6666666667em;
     line-height: 1em;
 
     position: absolute;
@@ -55,7 +55,7 @@
 {
     .section__index
     {
-        font-size: 3.07692em;
+        font-size: 3.0769230769em;
     }
 }
 .section:nth-child(odd) .section__index
@@ -118,8 +118,8 @@
     box-sizing: border-box;
     width: 75vw;
     height: 100%;
-    padding-top: 7.14286vw;
-    padding-bottom: 7.14286vw;
+    padding-top: 7.1428571429vw;
+    padding-bottom: 7.1428571429vw;
 
     background-color: #fff;
 
@@ -139,7 +139,7 @@
 }
 .section .section__detail__index
 {
-    font-size: 1.33333em; 
+    font-size: 1.3333333333em; 
     font-weight: bold;
     line-height: 1.8;
 
@@ -156,7 +156,7 @@
 {
     .section .section__detail__index
     {
-        font-size: 1.30769em;
+        font-size: 1.3076923077em;
     }
 }
 .section .section__detail__content
@@ -247,8 +247,8 @@
 }
 .section__gallery
 {
-    padding-top: 8.57143vw;
-    padding-bottom: 4.28571vw;
+    padding-top: 8.5714285714vw;
+    padding-bottom: 4.2857142857vw;
 }
 @media screen and (max-width: 780px)
 {
@@ -353,7 +353,7 @@
 {
     .section--sub__index
     {
-        font-size: 1.84615em; 
+        font-size: 1.8461538462em; 
 
         margin-bottom: 30px;
     }
@@ -494,7 +494,7 @@
 }
 .recruitBlock__copy
 {
-    font-size: 1.33333em;
+    font-size: 1.3333333333em;
     font-weight: bold; 
 
     margin-bottom: 40px;

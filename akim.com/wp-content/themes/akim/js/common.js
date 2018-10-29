@@ -16,7 +16,7 @@ $( function(){
     /**
      * global nav toggle
      */
-    if ($ww < $breakpoint_mobile ){
+    if ($ww <= $breakpoint_mobile ){
         navHandling($('.navtoggle--open') ); 
         navHandling($('.navtoggle--close') ); 
     }

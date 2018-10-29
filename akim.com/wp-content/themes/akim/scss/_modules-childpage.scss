@@ -7,6 +7,25 @@
 //////////////////////////////////////////
 
 
+
+.separateSec{
+    padding-top: $space_l;
+    padding-bottom: $space_l;
+
+    @include mq( sp ){
+        padding-top: $space_l_sp;
+        padding-bottom: $space_l_sp;
+
+    }    
+
+    &:nth-child( odd ){
+        background-color: #fff;
+    }
+}
+
+
+
+
 ////////////////////
 
 // header ( childpage )
@@ -31,7 +50,7 @@
         letter-spacing: 0.1em;
         background-color: #ffffff;
 
-        @include mq( sp ){
+        @include mq( tab ){
             min-width: 250px;
             padding: 15px;
             font-size: 2.1rem;
@@ -96,6 +115,14 @@
     max-width: 600px;
     margin-right: auto;
     margin-left: auto;
+
+
+    &__index{
+        font-size: $fontsize_l;
+        font-weight: bold;
+        color: $red;
+        text-align: center;
+    }
 }
 
 

@@ -19,6 +19,100 @@
 }
 
 
+.section{
+
+    &__index{
+        line-height: 1;
+        margin-bottom: $space_l;
+        font-weight: bold;
+        font-size: $fontsize_l;
+        color: $red;
+        text-align: center;
+
+        @include mq( sp ){
+            font-size: $fontsize_l_sp;
+            margin-bottom: $space_m_sp;;
+        }             
+    }
+
+
+
+    position: relative;
+    .triangle{
+        position: absolute;
+        z-index: -1;
+    }
+    .triangle--left{
+        top: 0;
+        left: 0;
+    }
+    .triangle--right{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+}
+
+.innerContent{
+    padding: $space_m;
+    background-color: #ffffff;
+
+    @include mq( sp ){
+        padding: $space_s_sp;
+    }      
+}
+
+
+
+.infoContent{
+    display: flex;
+    margin-right: $space_m / -2;
+    margin-left: $space_m / -2;        
+
+    @include mq( sp ){
+        flex-direction: column-reverse;
+
+        @include mq( sp ){
+            margin-right: 0;
+            margin-left: 0;
+        }           
+    }  
+
+
+    p{
+        margin-bottom: 2em;
+    }
+
+    &__text,
+    &__img{
+        margin-right: $space_m / 2;
+        margin-left: $space_m / 2;
+
+        @include mq( sp ){
+            margin-right: 0;
+            margin-left: 0;
+        }           
+    }
+
+    &__img{
+        flex-shrink: 0;
+        width: percentage( 460/ 1200 );
+
+        @include mq( sp ){
+            width: 100%;
+            margin-bottom: 20px;
+        }           
+
+
+        &__name{
+            text-align: right;
+            font-size: $fontsize_s;
+        }
+    }
+}
+
+
 
 ///////////////////////////////
 
@@ -77,6 +171,326 @@
                 width: 100%;
                 min-width: 0;
             }
+        }
+    }
+}
+
+
+
+///////////////////////////////
+
+//企業理念ページ
+
+///////////////////////////////
+
+
+
+///////// 最初の3項目
+.section--pickup{
+
+    position: relative;
+
+    .mind{
+        &:nth-child( even ){
+            @include mq( tab,min ){
+                flex-direction: row-reverse;
+            }
+        }
+
+        &:not( :last-child ){
+            margin-bottom: $space_m;
+
+
+            @include mq( sp ){
+                margin-bottom: $space_s_sp;
+            }
+        }
+
+
+        &__index{
+            margin-bottom: 30px;
+            font-weight: bold;
+            font-size: $fontsize_m;
+
+            @include mq( sp ){
+                font-size: $fontsize_m_sp;
+                margin-bottom: 10px;
+            }            
+        }
+    }
+
+    ul{
+        li{
+            position: relative;
+            padding-left: calc( 1em + 10px);
+            list-style: none;
+
+            &:not( :last-child ){
+                margin-bottom: 10px;
+            }
+
+            &:before{
+                content: " ";
+                width: 10px;
+                height: 2px;
+                display: inline-block;
+                position: absolute;
+                top: 1em;
+                left: 0;
+                background-color: $red;
+            }
+        }
+    }
+
+
+
+    .triangle{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+
+
+
+////////// 社長
+
+.section--message{
+
+}
+
+
+
+////////// 会社概要
+
+.section--profile{
+
+
+    .corporateProfile{
+
+        &__abload{
+            font-weight: bold;
+            font-size: $fontsize_m;
+        }
+
+        &__section{
+            display: flex;
+            flex-direction: row;
+
+            @include mq( sp ){
+                flex-direction: column;
+            }            
+
+
+            & + .corporateProfile__section{
+                margin-top: $space_m;
+
+                @include mq( sp ){
+                    margin-top: $space_m_sp;
+                }            
+
+            }
+        }
+
+        &__table{
+            width: 100%;
+            margin-right: 60px;
+            border-collapse: collapse;
+
+
+            tr{
+                border-bottom: 1px solid $color_border;
+            }
+
+            th{
+                text-align: left;
+            }
+
+            th{
+                width: 90px;    
+                padding-right: 20px;
+            }
+            td,th{
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            &__index{
+                font-size: $fontsize_m;
+
+                th{
+                    padding-top: 0;
+                }
+            }
+        }
+
+        &__img{
+            flex-shrink: 0;
+            max-width: 440px;
+            width: percentage( 440/ 870 );
+
+            @include mq( sp ){
+                max-width: 100%;
+                width: auto;
+            }              
+        }
+    }
+}
+
+
+
+////////// 沿革
+
+.section--history{
+    .infoContent{
+        flex-direction: row-reverse;
+    }
+
+
+    .historyTl{
+        max-width: 840px;
+        position: relative;
+        
+
+        &__events{
+            flex-direction: column;
+        }
+
+        &__event{
+            width: 420px;
+            margin-bottom: -30px;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: row;    
+            position: relative;
+            z-index: 1;      
+
+            @include mq( tab ){
+                width: auto;
+                margin-bottom: $space_s_sp;
+                transform: translateX( -5px );                
+            }              
+
+
+
+            &:nth-child( odd ) {
+                @include mq( tab,min ){
+                    margin-left: auto;
+                    transform: translateX( -7px );
+                }              
+            }
+            &:nth-child( even ) {
+                @include mq( tab,min ){
+                margin-right: auto;
+                transform: translateX( 7px );
+                flex-direction: row-reverse;
+                }
+            }
+
+
+            &__heading{
+                display: flex;
+                align-items: center;
+                line-height: 1;
+            }
+            &:nth-child( odd ) .historyTl__event__heading{
+            }
+            &:nth-child( even ) .historyTl__event__heading{
+                @include mq( tab,min ){
+                flex-direction: row-reverse;
+                }
+            }            
+
+
+
+            &__marker{
+                    line-height: 1;
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 15px;
+                    height: 15px;
+                    box-sizing: border-box;
+                    border: 3px solid $red;
+                    background-color: #ffffff;
+
+                    @include mq( sp ){
+                        width: 8px;
+                        height: 8px;
+                        border-width: 2px;
+                    }                     
+
+            }
+
+            &__line{
+                    width: 20px;
+                    height: 1px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    background-color: $red;
+
+                @include mq( tab ){
+                    margin-right: 15px;
+                }              
+
+            }
+           &:nth-child( odd ) .historyTl__event__line{
+                margin-right: 15px;
+            }
+            &:nth-child( even ) .historyTl__event__line{
+                @include mq( tab,min ){
+                    margin-left: 15px;
+                }              
+            }              
+
+            &__y{
+                line-height: 1.25;
+                font-weight: bold;
+                font-family: $fontFamily_en;
+                color: $red;
+            }
+
+            &__content{
+                margin-top: -0.25em;
+
+                @include mq( tab ){
+                    margin-left: 10px;
+                }
+
+                p{
+                    margin-top: 0;
+                }
+            }
+            &:nth-child( odd )  .historyTl__event__content{
+                @include mq( tab,min ){
+                    margin-left: 30px;
+                }
+            }
+            &:nth-child( even )   .historyTl__event__content{
+                @include mq( tab,min ){
+                    margin-right: 30px;
+                }
+            }
+        }
+
+
+
+
+
+        &__line{
+            width: 3px;
+            height: 100%;
+            margin-right: auto;
+            margin-left: auto;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: $red;
+
+            @include mq( tab ){
+                margin-left : 0;
+            }              
         }
     }
 }

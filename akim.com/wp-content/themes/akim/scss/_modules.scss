@@ -69,7 +69,7 @@
 		
 		img{
 			width: 75px;
-			@include mq( sp ){
+			@include mq( tab ){
 				width: 35px;
 			}		
 		}	
@@ -396,9 +396,9 @@
 	line-height: 1;
 	text-align: center;
 	
-	@include mq( tab ){
-		margin-top: 50px;
-	}
+	// @include mq( tab ){
+	// 	margin-top: 50px;
+	// }
 
 	&__top{
 		line-height: 2;
