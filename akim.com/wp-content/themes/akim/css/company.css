@@ -1,3 +1,5 @@
+@charset 'UTF-8';
+@import url(../js/fancybox/fancybox.min.css);
 .subpageMv
 {
     background-image: url(../img/company/archive-mv.jpg);
@@ -30,7 +32,7 @@
 {
     .section__index
     {
-        font-size: 1.8461538462em;
+        font-size: 1.6153846154em;
 
         margin-bottom: 50px;
     }
@@ -559,4 +561,83 @@
     {
         margin-left: 0;
     }
+}
+
+.section--gallery.separateSec
+{
+    padding-top: 20px;
+
+    background-color: transparent;
+}
+.section--gallery .section__child:not(:first-child)
+{
+    margin-top: 100px;
+}
+@media screen and (max-width: 414px)
+{
+    .section--gallery .section__child:not(:first-child)
+    {
+        margin-top: 50px;
+    }
+}
+@media screen and (min-width: 414px)
+{
+    .section--gallery .wrap
+    {
+        max-width: 1000px;
+    }
+}
+.section--gallery .gallery
+{
+    display: -ms-flexbox;
+    display: flex;
+
+    margin-right: -2.5%; 
+    margin-left: -2.5%;
+
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+.section--gallery .gallery__img
+{
+    line-height: 1;
+
+    max-width: 30%;
+    margin-right: 2.25%;
+    margin-bottom: 40px;
+    margin-left: 2.25%;
+
+    list-style: none;
+}
+@media screen and (max-width: 414px)
+{
+    .section--gallery .gallery__img
+    {
+        margin-right: 1.6%;
+        margin-bottom: 30px;
+        margin-left: 1.6%;
+    }
+}
+.section--gallery .gallery__img.-goshikyu
+{
+    position: relative; 
+
+    overflow: hidden;
+}
+.section--gallery .gallery__img.-goshikyu:after
+{
+    position: absolute;
+
+    display: -ms-flexbox;
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+
+    content: 'ご支給';
+
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }

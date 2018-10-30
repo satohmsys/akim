@@ -496,3 +496,76 @@
         }
     }
 }
+
+
+
+///////////////////////////////
+
+// 設備紹介
+
+///////////////////////////////
+
+
+@import '../js/fancybox/fancybox.min.css';
+
+.section--gallery{
+    &.separateSec{ 
+        padding-top: 20px;
+        background-color: transparent;
+    }
+
+    
+    .section__child:not( :first-child ){
+        margin-top: $space_l;
+
+        @include mq( sp ){
+            margin-top: $space_m_sp;
+        }
+    }
+
+    .wrap{
+        @include mq( sp,min ){
+            max-width: 1000px;
+        }
+    }
+
+    .gallery{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: percentage( 50 / 1000 * -0.5  );
+        margin-right: percentage( 50 / 1000 * -0.5  );
+
+        &__img{
+            max-width: percentage( 300 / 1000 );
+            line-height: 1;
+            margin-right: percentage( 50 / 1000 * 0.45  );
+            margin-bottom: $space_s ;
+            margin-left: percentage( 50 / 1000 * 0.45  );
+            list-style: none ;
+
+            @include mq( sp ){
+                margin-right: 1.6%;
+                margin-bottom: $space_s_sp;
+                margin-left: 1.6%;
+            }
+
+
+            &.-goshikyu{
+                overflow: hidden;
+                position: relative;
+                &:after{
+                    content:"ご支給";
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+
+
+    }
+}
+
