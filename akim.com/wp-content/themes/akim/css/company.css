@@ -560,3 +560,30 @@
         margin-left: 0;
     }
 }
+
+.section--tech
+{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+@media screen and (max-width: 414px)
+{
+    .section--tech
+    {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+.section--tech .wrap
+{
+    text-align: center;
+}
+@media screen and (max-width: 414px)
+{
+    .section--tech .wrap
+    {
+        max-width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}

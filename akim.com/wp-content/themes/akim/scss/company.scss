@@ -496,3 +496,32 @@
         }
     }
 }
+
+
+
+///////////////////////////////
+
+// テクノロジーページ
+
+///////////////////////////////
+
+///////// 
+.section--tech{
+    padding-top: $space_m;
+    padding-bottom: $space_m;
+
+    @include mq( sp ){
+        padding-top: $space_m_sp;
+        padding-bottom: $space_m_sp;
+    }
+
+    .wrap{
+        text-align: center;
+
+        @include mq( sp ){
+            max-width: 100%;
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+}
