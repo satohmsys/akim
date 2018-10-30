@@ -420,6 +420,14 @@
 
 		.button{
 			margin-top: 40px;
+			min-width: 250px;
+
+			@include mq( sp ){
+				min-width: 70%;
+			}
+
+			a{
+			}
 		}
 	}
 

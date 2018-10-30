@@ -1259,7 +1259,15 @@ button
 }
 .siteFooter__top .button
 {
+    min-width: 250px; 
     margin-top: 40px;
+}
+@media screen and (max-width: 414px)
+{
+    .siteFooter__top .button
+    {
+        min-width: 70%;
+    }
 }
 .siteFooter li
 {
