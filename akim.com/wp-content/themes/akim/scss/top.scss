@@ -369,9 +369,14 @@
 
 
         &__en{
+            max-height: 141px;
             line-height: 1;
             margin-top: 0;
             margin-bottom: 60px;
+
+            @include mq( tab ){
+                max-height: none;
+            }
 
             @include mq( sp ){
                 margin-bottom: $space_s_sp;
@@ -380,7 +385,7 @@
 
         &__ja{
             line-height: 2;
-            letter-spacing: 0.06em;
+            letter-spacing: 0.1em;
             font-feature-settings: "pkna";
             font-size: 1.1em;
             color: $red;

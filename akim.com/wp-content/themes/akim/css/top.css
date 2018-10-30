@@ -415,8 +415,16 @@
 {
     line-height: 1;
 
+    max-height: 141px;
     margin-top: 0;
     margin-bottom: 60px;
+}
+@media screen and (max-width: 780px)
+{
+    .mv__copy__en
+    {
+        max-height: none;
+    }
 }
 @media screen and (max-width: 414px)
 {
@@ -430,7 +438,7 @@
     font-size: 1.1em;
     line-height: 2;
 
-    letter-spacing: .06em;
+    letter-spacing: .1em;
         -ms-writing-mode: tb-rl;
 
     color: #d31323;
