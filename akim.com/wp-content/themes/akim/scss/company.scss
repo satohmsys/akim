@@ -294,7 +294,7 @@
         }
 
         &__table{
-            width: 100%;
+            width: percentage( 430/ 870 );
             margin-right: 60px;
             border-collapse: collapse;
 
@@ -349,6 +349,8 @@
 
     .historyTl{
         max-width: 840px;
+        margin-right: auto;
+        margin-left: auto;
         position: relative;
         
 

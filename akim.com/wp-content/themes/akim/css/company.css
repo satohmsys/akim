@@ -308,7 +308,7 @@
 }
 .section--profile .corporateProfile__table
 {
-    width: 100%;
+    width: 49.4252873563%;
     margin-right: 60px;
 
     border-collapse: collapse;
@@ -368,6 +368,8 @@
     position: relative; 
 
     max-width: 840px;
+    margin-right: auto;
+    margin-left: auto;
 }
 .section--history .historyTl__events
 {
