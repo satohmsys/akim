@@ -6,7 +6,7 @@
 		</p>
 		<% } else { %>
 		<p class="siteHeader__logo">
-			<img src="<%- $path %>img/common/logo.svg" width="50" alt="AKIM">
+			<a href="/"><img src="<%- $path %>img/common/logo.svg" width="50" alt="AKIM"></a>
 		</p>
 		<% } %>
 		<nav class="siteHeader__nav">
@@ -23,8 +23,8 @@
 							<% } %>>
 								<a href="<%- $path %>a">製品情報</a>
 						</li>
-						<li <% if($active=='members' ){ %>class="current-menu-item"
-							<% } %>><a href="<%- $path %>a">採用情報</a></li>
+						<li <% if($active=='recruit' ){ %>class="current-menu-item"
+							<% } %>><a href="/page-recruit.html">採用情報</a></li>
 						<li <% if($active=='about' ){ %>class="current-menu-item"
 							<% } %>><a href="<%- $path %>a">お知らせ</a></li>
 						<li><a href="<%- $path %>a">お問い合わせ</a></li>
