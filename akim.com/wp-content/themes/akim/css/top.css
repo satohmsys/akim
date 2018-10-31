@@ -466,18 +466,6 @@
     width: 100%;
 }
 
-.productsBlock
-{
-    padding-bottom: 20px;
-}
-@media screen and (max-width: 414px)
-{
-    .productsBlock
-    {
-        padding-bottom: 40px;
-    }
-}
-
 .recruitBlock
 {
     position: relative;
