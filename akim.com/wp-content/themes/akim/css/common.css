@@ -473,11 +473,63 @@ template
     content: '\e903';
 }
 
+@keyframes scrollbar
+{
+    0%
+    {
+        transform: translateX(-100%);
+    }
+    75%
+    {
+        transform: translateX(100%);
+    }
+    100%
+    {
+        transform: translateX(100%);
+    }
+}
+@keyframes scrollbar-bottom
+{
+    0%
+    {
+        bottom: -100%;
+    }
+    75%
+    {
+        bottom: 100%;
+    }
+    100%
+    {
+        bottom: 100%;
+    }
+}
+@keyframes maskmove
+{
+    0%
+    {
+        left: 0; 
+
+        width: 0;
+    }
+    45%
+    {
+        width: 90%;
+    }
+    75%
+    {
+        width: 50%;
+    }
+    100%
+    {
+        left: 101%; 
+
+        width: 0;
+    }
+}
 ::-moz-selection
 {
     background-color: rgba(115, 89, 89, .3);
 }
-
 ::selection
 {
     background-color: rgba(115, 89, 89, .3);
@@ -1327,6 +1379,8 @@ button
     font-size: 2.4em;
     font-weight: bold;
 
+    position: relative; 
+
     display: inline-block;
 
     min-width: 500px;
@@ -1335,6 +1389,21 @@ button
     letter-spacing: .1em;
 
     color: #d31323;
+}
+.subpageMv__copy:before
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    width: 000%;
+
+    content: ' ';
+    transition: all .5s cubic-bezier(.785, .135, .15, .86) 0s;
+
     background-color: #fff;
 }
 @media screen and (max-width: 780px)
@@ -1346,6 +1415,16 @@ button
         min-width: 250px;
         padding: 15px;
     }
+}
+.subpageMv.-on .subpageMv__copy:before
+{
+    width: 100%;
+
+    transition-delay: .35s;
+}
+.subpageMv.-on .subpageMv__copy .mask__element
+{
+    transition-delay: .5s;
 }
 .subpageMv .wrap,
 .subpageMv .inner
@@ -1773,6 +1852,62 @@ button
     content: ' ';
     -ms-transform: rotate(-45deg);
         transform: rotate(-45deg);
+}
+
+.js-effect .mask
+{
+    position: relative; 
+
+    display: inline-block;
+    overflow: hidden;
+}
+.js-effect .mask:before
+{
+    position: absolute;
+    z-index: 2;
+    left: 0;
+
+    display: block;
+
+    width: 0;
+    height: 100%;
+
+    content: ' ';
+    transition: all .25s cubic-bezier(.785, .135, .15, .86) 0s;
+    transition-delay: .15s;
+
+    background-color: #d31323;
+
+    will-change: width;
+}
+.js-effect .mask__element
+{
+    display: inline-block;
+
+    transition: all .5s cubic-bezier(.785, .135, .15, .86) 0s;
+    transition-delay: .235s;
+    -ms-transform: translateX(-100%);
+        transform: translateX(-100%);
+    white-space: nowrap;
+
+    will-change: transform;
+}
+
+.-on .mask:before
+{
+    right: 0;
+    left: auto;
+
+    content: ' ';
+    animation: maskmove 1s cubic-bezier(.785, .135, .15, .86) .15s 1 normal;
+}
+.-on .mask__element
+{
+    display: inherit;
+
+    -ms-transform: translateX(0%);
+        transform: translateX(0%); 
+    white-space: normal;
 }
 
 .horizontalCard

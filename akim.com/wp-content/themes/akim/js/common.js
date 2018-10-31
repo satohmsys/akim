@@ -7,6 +7,7 @@ $( function(){
         $scrollVal,
         $scrollBottom;
 
+
     $w.on( 'load resize', function( e ){
         e.stopPropagation();
 
@@ -20,6 +21,34 @@ $( function(){
         navHandling($('.navtoggle--open') ); 
         navHandling($('.navtoggle--close') ); 
     }
+
+
+
+
+    /**
+     * スクロール連動
+     */
+
+    $w.on('scroll load', function () {
+        $scrollVal = $w.scrollTop();
+        $scrollBottom = $scrollVal + $w.height();
+
+        var $jsEffect = $('.js-effect');
+
+
+        /**
+        * all fadein targets
+        */
+        if ($jsEffect) {
+            $.each($jsEffect, function () {
+                let $target = $(this);
+
+                if ($target.offset().top < $scrollBottom - 90) {
+                    $target.addClass('-on');
+                }
+            });
+        }    
+    });
 
 
 });
@@ -40,3 +69,4 @@ function navHandling($fire) {
         // $b.toggleClass('-is-navOpen');
     });
 }
+

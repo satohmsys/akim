@@ -48,14 +48,42 @@
         font-size: $fontsize_l;
         color: $red;
         letter-spacing: 0.1em;
-        background-color: #ffffff;
+        position: relative;
+        // background-color: #ffffff;
+
+        &:before{
+            content: " ";
+            width: 000%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            transition: transition(all, 0.5s );
+            display: block;
+            background-color: #fff;
+        }
+
 
         @include mq( tab ){
             min-width: 250px;
             padding: 15px;
             font-size: 2.1rem;
         }        
+
     }
+    &.-on .subpageMv__copy{
+        &:before{
+            width: 100%;
+            transition-delay: 0.35s;
+        }
+        .mask{
+            &__element{
+                transition-delay: 0.5s;
+            }
+        }
+
+    }
+
 
 
     .wrap,
