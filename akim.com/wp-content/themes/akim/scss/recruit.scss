@@ -1,0 +1,238 @@
+@import "colors.scss";
+@import "variables.scss";
+@import "mixins.scss";
+////////////////////////////////////////// kaishaannai
+
+
+///////////////////////////////
+
+//module/
+
+///////////////////////////////
+
+.subpageMv{
+    background-image: url(../img/recruit/mv.jpg);
+
+    @include mq( tab ){
+        background-image: url(../img/recruit/_sp/mv.jpg);    
+    }
+}
+
+
+.section{
+    position: relative;
+
+    &__index{
+        line-height: 1;
+        margin-bottom: $space_l;
+        font-weight: bold;
+        font-size: $fontsize_l;
+        color: $red;
+        text-align: center;
+
+        @include mq( sp ){
+            font-size: $fontsize_l_sp;
+            margin-bottom: $space_m_sp;;
+        }             
+    }
+
+
+
+    .triangle{
+        position: absolute;
+        z-index: -1;
+    }
+    .triangle--left{
+        top: 0;
+        left: 0;
+    }
+    .triangle--right{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+}
+
+
+
+///////////////////////////////
+
+//our style
+
+///////////////////////////////
+
+.section--walfare{
+    padding-top: 0;
+    padding-bottom: 40px;
+    position: relative;
+
+    &.separateSec{
+        background: transparent;
+    }
+
+    @include mq( sp ){
+        padding-bottom: 20px;
+    }
+
+
+
+    .wrap{
+        @include mq( tab, min ){
+            max-width: 1000px;
+        }
+    }
+
+    .walfarelist{
+        margin-right: percentage( -20 / 1000 );
+        margin-left: percentage( -20 / 1000 );
+        display: flex;
+        flex-wrap: wrap;
+
+        @include mq( sp  ){
+            margin-right: 0;
+            margin-left: 0;
+        }
+
+
+        .walfare{
+            width: percentage( 460/ 1000 );
+            display: flex;
+            flex-direction: column;
+            margin-bottom: $space_s;
+            margin-right: percentage( 20 / 1000 );
+            margin-left: percentage( 20 / 1000 );
+            list-style: none;
+
+            @include mq( sp ){
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: $space_s_sp;
+                margin-left: 0;
+            }
+
+
+            &__img{
+                position: relative;
+                line-height: 0;
+            }
+
+
+            &__content{
+                font-weight: bold;
+                padding: $space_s;
+                background-color: #fff;
+                height: 100%; 
+
+                @include mq( sp ){
+                    padding: 20px;
+                }
+
+            }
+
+            &__index{
+                margin-bottom: $space_s;
+                line-height: 1;
+                color: $red;
+                font-size: $fontsize_m;
+                font-weight: bold;
+
+                @include mq( sp ){
+                    margin-bottom: $space_s_sp;
+                    font-size: $fontsize_m_sp;
+                }                
+            }
+
+            &__description{
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+
+
+////////// 採用情報
+
+.section--recruitinfo{
+    background-color: #ffffff;
+
+
+    .wrap{
+        @include mq( tab, min ){
+            max-width: 1000px;
+        }
+    }
+
+
+    .section__child:not( :first-child ){
+        margin-top: $space_l;
+
+        @include mq( sp ){
+            margin-top: $space_m_sp;
+        }
+    }
+
+
+    .recruitInfoTable{
+        margin-top: -30px;
+        border-collapse: collapse;
+
+        &__th,
+        &__td{
+            padding-top: 30px;
+            padding-right: 20px;
+            padding-bottom: 30px;
+
+            @include mq( sp ){
+                padding-top: 20px;
+                padding-right: 1em;
+                padding-bottom: 20px;
+            }            
+        }
+
+        &__th{
+            text-align: left;
+            width: 130px;
+            vertical-align: top;
+
+            @include mq( sp ){
+                width: 90px;
+            }
+        }
+
+
+        &__index{
+            margin-bottom: 1em;
+            font-weight: bold;
+        }
+        
+
+        tr{
+            border-bottom: 1px solid $color_border;
+
+        }
+
+
+
+        ol{
+            margin-left: 0;
+            padding-left: 0;
+            list-style: none;
+        }
+
+        p:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+
+///////////////////////////////
+
+//企業理念ページ
+
+///////////////////////////////
+
+
