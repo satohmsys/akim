@@ -209,7 +209,8 @@
     flex-wrap: wrap;
 
     &__item{
-        width: 25%;
+        // width: 25%;
+        width: calc( 100% / 3 );
         margin-bottom: $space_m;
         box-sizing: border-box;
         padding-right: 20px;
@@ -219,7 +220,7 @@
 
 
         @include mq( 1024 ) {
-            width: 33.333%;
+            // width: 33.333%;
             padding-right: 10px;
             padding-left: 10px;
         }
@@ -269,6 +270,63 @@
                 width: 100%;
                 min-width: 0;
             }
+        }
+    }
+}
+
+
+.otherProducts{
+    padding: $space_s;
+    border: 1px solid $color_border;
+
+    @include mq( sp ){
+        padding: $space_s_sp;
+    }
+
+
+    &__index{
+        line-height: 1;
+        margin-bottom: $space_s;
+        font-weight: bold;
+        font-size: $fontsize_m;
+        text-align: center;
+
+        @include mq( sp ){
+            margin-bottom: $space_s_sp;
+            font-size: $fontsize_m_sp;
+        }
+
+    }
+
+    &__list{
+        max-width: 60%;
+        margin-top: -1em;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        flex-wrap: wrap;
+
+        @include mq( tab ){
+            max-width: 80%;
+        }
+        @include mq( sp ){
+            max-width: 100%;
+        }
+
+
+        li{
+            width: 33.333%;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            box-sizing: border-box;
+            list-style: none;
+            text-align: center;
+
+
+            @include mq( tab ){
+                width: 50%;
+            }
+
         }
     }
 }
