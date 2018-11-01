@@ -21,13 +21,14 @@
 							<% } %>><a href="/page-archive-company.html">会社案内</a></li>
 						<li <% if($active=='products' ){ %>class="current-menu-item"
 							<% } %>>
-								<a href="<%- $path %>a">製品情報</a>
+								<a href="<%- $path %>/products.html">製品情報</a>
 						</li>
 						<li <% if($active=='recruit' ){ %>class="current-menu-item"
 							<% } %>><a href="/page-recruit.html">採用情報</a></li>
 						<li <% if($active=='news' ){ %>class="current-menu-item"
-							<% } %>><a href="<%- $path %>a">お知らせ</a></li>
-						<li><a href="<%- $path %>contact">お問い合わせ</a></li>
+							<% } %>><a href="<%- $path %>/news.html">お知らせ</a></li>
+						<li <% if($active=='contact' ){ %>class="current-menu-item"
+						<% } %>><a href="<%- $path %>/contact.html">お問い合わせ</a></li>
 					</ul>
 					<div class="language"><a href=""><span class="language__label">Global</span><span>EN</span></a></div>
 				</nav>
