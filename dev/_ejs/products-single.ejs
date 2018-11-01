@@ -2,6 +2,7 @@
 	include( '_include/_function.ejs' );
 	$active = 'products';
 	$css = ['<link rel="stylesheet" href="/css/products.min.css" />'];
+	$scripts = ['<script src="/js/slick/slick.min.js"></script>','<script src="/js/productdetail.js"></script>'];
 	$src = '/img/products/';
 %>
 <!DOCTYPE html>
@@ -43,6 +44,15 @@
                     <!-- *** 左 -->
                     <section class="detail__main">
                         <section class="detail__imgs">
+                            <div class="detail__img__item">
+                                <img src="<%- $src %>productimg-tcxo.png" alt="">
+                            </div> 
+                            <div class="detail__img__item">
+                                <img src="<%- $src %>productimg-tcxo.png" alt="">
+                            </div> 
+                            <div class="detail__img__item">
+                                <img src="<%- $src %>productimg-tcxo.png" alt="">
+                            </div> 
                             <div class="detail__img__item">
                                 <img src="<%- $src %>productimg-tcxo.png" alt="">
                             </div> 
