@@ -40,7 +40,7 @@
 .section__index
 {
     font-family: 'Din', sans-serif; 
-    font-size: 4.6666666667em;
+    font-size: 3.45em;
     line-height: 1em;
 
     position: absolute;
@@ -55,7 +55,9 @@
 {
     .section__index
     {
-        font-size: 3.0769230769em;
+        font-size: 1.6153846154em; 
+
+        width: 8%;
     }
 }
 .section:nth-child(odd) .section__index
@@ -83,7 +85,7 @@
     position: relative;
     z-index: 1; 
 
-    width: 50vw;
+    width: 50%;
 }
 @media screen and (max-width: 780px)
 {
@@ -109,14 +111,14 @@
 .section .section__detail
 {
     position: absolute;
-    top: 10%; 
+    top: 100px; 
 
     display: -ms-flexbox;
     display: flex;
         flex-direction: column;
 
     box-sizing: border-box;
-    width: 75vw;
+    width: 75%;
     height: 100%;
     padding-top: 7.1428571429vw;
     padding-bottom: 7.1428571429vw;
@@ -247,8 +249,10 @@
 }
 .section__gallery
 {
-    padding-top: 8.5714285714vw;
-    padding-bottom: 4.2857142857vw;
+    line-height: 1;
+
+    padding-top: 200px;
+    padding-bottom: 100px;
 }
 @media screen and (max-width: 780px)
 {
@@ -280,7 +284,7 @@
 {
     .section__gallery__img
     {
-        max-width: 49%;
+        max-width: 47%;
     }
 }
 .section__gallery__img img
@@ -295,7 +299,7 @@
 {
     .section__gallery__img:not(:last-child)
     {
-        margin-right: 2%;
+        margin-right: 6%;
     }
 }
 @media screen and (min-width: 414px)
@@ -433,6 +437,13 @@
         margin-bottom: 30px;
     }
 }
+@media screen and (max-width: 320px)
+{
+    .mv__copy__en
+    {
+        margin-bottom: 5vw;
+    }
+}
 .mv__copy__ja
 {
     font-size: 1.1em;
@@ -455,6 +466,13 @@
         font-size: 1.2rem;
     }
 }
+@media screen and (max-width: 320px)
+{
+    .mv__copy__ja
+    {
+        font-size: 1rem;
+    }
+}
 .mv__img
 {
     width: 75vw;
@@ -469,7 +487,7 @@
 {
     position: absolute;
     right: 0;
-    bottom: -40px;
+    bottom: -30px;
     left: 0;
 
     overflow: hidden; 
@@ -478,6 +496,13 @@
     height: 80px;
     margin-right: auto;
     margin-left: auto;
+}
+@media screen and (max-width: 414px)
+{
+    .mv__scroll
+    {
+        display: none;
+    }
 }
 .mv__scroll:after
 {
@@ -533,6 +558,13 @@
 .recruitBlock .button
 {
     margin-right: auto;
+}
+@media screen and (max-width: 780px)
+{
+    .recruitBlock .button
+    {
+        width: 100%;
+    }
 }
 .recruitBlock .triangle
 {
