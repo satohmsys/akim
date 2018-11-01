@@ -1,5 +1,6 @@
 @import "colors.scss";
 @import "variables.scss";
+@import "fonts.scss";
 @import "mixins.scss";
 
 @import "modules-childpage.scss";
@@ -42,6 +43,44 @@
 
         a{
             display: block;
+
+            @include mouseOver(){
+                .button span:after{
+                    width: 0;
+                }
+
+                .icon--play{
+                    width: 0;
+                }
+            }
+        }
+
+
+        .icon--play{
+            width: 1em;
+            height: 1em;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            display: block;
+            transition: transition();
+            font-size: 4em;
+
+            &:after{
+                width: 100%;
+                height: 100%;
+               content: "\e903";
+               position: absolute;
+               top: 0;
+               left: 0;
+               color: $red;
+    			@extend %iconfont;               
+            }
         }
 
 
@@ -79,6 +118,15 @@
             // font-size: $fontsize_s;
         }
 
+
+
+
+    }
+
+    .productBanner--movie{
+        .button span:after{
+            display: none;
+        }
     }
 }
 
@@ -93,5 +141,12 @@
 .section--products{
     margin-top: $space_l;
     background-color: #ffffff;
+
+
+    .wrap{
+        @include mq( sp,min ){
+            max-width: 1000px;
+        }
+    }
     
 }
