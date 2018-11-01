@@ -1,0 +1,97 @@
+@import "colors.scss";
+@import "variables.scss";
+@import "mixins.scss";
+
+@import "modules-childpage.scss";
+////////////////////////////////////////// 製品情報
+
+
+///////////////////////////////
+
+//module/
+
+///////////////////////////////
+
+.subpageMv{
+    background-image: url(../img/products/mv.jpg);
+
+    @include mq( tab ){
+        background-image: url(../img/products/_sp/mv.jpg);    
+    }
+}
+
+
+
+////////バナーリンク
+
+.productBanners{
+    display: flex;
+
+
+    .productBanner{
+        width: 50%;
+        list-style: none;
+        position: relative;
+
+        &:first-child{
+            @include mq( tab,min ){
+                margin-right: 40px;
+            }
+        }
+
+
+        a{
+            display: block;
+        }
+
+
+        .button{
+            width: 270px;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            span{
+                padding-top: 0;
+                padding-bottom: 15px;
+                text-align: left;
+                color: $basefontColor;
+                background-color: #ffffff;
+
+                &:after{
+                    color: $red;
+                }
+            }
+        }
+
+
+        &__index{
+            font-size: $fontsize_m;
+            line-height: 1;
+        font-weight: bold;
+        }
+
+        &__description{
+            line-height: 1;
+            margin-top: 1em;
+            margin-bottom: 0;
+            font-weight: lighter;
+            // font-size: $fontsize_s;
+        }
+
+    }
+}
+
+
+
+///////////////////////////////
+
+//our style
+
+///////////////////////////////
+
+.section--products{
+    margin-top: $space_l;
+    background-color: #ffffff;
+    
+}
