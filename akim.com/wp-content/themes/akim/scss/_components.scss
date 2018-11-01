@@ -28,9 +28,16 @@
 
 
 
+<<<<<<< HEAD
 	a{
 		height: 100%;
 		padding: 10px 20px;
+=======
+	a,
+	span{
+		text-align: center;
+		padding: 20px;
+>>>>>>> 968b19e48696df84aa7bcf38e1a98c06126021f4
 		position: relative;
 		display: flex;
 		align-items: center;
@@ -63,6 +70,23 @@
 			}
 		}
 	}
+
+
+	///////// download
+	&--download{
+		a,span{
+			&:after{
+				content: "\e902";
+			}
+		}
+	}
+
+	///////// secondary
+	&--secondary{
+		a,span{
+			background-color: $basefontColor;
+		}
+	}	
 
 
 }

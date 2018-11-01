@@ -64,17 +64,17 @@ gulp.task('sass' , function(){
     style : 'nested'
   })
   .pipe(autoprefixer({
-    browsers: ['last 4 versions', '> 2%', 'ie > 10', 'iOS >= 10', 'Android >= 6']
+    browsers: ['last 4 versions', '> 2%', 'ie > 10', 'iOS >= 10', 'Android >= 7']
   }))
   .pipe(csscomb()) 
   .pipe(plumber({
     errorHandler : notify.onError('<%= error.message %>') //gulp notify エラーメッセージ
   }))
-  .pipe(rename(function(path){
-    path.dirname = path.dirname.replace( sassDir.sass, sassDir.css); // scss→cssに 
-    console.log('COMPILE→ ', path);
-  })) 
-  .pipe(gulp.dest( dir.top ))
+  // .pipe(rename(function(path){
+  //   path.dirname = path.dirname.replace( sassDir.sass, sassDir.css); // scss→cssに 
+  //   console.log('COMPILE→ ', path);
+  // })) 
+  // .pipe(gulp.dest( dir.top ))
   .pipe( cssmin() )
   .pipe( rename( function( path ){
     path.dirname = path.dirname.replace( sassDir.sass, sassDir.css );

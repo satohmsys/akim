@@ -201,7 +201,6 @@
 
 
 
-
 //////////////////
 
 // section 
@@ -210,4 +209,36 @@
 
 .section--painted{
 	background-color: #ffffff;
+}
+
+
+
+//////////////////
+
+//  リスト
+
+//////////////////
+
+.bullet{
+
+	li{
+		position: relative;
+		padding-left: calc( 1em + 10px);
+		list-style: none;
+
+		&:not( :last-child ){
+			margin-bottom: 10px;
+		}
+
+		&:before{
+			content: " ";
+			width: 10px;
+			height: 2px;
+			display: inline-block;
+			position: absolute;
+			top: 1em;
+			left: 0;
+			background-color: $red;
+		}	
+	}
 }

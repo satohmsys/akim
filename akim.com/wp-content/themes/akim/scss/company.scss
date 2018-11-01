@@ -1,6 +1,8 @@
 @import "colors.scss";
 @import "variables.scss";
 @import "mixins.scss";
+
+@import "modules-childpage.scss";
 ////////////////////////////////////////// kaishaannai
 
 
@@ -19,40 +21,6 @@
 }
 
 
-.section{
-
-    &__index{
-        line-height: 1;
-        margin-bottom: $space_l;
-        font-weight: bold;
-        font-size: $fontsize_l;
-        color: $red;
-        text-align: center;
-
-        @include mq( sp ){
-            font-size: $fontsize_l_sp;
-            margin-bottom: $space_m_sp;;
-        }             
-    }
-
-
-
-    position: relative;
-    .triangle{
-        position: absolute;
-        z-index: -1;
-    }
-    .triangle--left{
-        top: 0;
-        left: 0;
-    }
-    .triangle--right{
-        position: absolute;
-        bottom: 0;
-        right: 0;
-    }
-
-}
 
 .innerContent{
     padding: $space_m;
@@ -125,6 +93,8 @@
 .section--panels{
     margin-top: $space_m;
     margin-bottom: $space_l;
+    padding-top: 0;
+    padding-bottom: 0;
 
     @include mq( sp ){
         margin-top: $space_m_sp;        
@@ -188,8 +158,8 @@
 ///////// 最初の3項目
 .section--pickup{
 
-    position: relative;
-
+    padding-top: 0;
+    
     .mind{
         &:nth-child( even ){
             @include mq( tab,min ){
@@ -257,7 +227,7 @@
 ////////// 社長
 
 .section--message{
-
+    background-color: #ffffff;
 }
 
 
@@ -488,8 +458,6 @@
 
 
 
-
-
         &__line{
             width: 3px;
             height: 100%;
@@ -526,14 +494,6 @@
         background-color: transparent;
     }
 
-    
-    .section__child:not( :first-child ){
-        margin-top: $space_l;
-
-        @include mq( sp ){
-            margin-top: $space_m_sp;
-        }
-    }
 
     .wrap{
         @include mq( sp,min ){
@@ -579,5 +539,19 @@
 
 
     }
+}
+
+
+
+
+///////////////////////////////
+
+// テクノロジー
+
+///////////////////////////////
+
+.section--tech{
+    padding-top: 0;
+text-align: center;
 }
 

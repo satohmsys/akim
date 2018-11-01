@@ -8,20 +8,92 @@
 
 
 
-.separateSec{
+//////////セクション配色クラス
+// .separateSec{
+//     padding-top: $space_l;
+//     padding-bottom: $space_l;
+
+//     @include mq( sp ){
+//         padding-top: $space_l_sp;
+//         padding-bottom: $space_l_sp;
+
+//     }    
+
+//     &:first-of-type{
+//         padding-top: 0;
+//     }
+
+//     &:nth-child( odd ){
+//         background-color: #fff;
+//     }
+// }
+
+
+
+////////// 大セクション
+.section{
     padding-top: $space_l;
     padding-bottom: $space_l;
+    position: relative;
 
     @include mq( sp ){
         padding-top: $space_l_sp;
         padding-bottom: $space_l_sp;
 
     }    
+    // &:nth-child( odd ){
+    //     background-color: #fff;
+    // }    
 
-    &:nth-child( odd ){
-        background-color: #fff;
+    
+    &__index{
+        line-height: 1;
+        margin-bottom: $space_l;
+        font-weight: bold;
+        font-size: $fontsize_l;
+        color: $red;
+        text-align: center;
+
+        @include mq( sp ){
+            font-size: $fontsize_l_sp;
+            margin-bottom: $space_m_sp;;
+        }             
     }
+
+
+
+
+    ///// 小セクション
+
+    .section__child:not( :first-child ){
+        margin-top: $space_l;
+
+        @include mq( sp ){
+            margin-top: $space_m_sp;
+        }
+    }
+
+
+
+
+    .triangle{
+        position: absolute;
+        z-index: -1;
+    }
+    .triangle--left{
+        top: 0;
+        left: 0;
+    }
+    .triangle--right{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
 }
+
+
+
 
 
 
@@ -97,21 +169,27 @@
 
 .breadcrumbSection{
     margin-bottom: $space_m;
-    padding-top: 20px;
-    padding-bottom: 20px;
     line-height: 1;
     background-color: #fff;
     font-size: $fontsize_s;
 
     @include mq( sp ){
+        overflow: hidden;
         margin-bottom: $space_m_sp; 
     }    
 
     .wrap{
         max-width: 1000px;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
     }
 
     .breadcrumb{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        white-space: nowrap;
+
+
         li{
             display: inline-block;
 
@@ -140,16 +218,27 @@
 ////////////////////
 
 .subpageIntro{
-    max-width: 600px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    // max-width: 600px;
     margin-right: auto;
     margin-left: auto;
+    text-align: center;
+    font-weight: bold;
+
+    @include mq(sp ){
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
 
 
     &__index{
         font-size: $fontsize_l;
-        font-weight: bold;
         color: $red;
-        text-align: center;
+    
+        @include mq(sp ){
+            font-size: $fontsize_l_sp;
+        }        
     }
 }
 
