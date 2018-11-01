@@ -8,6 +8,7 @@
 
 
 
+//////////セクション配色クラス
 .separateSec{
     padding-top: $space_l;
     padding-bottom: $space_l;
@@ -22,6 +23,59 @@
         background-color: #fff;
     }
 }
+
+
+
+////////// 大セクション
+.section{
+    position: relative;
+
+    &__index{
+        line-height: 1;
+        margin-bottom: $space_l;
+        font-weight: bold;
+        font-size: $fontsize_l;
+        color: $red;
+        text-align: center;
+
+        @include mq( sp ){
+            font-size: $fontsize_l_sp;
+            margin-bottom: $space_m_sp;;
+        }             
+    }
+
+
+    ///// 小セクション
+
+    .section__child:not( :first-child ){
+        margin-top: $space_l;
+
+        @include mq( sp ){
+            margin-top: $space_m_sp;
+        }
+    }
+
+
+
+
+    .triangle{
+        position: absolute;
+        z-index: -1;
+    }
+    .triangle--left{
+        top: 0;
+        left: 0;
+    }
+    .triangle--right{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+}
+
+
+
 
 
 
@@ -140,16 +194,16 @@
 ////////////////////
 
 .subpageIntro{
-    max-width: 600px;
+    // max-width: 600px;
     margin-right: auto;
     margin-left: auto;
+    text-align: center;
+    font-weight: bold;
 
 
     &__index{
         font-size: $fontsize_l;
-        font-weight: bold;
         color: $red;
-        text-align: center;
     }
 }
 

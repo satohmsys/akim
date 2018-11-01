@@ -1,6 +1,8 @@
 @import "colors.scss";
 @import "variables.scss";
 @import "mixins.scss";
+
+@import "modules-childpage.scss";
 ////////////////////////////////////////// kaishaannai
 
 
@@ -16,42 +18,6 @@
     @include mq( tab ){
         background-image: url(../img/recruit/_sp/mv.jpg);    
     }
-}
-
-
-.section{
-    position: relative;
-
-    &__index{
-        line-height: 1;
-        margin-bottom: $space_l;
-        font-weight: bold;
-        font-size: $fontsize_l;
-        color: $red;
-        text-align: center;
-
-        @include mq( sp ){
-            font-size: $fontsize_l_sp;
-            margin-bottom: $space_m_sp;;
-        }             
-    }
-
-
-
-    .triangle{
-        position: absolute;
-        z-index: -1;
-    }
-    .triangle--left{
-        top: 0;
-        left: 0;
-    }
-    .triangle--right{
-        position: absolute;
-        bottom: 0;
-        right: 0;
-    }
-
 }
 
 
@@ -164,15 +130,7 @@
         }
     }
 
-
-    .section__child:not( :first-child ){
-        margin-top: $space_l;
-
-        @include mq( sp ){
-            margin-top: $space_m_sp;
-        }
-    }
-
+    
 
     .recruitInfoTable{
         margin-top: -30px;
