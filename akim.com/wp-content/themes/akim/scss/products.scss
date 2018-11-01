@@ -25,19 +25,34 @@
 
 ////////バナーリンク
 
-.productBanners{
+.productBanner{
     display: flex;
 
 
-    .productBanner{
+    @include mq( sp ){
+        flex-direction: column;
+    }     
+
+
+    &__item{
         width: 50%;
         list-style: none;
         position: relative;
 
+        @include mq( sp ){
+            width: 100%;
+        } 
+
+
         &:first-child{
             @include mq( tab,min ){
                 margin-right: 40px;
-            }
+            }           
+        }
+        &:not( :first-child ){
+            @include mq( sp ){
+                margin-top: 20px;
+            }              
         }
 
 
@@ -90,8 +105,12 @@
             top: 0;
             left: 0;
 
+            @include mq( sp ){
+                width: 200px;
+            }             
+
             span{
-                padding-top: 0;
+                padding-top: 15px;
                 padding-bottom: 15px;
                 text-align: left;
                 color: $basefontColor;
@@ -101,13 +120,17 @@
                     color: $red;
                 }
             }
+      
         }
-
-
+    
         &__index{
             font-size: $fontsize_m;
             line-height: 1;
-        font-weight: bold;
+            font-weight: bold;
+            
+            @include mq( sp ){
+                font-size: 1em;
+            }             
         }
 
         &__description{
@@ -116,11 +139,11 @@
             margin-bottom: 0;
             font-weight: lighter;
             // font-size: $fontsize_s;
+
+            @include mq( sp ){
+                font-size: $fontsize_s;
+            }             
         }
-
-
-
-
     }
 
     .productBanner--movie{
@@ -132,9 +155,11 @@
 
 
 
+
+
 ///////////////////////////////
 
-//our style
+//カテゴリトップ
 
 ///////////////////////////////
 
@@ -148,5 +173,209 @@
             max-width: 1000px;
         }
     }
-    
+
+
+    .productBanner__item{
+        .button{
+            span{
+                padding-top: 0;
+           }
+        }
+    }    
+
+}
+
+
+
+
+///////////////////////////////
+
+//製品一覧
+
+///////////////////////////////
+
+.section--items{
+
+    .itemList{
+        padding-left: 0;
+    }
+
+    .itemList__item{
+        list-style: none;
+        padding-right: 60px;
+        padding-left: 60px;
+        display: flex;
+
+        @include mq( tab ){
+            padding-right: 0;
+            padding-left: 0;
+        }            
+
+        @include mq( sp ){
+            flex-direction: column;
+        }        
+
+
+        &:not( :first-child ){
+            border-top: 1px solid $color_border;
+            padding-top: $space_s;
+        }
+        &:not( :last-child ) {
+            padding-bottom: $space_s;
+        }
+
+
+
+        &__img{
+            max-width: 210px;
+            line-height: 1;
+            text-align: center;
+
+            @include mq( sp ){
+                max-width: 100%;
+                margin-right: $space_s_sp;
+                margin-bottom: $space_s_sp;
+                margin-left: $space_s_sp;
+            }                
+        }
+
+
+        &__content{
+            margin-left: $space_s;
+
+
+            @include mq( sp ){
+                margin-left: 0;
+            }    
+
+        }
+
+
+        &__index{
+            font-weight: bold;
+            font-size: $fontsize_m;
+            margin-bottom: 20px;
+
+
+            @include mq( sp ){
+                font-size: $fontsize_m_sp;
+            }                
+        }
+
+
+        &__benefit{
+            &__item{
+                position: relative;
+                padding-left: calc( 1em + 10px);
+                list-style: none;
+
+                &:not( :last-child ){
+                    margin-bottom: 10px;
+                }
+
+                &:before{
+                    content: " ";
+                    width: 10px;
+                    height: 2px;
+                    display: inline-block;
+                    position: absolute;
+                    top: 1em;
+                    left: 0;
+                    background-color: $red;
+                }
+            }            
+        }
+
+
+        .button{
+            margin-top: $space_s;
+
+            @include mq( sp ){
+                width: 100%;
+            }                
+        }
+
+    }
+}
+
+
+.section--banner{
+
+    .wrap{
+        @include mq( sp, min ){        
+            max-width: 1000px;
+        }
+    }
+
+    .productBanner--main{
+        .productBanner__item{
+            width: auto;
+
+            &:first-child{
+                margin-right: 0;
+            }
+
+            .button{
+                position: absolute;
+
+                @include mq( sp , min ){
+                    left: auto;
+                    top: $space_s/2;
+                    right: $space_s/2;
+                }
+                @include mq( sp ){
+                    top: 5px;
+                    right: 5px;
+                }                  
+            }
+        }
+    }
+
+
+    .relatedProduct{
+        line-height: 1;
+        margin-top: $space_s;
+
+        @include mq( sp ){
+            margin-top: 20px;
+        }          
+
+
+        &__item{
+            line-height: 0;
+            position: relative;
+
+            &__img{
+                width: 150px;
+
+                @include mq( sp ){
+                   width: 100px;
+                } 
+
+            }
+
+            .button{
+                width: calc( 100% - 150px );
+                left: 150px;
+                position: absolute;
+                display: flex;
+                height: 100%;
+
+                @include mq( sp ){
+                    width: calc( 100% - 100px );
+                    left: 100px;
+                }                
+
+
+                span{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    // height: 100%;
+                    box-sizing: border-box;
+                }
+            }
+        }
+
+    }
 }
