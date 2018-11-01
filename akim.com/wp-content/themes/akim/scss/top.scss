@@ -315,6 +315,12 @@
     &__logo{
         margin-top: 40px;
 
+        img{
+            @include mq( tab,min ){
+                width: 75px;
+            }
+        }
+
         @include mq(sp) {
          margin-top: 0;
         }

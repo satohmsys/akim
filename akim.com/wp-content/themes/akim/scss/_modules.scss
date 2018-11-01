@@ -68,7 +68,7 @@
 		}
 		
 		img{
-			width: 75px;
+			width: 60px;
 			@include mq( tab ){
 				width: 35px;
 			}		
@@ -78,8 +78,7 @@
 
 
 	&__nav{
-		padding-top: 40px;
-		padding-bottom: 40px;
+
 		margin-left: auto;
 
 		@include mq( tab ){
@@ -91,6 +90,7 @@
 	
 	
 	&__mainNav{
+		height: 100%;
 		display: flex;
 		align-items: center;
 
@@ -135,30 +135,6 @@
 				align-items: flex-start;
 			}
 		}
-		> nav ul > li > a{
-			@include mouseOver(){
-				transition: transition();
-				&:after{
-					width: 100%;
-					// right: auto;
-					// left: 0;
-				}
-			}
-			&:after{
-				content:" ";
-				width: 0%;
-				height: 2px;
-				margin-right: auto;
-				margin-left: auto;
-				display: block;
-				position: absolute;
-				right: 0;
-				bottom: 0px;
-				left: 0;
-				background-color: $red;
-				transition: transition(all,0.2s);
-			}					
-		}
 
 		li{	
 			height: 100%;
@@ -180,9 +156,35 @@
 		li > a{
 			height: 100%;
 			line-height: 1;
+			padding: 40px 30px;
 			box-sizing: border-box;
-			padding: 10px 30px;
+			position: relative;
 			display: block;	
+
+
+			&:after{
+				content: " ";
+				width: 0;
+				height: 5px;
+				display: block;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				background-color: $red;
+				transition: transition(all,0.38s);
+
+			}
+
+			@include mq( tab,min ){
+				@include mouseOver(){
+					&:after{
+						width: 100%;
+						right: 0;
+						left: auto;
+					}
+				}
+			}
+
 
 			@include mq( 1024 ){
 				padding-right: 15px;
@@ -196,14 +198,14 @@
 				color: #ffffff;
 			}			
 		}
-		// .active a,
-		// .current-menu-item a{
-		// 	pointer-events:none;
+		.active a,
+		.current-menu-item a{
+			pointer-events:none;
 			
-		// 	&:after{
-		// 		width: 100%;
-		// 	}
-		// }
+			&:after{
+				width: 100%;
+			}
+		}
 
 		.notactive{
 			pointer-events:none;
