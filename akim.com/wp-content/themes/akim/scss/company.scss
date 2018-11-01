@@ -93,6 +93,8 @@
 .section--panels{
     margin-top: $space_m;
     margin-bottom: $space_l;
+    padding-top: 0;
+    padding-bottom: 0;
 
     @include mq( sp ){
         margin-top: $space_m_sp;        
@@ -156,8 +158,8 @@
 ///////// 最初の3項目
 .section--pickup{
 
-    position: relative;
-
+    padding-top: 0;
+    
     .mind{
         &:nth-child( even ){
             @include mq( tab,min ){
@@ -225,7 +227,7 @@
 ////////// 社長
 
 .section--message{
-
+    background-color: #ffffff;
 }
 
 
@@ -531,5 +533,19 @@
 
 
     }
+}
+
+
+
+
+///////////////////////////////
+
+// テクノロジー
+
+///////////////////////////////
+
+.section--tech{
+    padding-top: 0;
+text-align: center;
 }
 

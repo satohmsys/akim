@@ -9,27 +9,43 @@
 
 
 //////////セクション配色クラス
-.separateSec{
+// .separateSec{
+//     padding-top: $space_l;
+//     padding-bottom: $space_l;
+
+//     @include mq( sp ){
+//         padding-top: $space_l_sp;
+//         padding-bottom: $space_l_sp;
+
+//     }    
+
+//     &:first-of-type{
+//         padding-top: 0;
+//     }
+
+//     &:nth-child( odd ){
+//         background-color: #fff;
+//     }
+// }
+
+
+
+////////// 大セクション
+.section{
     padding-top: $space_l;
     padding-bottom: $space_l;
+    position: relative;
 
     @include mq( sp ){
         padding-top: $space_l_sp;
         padding-bottom: $space_l_sp;
 
     }    
+    // &:nth-child( odd ){
+    //     background-color: #fff;
+    // }    
 
-    &:nth-child( odd ){
-        background-color: #fff;
-    }
-}
-
-
-
-////////// 大セクション
-.section{
-    position: relative;
-
+    
     &__index{
         line-height: 1;
         margin-bottom: $space_l;
@@ -43,6 +59,8 @@
             margin-bottom: $space_m_sp;;
         }             
     }
+
+
 
 
     ///// 小セクション
