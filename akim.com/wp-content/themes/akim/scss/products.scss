@@ -321,6 +321,8 @@
             }
 
             .button{
+                height: auto;
+
                 position: absolute;
 
                 @include mq( sp , min ){
@@ -375,7 +377,7 @@
                 span{
                     width: 100%;
                     display: flex;
-                    align-items: center;
+                    justify-content: center;
                     // height: 100%;
                     box-sizing: border-box;
                 }
