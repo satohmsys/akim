@@ -4,6 +4,9 @@
 @import "mixins.scss";
 
 @import "modules-childpage.scss";
+
+@import "../js/slick/slick.css";
+@import "../js/slick/slick-theme.css";
 ////////////////////////////////////////// 製品情報
 
 
@@ -483,6 +486,70 @@
         }
 
 
+        ///// images
+
+        &__imgs{
+
+            transition: transition();
+
+            .slick-slider{
+                opacity: 0;
+
+                &.slick-initialized{
+                    opacity: 1;
+                }
+            }
+
+            img{
+                margin-right: auto;
+                margin-left: auto;
+            }
+
+
+            .slick-slide{
+                transform: scale(0.95);
+                transition: transition();
+
+                &.slick-current{
+                    transform: scale(1);                                    
+                }
+            }
+
+
+
+            .slick-arrow{
+                width: 40px;
+                height: 40px;
+                z-index: 2;
+
+                &:before{
+                    content: "";
+                    width: 100%;
+                    height: 100%;
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    display: block;
+                    border-top: solid 1px $red;
+                    border-right: solid 1px $red;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    transform-origin: center center ;
+                    // font-size: 3em;
+                }
+
+                &.slick-next{
+                    right: 20px;
+                    transform: rotate( 45deg );
+                }
+                &.slick-prev{
+                    left: 20px;
+                    transform: rotate( 225deg );
+                }
+            }
+        }
+
+
         ///gaiyou 
         &__index{
             line-height: 1;
@@ -511,8 +578,9 @@
         &__licenseNum{
 
             width: 350px;
+            margin-top: 1em;
+            margin-right: 0;margin-bottom: 0;
             margin-left: auto;
-            margin-right: 0;
             display: table;
             table-layout: fixed;
             font-size: 1rem;
