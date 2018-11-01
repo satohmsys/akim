@@ -31,18 +31,20 @@
         top: -1.5em;
         z-index: 3;
         // transform: rotate(90deg);
-        font-size: $fontsize_xl;
+        font-size: 3.45em;
         color: $red;
         font-family: $fontFamily_en;
 
         @include mq( sp ){
-            font-size: $fontsize_xl_sp;
+            width: 8%;
+            font-size: $fontsize_l_sp;
+        } 
+        @include mq( 320 ){
         } 
 
         img{
             // max-width: auto;
             // height: 100%;
-        
         }
     }
 
@@ -69,7 +71,7 @@
 
 
     .section__img{
-        width: 50vw;
+        width: 50%;
         line-height: 0;
         position: relative;
         z-index: 1;
@@ -98,7 +100,7 @@
 
 
     .section__detail{
-        width: 75vw;
+        width: 75%;
         height: 100%;
         padding-top: #{( 100/1400 * 100 )}vw;
         padding-bottom: #{( 100/1400 * 100 )}vw;
@@ -108,7 +110,7 @@
         flex-direction: column;
         justify-content: center;
         position: absolute;
-        top: 10%;
+        top: $space_l;
 
         @include mq( tab ) {
             width: 100%;
@@ -214,10 +216,10 @@
 
     ///// 
     &__gallery{
-        // padding-top: $space_l;
-        // padding-bottom: $space_l;
-        padding-top: #{120/1400 * 100}vw;
-        padding-bottom: #{60/1400 * 100}vw;     
+        padding-top: $space_l*2;
+        padding-bottom: $space_l;
+        // padding-top: #{120/1400 * 100}vw;
+        // padding-bottom: #{60/1400 * 100}vw;     
 
         @include mq( tab ){
             padding-top: $space_l_sp;
@@ -238,7 +240,7 @@
             max-width: percentage( 300/1000 );
 
             @include mq( sp ) {
-                max-width: 49%;
+                max-width: 47%;
             }
 
             img{
@@ -249,7 +251,7 @@
                 margin-right: percentage( 50/1000 );
 
                 @include mq(sp) {
-                    margin-right: 2%;
+                    margin-right: 6%;
                 }
 
             }
@@ -380,7 +382,11 @@
 
             @include mq( sp ){
                 margin-bottom: $space_s_sp;
-            }            
+            }        
+            @include mq( 320 ){
+                margin-bottom: 5vw;
+            }
+
         }
 
         &__ja{
@@ -393,6 +399,9 @@
 
             @include mq(sp) {
                font-size: 1.2rem;
+            }
+            @include mq( 320 ){
+                font-size: 1rem
             }
             
         }
@@ -421,9 +430,13 @@
         margin-left: auto;
         position: absolute;
         right: 0;
-        bottom: -40px;
+        bottom: -30px;
         left: 0;
         overflow: hidden;
+
+        @include mq( sp ){
+            display: none;
+        }
 
         &:after{
             content: " ";
@@ -484,6 +497,10 @@
     .button{
         // margin-left: auto;
         margin-right: auto;
+
+        @include mq( tab ){
+            width: 100%;
+        }
     }
 
 

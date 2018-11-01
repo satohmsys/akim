@@ -235,27 +235,43 @@
 .productList{
     display: flex;
     flex-wrap: wrap;
+    margin-right: -50px;
+    margin-left: -50px;
+
+    @include mq( 1024 ) {
+        // width: 33.333%;
+        margin-right: -1 * $space_s/2;
+        margin-left: -1 * $space_s/2;
+    }    
+
+    @include mq(sp) {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
 
     &__item{
         // width: 25%;
         width: calc( 100% / 3 );
         margin-bottom: $space_m;
         box-sizing: border-box;
-        padding-right: 20px;
-        padding-left: 20px;
+        padding-right: 50px;
+        padding-left: 50px;
         text-align: center;
         list-style:none ;
 
 
         @include mq( 1024 ) {
             // width: 33.333%;
-            padding-right: 10px;
-            padding-left: 10px;
+            padding-right: $space_s/2;
+            padding-left: $space_s/2;
         }
 
         @include mq(sp) {
             width: 50%;
             margin-bottom: $space_s;
+            display: flex;
+            flex-direction: column;
 
             &:nth-child(odd) {
                 padding-right: 10px;
@@ -283,7 +299,8 @@
             }
             @include mq( sp ){
                 // white-space: nowrap;
-                font-size: 1.2rem;
+                font-size: 1.25rem;
+                // font-weight: bold;
             }
         }
 
@@ -294,9 +311,12 @@
 
 
         .button{
+            width: 100%;
             @include mq( tab ) {
-                width: 100%;
                 min-width: 0;
+            }
+            @include mq( sp ) {
+                margin-top: auto;
             }
         }
     }
@@ -304,11 +324,11 @@
 
 
 .otherProducts{
-    padding: $space_s;
+    padding:  $space_s $space_s calc( #{$space_s} - 1em ) $space_s;
     border: 1px solid $color_border;
 
     @include mq( sp ){
-        padding: $space_s_sp;
+        padding:  $space_s_sp $space_s_sp calc( #{$space_s_sp} - 1em ) $space_s_sp;
     }
 
 

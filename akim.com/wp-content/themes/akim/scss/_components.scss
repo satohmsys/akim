@@ -18,22 +18,29 @@
 .button{
 	min-width: 240px;
 	line-height: 1;
+	height: 60px;
 	display: inline-block;
 
     @include mq( sp ) {
 		min-width: 100px;
+		height: 50px;
     }
 
 
 
 	a{
-		text-align: center;
-		padding: 20px;
+		height: 100%;
+		padding: 10px 20px;
 		position: relative;
-		background-color: $red;
-		color: #ffffff;
-		display: block;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		box-sizing: border-box;
+		text-align: center;
 		font-weight: bold;
+		color: #ffffff;
+		background-color: $red;
+
 
 		&:after{
 			width: 1em;
