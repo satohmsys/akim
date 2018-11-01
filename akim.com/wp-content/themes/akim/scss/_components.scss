@@ -59,6 +59,23 @@
 	}
 
 
+	///////// download
+	&--download{
+		a,span{
+			&:after{
+				content: "\e902";
+			}
+		}
+	}
+
+	///////// secondary
+	&--secondary{
+		a,span{
+			background-color: $basefontColor;
+		}
+	}	
+
+
 }
 
 .button.-outline{

@@ -151,21 +151,27 @@
 
 .breadcrumbSection{
     margin-bottom: $space_m;
-    padding-top: 20px;
-    padding-bottom: 20px;
     line-height: 1;
     background-color: #fff;
     font-size: $fontsize_s;
 
     @include mq( sp ){
+        overflow: hidden;
         margin-bottom: $space_m_sp; 
     }    
 
     .wrap{
         max-width: 1000px;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
     }
 
     .breadcrumb{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        white-space: nowrap;
+
+
         li{
             display: inline-block;
 
@@ -194,16 +200,27 @@
 ////////////////////
 
 .subpageIntro{
+    margin-top: 80px;
+    margin-bottom: 80px;
     // max-width: 600px;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
     font-weight: bold;
 
+    @include mq(sp ){
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
 
     &__index{
         font-size: $fontsize_l;
         color: $red;
+    
+        @include mq(sp ){
+            font-size: $fontsize_l_sp;
+        }        
     }
 }
 

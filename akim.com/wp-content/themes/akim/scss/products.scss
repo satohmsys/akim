@@ -182,7 +182,6 @@
            }
         }
     }    
-
 }
 
 
@@ -300,6 +299,7 @@
 
 
 .section--banner{
+    background-color: transparent!important;
 
     .wrap{
         @include mq( sp, min ){        
@@ -309,7 +309,7 @@
 
     .productBanner--main{
         .productBanner__item{
-            width: auto;
+            width: 100%;
 
             &:first-child{
                 margin-right: 0;
@@ -378,4 +378,281 @@
         }
 
     }
+}
+
+
+
+///////////////////////////////
+
+//商品詳細
+
+///////////////////////////////
+
+
+.section--detail{
+    background-color: #ffffff;
+
+
+    .wrap{
+        @include mq( sp,min ){
+            max-width: 1000px;
+        }
+    }
+
+
+    ///// component
+
+    ul{
+        padding-left: 0;
+        list-style: none;
+    }
+
+
+    .subColumnSection{
+        &:not( :first-child ){
+            margin-top: $space_m;
+
+
+        }
+
+        &__index{
+            line-height: 1;
+            margin-bottom: 1em;
+            font-weight: bold;
+
+             @include mq(sp ){
+                 font-size: $fontsize_m_sp;
+             }
+
+        }
+    }
+
+
+    .mainColumnSection{
+        margin-top: $space_s;
+
+        @include mq( sp ){
+            margin-top: $space_m_sp;
+        }
+
+
+        &__index{
+            line-height: 1;
+            margin-bottom: 30px;
+            font-weight: bold;
+            font-size: $fontsize_m;
+
+            @include mq( sp ){
+                margin-bottom: 20px;
+                font-size: $fontsize_m_sp;
+            }            
+        }
+    }
+
+
+
+
+    .detail{
+        display: flex;
+
+        @include mq( tab ){
+            flex-direction: column;
+        }
+
+        &__main{
+
+            @include mq( tab,min ){
+                width: percentage( 710 / 1000 );
+                margin-right: $space_s;                
+            }
+        }
+        &__sub{
+            margin-top: $space_m_sp;
+            @include mq( tab,min ){
+                margin-top: 0;
+                width: percentage( 250 / 1000 );
+            }
+        }
+
+
+        ///// main
+
+        &__main{
+
+
+        }
+
+
+        ///gaiyou 
+        &__index{
+            line-height: 1;
+            font-weight: bold;
+
+            p{
+                @include mq( sp ){
+                    font-size: $fontsize_m_sp;
+                }            
+            }
+
+            &__text{
+                margin-top: 20px;
+                font-size: $fontsize_l;
+                color: $red;
+
+                @include mq( sp ){
+                    font-size: $fontsize_l_sp;
+                }
+
+            }
+        }
+
+
+        /// 特許
+        &__licenseNum{
+
+            width: 350px;
+            margin-left: auto;
+            margin-right: 0;
+            display: table;
+            table-layout: fixed;
+            font-size: 1rem;
+
+            @include mq( sp ){
+                width: auto;
+                margin-left: 0;
+                margin-right: auto;
+                margin-bottom: $space_m_sp;
+            }
+
+
+            &__index,
+            &__content{
+                display: table-cell;
+                vertical-align: top;
+            }
+
+
+            &__index{
+                width: 5em;
+                font-weight: bold;
+                padding-right: $space_s;
+
+                @include mq( sp ){
+                    padding-right: 10px;
+                }
+
+            }
+
+
+            .licenseNum{
+                li{
+                    display: inline;
+                    &:after{
+                        content: ","
+                    }
+                }
+            }
+        }
+
+
+        /////特徴
+        &__benefit{}
+
+        .linebullet{
+        }
+
+
+        ///// 仕様
+
+        &__spec{
+
+            .detailTable{
+                border-collapse: collapse;
+                &__th,
+                &__td{
+                    padding: 20px;
+                    border: 1px solid $color_border;
+
+                    @include mq(sp ){
+                        padding: 15px 10px;
+                    }
+
+                }
+
+
+                &__th{
+                    width: 120px;
+                    font-weight: bold;
+                    color: $red;
+
+                    @include mq(sp ){
+                        width: 100px;
+                        box-sizing: border-box;
+                    }                    
+                }
+            }
+        }
+
+    }
+
+
+
+
+    ///// sub
+
+    .detail__sub{
+
+       .textsdownload{
+           li{
+               &:not( :first-child ){
+                   margin-top: 10px;
+               }
+           }
+
+           .button{
+               width: 100%;
+           }
+       }
+
+
+       .categoryNav{
+
+           li{
+               border-bottom: 1px solid $color_border;
+           }
+           a{
+               display: block;
+               padding: 20px 20px 20px 0;
+               position: relative;
+               color: inherit;
+
+                &:after{
+                    width: 1em;
+                    content: "\e901";
+                    overflow: hidden;
+                    color: $red;
+                    position: absolute;
+                    right: 20px;
+                    height: 1em;
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    top: 0;
+                    bottom: 0;
+                    transition: transition();
+                    @extend %iconfont;
+                }
+                @include mouseOver(){
+                    &:after{
+                        width: 0;
+                    }
+                }
+           }
+       }
+    }
+}
+
+
+
+.section--productsinfooter{
+ background-color: #ffffff;   
 }
