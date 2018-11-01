@@ -115,7 +115,8 @@
             span{
                 padding-top: 15px;
                 padding-bottom: 15px;
-                text-align: left;
+                align-items: flex-start;
+                justify-content: flex-start;
                 color: $basefontColor;
                 background-color: #ffffff;
 

@@ -28,18 +28,14 @@
 
 
 
-<<<<<<< HEAD
-	a{
-		height: 100%;
-		padding: 10px 20px;
-=======
 	a,
 	span{
+		height: 100%;
 		text-align: center;
-		padding: 20px;
->>>>>>> 968b19e48696df84aa7bcf38e1a98c06126021f4
+		padding: 10px 20px;
 		position: relative;
 		display: flex;
+		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		box-sizing: border-box;
