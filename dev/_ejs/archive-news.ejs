@@ -1,0 +1,119 @@
+
+<% 
+	include( '_include/_function.ejs' );
+	$active = 'news';
+	$css = ['<link rel="stylesheet" href="/css/news.min.css" />'];
+	$src = '/img/products/';
+%>
+<!DOCTYPE html>
+<html>
+<head>
+	<%- include( '_include/head.ejs' ); %>
+</head>
+<body class="page">
+	<%- include( '_include/header.ejs' ); %>
+	<!-- ***** mv -->
+	<section class="subpageMv js-effect">
+		<div class="wrap">
+			<h1 class="subpageMv__copy">
+                <span class="mask"><span class="mask__element">お知らせ</span></span>
+			</h1>
+		</div>
+	</section>
+	<!-- ///// -->
+	<div class="breadcrumbSection">
+		<div class="wrap">
+			<ul class="breadcrumb">
+				<li><a href="">TOP</a></li>
+				<li><a href="">お知らせ</a></li>
+			</ul>
+		</div>
+	</div>
+	<main class="mainContent">
+        <section class="section section--archive">
+            <div class="wrap">
+                <ul class="news">
+                    <li class="news__item">
+                        <article>
+                            <header class="news__item__index">
+                                <h2 class="news__item__index__text">
+                                    ニュースのタイトル
+                                </h2>
+                                <div class="news__item__index__date">
+                                    <time>2018.10.11</time>
+                                </div>
+                            </header>
+                            <div class="news__item__description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde esse, commodi cupiditate error voluptatem et, similique impedit possimus dolore ducimus, quod autem architecto laudantium nihil minima alias sequi optio sunt.
+                            </div>
+                            <div class="button"><a href="">お知らせを読む</a></div>
+                        </article>
+                    </li>
+                    <li class="news__item">
+                        <article>
+                            <header class="news__item__index">
+                                <h2 class="news__item__index__text">
+                                    ニュースのタイトル
+                                </h2>
+                                <div class="news__item__index__date">
+                                    <time>2018.10.11</time>
+                                </div>
+                            </header>
+                            <div class="news__item__description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde esse, commodi cupiditate error voluptatem et, similique impedit possimus dolore ducimus, quod autem architecto laudantium nihil minima alias sequi optio sunt.
+                            </div>
+                            <div class="button"><a href="">お知らせを読む</a></div>
+                        </article>
+                    </li>
+                    <li class="news__item">
+                        <article>
+                            <header class="news__item__index">
+                                <h2 class="news__item__index__text">
+                                    ニュースのタイトル
+                                </h2>
+                                <div class="news__item__index__date">
+                                    <time>2018.10.11</time>
+                                </div>
+                            </header>
+                            <div class="news__item__description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde esse, commodi cupiditate error voluptatem et, similique impedit possimus dolore ducimus, quod autem architecto laudantium nihil minima alias sequi optio sunt.
+                            </div>
+                            <div class="button"><a href="">お知らせを読む</a></div>
+                        </article>
+                    </li>
+                </ul>
+
+                <nav class="pager">
+                    <ul class="pagerlist">
+                        <li class="pagerlist__item pagerlist__item--prev">
+                            <a href=""><i class="prevIcon"></i></a>
+                        </li>
+                        <li class="pagerlist__item">
+                            <a href="">1</a>
+                        </li>
+                        <li class="pagerlist__item">
+                            <a href="">2</a>
+                        </li>
+                        <li class="pagerlist__item">
+                            <a href="">3</a>
+                        </li>
+                        <li class="pagerlist__item">
+                            <a href="">4</a>
+                        </li>
+                        <li class="pagerlist__item">
+                            <a href="">5</a>
+                        </li>
+                        <li class="pagerlist__item pagerlist__item--next">
+                            <a href=""><i class="nextIcon"></i></a>
+                        </li>
+
+                    </ul>
+                </nav>
+
+            </div>
+        </section>
+        <!-- /////  -->       
+	</main>		
+	<%- include( '_include/footer.ejs' ); %>
+</body>
+</html>

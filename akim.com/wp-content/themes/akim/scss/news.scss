@@ -1,0 +1,165 @@
+@import "colors.scss";
+@import "variables.scss";
+@import "mixins.scss";
+@import "fonts.scss";
+
+@import "modules-childpage.scss";
+////////////////////////////////////////// kaishaannai
+
+
+///////////////////////////////
+
+//module/
+
+///////////////////////////////
+
+.subpageMv{
+    background-image: url(../img/news/mv.jpg);
+
+    @include mq( tab ){
+        background-image: url(../img/news/_sp/mv.jpg);    
+    }
+}
+
+
+
+// .innerContent{
+//     padding: $space_m;
+//     background-color: #ffffff;
+
+//     @include mq( sp ){
+//         padding: $space_s_sp;
+//     }      
+// }
+
+
+
+///////////////////////////////
+
+//our style
+
+///////////////////////////////
+
+.section--archive{
+    background-color: #ffffff;
+}
+
+.news{
+    padding-left: 0;
+
+    &__item{
+        list-style: none;
+        padding-bottom: $space_s;
+        border-bottom: 1px solid $color_border;
+
+        @include mq( sp ){
+            padding-bottom: $space_s_sp;
+        }
+
+
+        &:not( :first-child ){
+            padding-top: $space_s;
+        
+            @include mq( sp ){
+                padding-top: $space_s_sp;
+            }            
+        }
+
+        &__index{
+            font-weight: bold;
+
+            &__text{
+                font-size: $fontsize_m;
+                color: $red;
+
+                @include mq( sp ){
+                    font-size: $fontsize_m_sp;
+                }
+
+            }
+        }
+
+        .button{
+            margin-top: $space_s/2;
+
+            @include mq( sp ){
+                width: 100%;
+            }
+        }
+
+    }
+    
+}
+
+
+
+////////// nav
+.pager{
+    margin-top: $space_l;
+    &list{
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+
+        &__item{
+            margin-right: 5px;
+            margin-left: 5px;
+            color: #ffffff;
+        }
+
+        a{
+            display: inline-block;
+            padding: 5px;
+            position: relative;
+
+			&:after{
+				content: " ";
+				width: 0;
+				height: 2px;
+				display: block;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				background-color: $red;
+				transition: transition(all,0.38s);
+			}
+			@include mq( tab,min ){
+				@include mouseOver(){
+					&:after{
+						width: 100%;
+						right: 0;
+						left: auto;
+					}
+				}
+			}
+        }
+		.active a,
+		.current-menu-item a{
+			pointer-events:none;
+			
+			&:after{
+				width: 100%;
+			}
+		}        
+
+        &__item--prev{}
+        &__item--next{}
+
+        .prevIcon,
+        .nextIcon{
+            &:before{
+                content: "\e901";
+                display: inline-block;
+                color: $red;
+                @extend %iconfont;
+            }
+        }
+
+        .prevIcon{
+            &:before{
+
+                transform: rotateY( 180deg ) ;
+            }
+        }
+    }
+}
