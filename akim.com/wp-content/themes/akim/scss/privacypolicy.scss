@@ -1,0 +1,68 @@
+@import "colors.scss";
+@import "variables.scss";
+@import "fonts.scss";
+@import "mixins.scss";
+
+@import "modules-childpage.scss";
+
+////////////////////////////////////////// 製品情報
+
+
+///////////////////////////////
+
+//module/
+
+///////////////////////////////
+
+.subpageMv{
+    background: $red;
+    // background-image: url(../img/products/mv.jpg);
+
+    @include mq( tab ){
+        // background-image: url(../img/products/_sp/mv.jpg);    
+    }
+}
+
+
+
+///////////////////////////////
+
+//カテゴリトップ
+
+///////////////////////////////
+
+.section--privacypolicy{
+    background-color: #ffffff;
+
+
+    .wrap{
+        @include mq( sp,min ){
+            max-width: 1000px;
+        }
+    }
+
+    .section__index{
+        @include mq( sp ){
+         line-height: 1.5;
+         margin-bottom: $space_m_sp - 10px; 
+        }
+    }
+
+
+    .section__child--contact{
+        // max-width: 600px;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 50px;
+        border: 1px solid $color_border;
+
+        .section__index{
+            text-align: left;
+            margin-bottom: 1em;
+            font-size: 1em;
+        }
+    }
+ 
+}
+
+
