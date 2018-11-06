@@ -6,7 +6,7 @@
 function createPT(){
 
   register_taxonomy(
-    'products_categroy',// 新規カスタムタクソノミー名
+    'products_category',// 新規カスタムタクソノミー名
     'products',// 新規カスタムタクソノミーを反映させる投稿タイプの定義名
     array(
       'label' => __( '製品カテゴリ' ),// 表示するカスタムタクソノミー名
