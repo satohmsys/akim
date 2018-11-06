@@ -4,6 +4,7 @@ include( '_inc/functions-setup.php');
 include( '_inc/functions-cleanheader.php');
 include( '_inc/functions-scripts.php');
 include( '_inc/functions-posttypes.php');
+include( '_inc/functions-shortcodes.php');
 
 /**
  * Twenty Seventeen only works in WordPress 4.7 or later.
