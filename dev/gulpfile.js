@@ -20,10 +20,10 @@ var gulp = require( 'gulp' ),
 
 
 var dir = {
-  top: '../akim.com/wp-content/themes/akim/',
+  top: '../public/wp-content/themes/akim/',
   below: '/',
   index: 'index.html',
-  js: '../akim.com/wp-content/themes/akim/'
+  js: '../public/wp-content/themes/akim/'
 },
     sassDir = {
   css: 'css',
