@@ -27,9 +27,16 @@
     }
 
 
+	span,
+	button{
+		transition: transition();
+	}
+
+
 
 	a,
-	span{
+	span,
+	button{
 		height: 100%;
 		text-align: center;
 		padding: 10px 20px;
@@ -41,6 +48,7 @@
 		box-sizing: border-box;
 		text-align: center;
 		font-weight: bold;
+		border: none;
 		color: #ffffff;
 		background-color: $red;
 
@@ -61,6 +69,7 @@
 			@extend %iconfont;
 		}
 		@include mouseOver(){
+			opacity: 0.75;			
 			&:after{
 				width: 0;
 			}
@@ -70,7 +79,7 @@
 
 	///////// download
 	&--download{
-		a,span{
+		a,span,button{
 			&:after{
 				content: "\e902";
 			}
@@ -79,7 +88,7 @@
 
 	///////// secondary
 	&--secondary{
-		a,span{
+		a,span,button{
 			background-color: $basefontColor;
 		}
 	}	

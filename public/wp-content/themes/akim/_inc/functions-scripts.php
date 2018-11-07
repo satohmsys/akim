@@ -26,8 +26,10 @@ function enqueueScripts(){
 			wp_enqueue_style( 'recruit', AKIM_CSS_URI. 'recruit.min.css', array('com'), 1, false );
 		} else if ( is_page( 'privacypolicy') ){
 			wp_enqueue_style( 'privacypolicy', AKIM_CSS_URI. 'privacypolicy.min.css', array('com'), 1, false );
-		}else if ( is_page( 'company') || is_page( 'facility') || is_page( 'mind') || is_page( 'technology') ){
+		} else if ( is_page( 'company') || is_page( 'facility') || is_page( 'mind') || is_page( 'technology') ){
 			wp_enqueue_style( 'company', AKIM_CSS_URI. 'company.min.css', array('com'), 1, false );
+		} else if ( is_page( 'contact') ){
+			wp_enqueue_style( 'contact', AKIM_CSS_URI. 'contact.min.css', array('com'), 1, false );
 		} else {
 			wp_enqueue_style( 'page', AKIM_CSS_URI. 'page-basic.min.css', array('com'), 1, false );
 		}

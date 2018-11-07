@@ -240,6 +240,12 @@
             margin-right: $space_s /2 ;
             margin-left: $space_s / 2;
 
+            button,
+            span,
+            a{
+                width: 100%;
+            }
+
             @include mq( sp ){
                 margin-right: $space_s_sp / 5 ;
                 margin-left: $space_s_sp / 5;
@@ -253,3 +259,74 @@
 }
 
 
+///////// MW WP FORM
+
+.mwform-radio-field label{
+    span{
+        position: relative;
+        padding-left: 2em;
+
+        &:before{
+            content: " ";
+            width: 1em;
+            height: 1em;
+            margin: auto;
+            display: inline-block;
+            vertical-align: middle;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 2px;            
+            border: 1px solid $color_border;
+            border-radius: 100px;
+        }
+        &:after{
+            content: " ";
+            width: 0.75em;
+            height: 0.75em;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 5px;
+            display: block;
+            transform: scale(0);
+            transition: easeInOutBack();
+            border-radius: 100px;                    
+            background-color: $red;
+        }
+    }
+
+    input:checked + span:after{
+       transform: scale( 1 );      
+    }    
+}
+
+.mw_wp_form_input{
+    .button--submit,
+    .button--inputback{
+        display: none;
+    }
+}
+.mw_wp_form_preview{
+    .button--confirm{
+        display: none;
+    }
+
+    .mailaddressConfirm{
+        display: none;
+    }
+
+    input[type="radio"]{
+    
+        &:not(:checked) + i {
+            display: none;
+        }
+    }    
+}
+
+.mw_wp_form_complete{
+    .subPageIntro{
+        display: none;
+    }
+}
