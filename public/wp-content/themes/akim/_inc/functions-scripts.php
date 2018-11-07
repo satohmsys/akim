@@ -31,6 +31,8 @@ function enqueueScripts(){
 		} else {
 			wp_enqueue_style( 'page', AKIM_CSS_URI. 'page-basic.min.css', array('com'), 1, false );
 		}
+	} else if ( get_post_type( ) == 'news'  ){
+		wp_enqueue_style( 'news', AKIM_CSS_URI. 'news.min.css', array('com'), 1, false );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'enqueueScripts' );

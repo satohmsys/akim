@@ -40,10 +40,20 @@
 
 ///////////////////////////////
 
+
+.wrap{
+    @include mq( sp,min ){
+        max-width: 1000px;
+    }
+}
+
+.section--single,
 .section--archive{
     background-color: #ffffff;
 }
 
+
+///////// ニュース一覧
 .news{
     padding-left: 0;
 
@@ -102,11 +112,13 @@
         font-weight: bold;
 
         &__item{
+            list-style: none;
+            color: $red;
             margin-right: 5px;
             margin-left: 5px;
-            color: #ffffff;
         }
 
+        span,
         a{
             display: inline-block;
             padding: 5px;
@@ -123,6 +135,9 @@
 				background-color: $red;
 				transition: transition(all,0.38s);
 			}
+        }        
+
+        a{
 			@include mq( tab,min ){
 				@include mouseOver(){
 					&:after{
@@ -133,8 +148,11 @@
 				}
 			}
         }
-		.active a,
-		.current-menu-item a{
+        span{
+            color: $basefontColor;
+        }
+
+		.current {
 			pointer-events:none;
 			
 			&:after{
@@ -160,6 +178,25 @@
 
                 transform: rotateY( 180deg ) ;
             }
+        }
+    }
+}
+
+
+
+/////////ニュース記事
+
+.newstopic{
+
+}
+
+
+
+///////// その他のニュース
+.otherNews{
+    .section{
+        &__index{
+            text-align: left;
         }
     }
 }

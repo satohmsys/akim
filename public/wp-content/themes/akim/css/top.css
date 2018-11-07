@@ -367,6 +367,13 @@
 {
     margin-top: 40px;
 }
+@media screen and (min-width: 780px)
+{
+    .siteHeader__logo img
+    {
+        width: 75px;
+    }
+}
 @media screen and (max-width: 414px)
 {
     .siteHeader__logo
