@@ -138,6 +138,7 @@
 }
 
 
+
 ////////////////////
 
 // mask efffect
@@ -187,4 +188,33 @@
             transform: translateX( 0% );
         }            
     }
+}
+
+
+
+////////////////////
+
+// column index
+
+////////////////////
+
+.column{
+	&__sub{
+		.subColumnSection{
+			&:not( :first-child ){
+				margin-top: $space_m;
+			}
+
+			&__index{
+				line-height: 1;
+				margin-bottom: 1em;
+				font-weight: bold;
+
+				@include mq(sp ){
+					font-size: $fontsize_m_sp;
+				}
+
+			}
+		}
+	}
 }

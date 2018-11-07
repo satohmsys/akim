@@ -7,18 +7,17 @@
 //////////////////////////////////////////
 
 .postArea{
+    padding-bottom: $space_m;
+    margin-bottom: $space_l;
+    // border-bottom: 1px solid $color_border;
 
-        padding-bottom: $space_m;
-        margin-bottom: $space_l;
-        border-bottom: 1px solid $color_border;
-
-        @include mq( tab ){
-            margin-bottom: $space_m_sp;
-        }        
-        @include mq( sp ){
-            margin-bottom: $space_s_sp;
-            padding-bottom: $space_s_sp;
-        }     
+    @include mq( tab ){
+        margin-bottom: $space_m_sp;
+    }        
+    @include mq( sp ){
+        margin-bottom: $space_s_sp;
+        padding-bottom: $space_s_sp;
+    }     
 
     &,
     &__content{

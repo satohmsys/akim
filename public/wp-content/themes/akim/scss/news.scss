@@ -186,6 +186,16 @@
 
 /////////ニュース記事
 
+.section--single{
+
+    .news__item__index__text{
+        font-size: 1em;
+    }
+
+    .news__item:last-child{
+        border-bottom: none;
+    }
+}
 .newstopic{
 
 }
