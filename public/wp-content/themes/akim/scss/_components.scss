@@ -93,6 +93,20 @@
 		}
 	}	
 
+	///////// disabled
+	&--disabled{
+		a,span,button{
+			color:	$basefontColor*1.5;
+			pointer-events: none;
+			cursor: normal;
+			background-color: $basefontColor;
+
+			&:after{
+				display: none;
+			}
+		}
+	}	
+
 
 }
 
