@@ -1,0 +1,136 @@
+/*
+Theme Name: Akim CORP
+Description: Used to style the TinyMCE editor.
+*/
+
+
+.wp-admin{
+   background-color: #fefefe;
+/* background-image: url("https://www.transparenttextures.com/patterns/clean-textile.png"); */
+}
+
+
+
+/**
+* UI
+*/
+
+#wpadminbar{
+    background-color: #470505;
+}
+#adminmenu, #adminmenu .wp-submenu, #adminmenuback, #adminmenuwrap{
+    background-color: #470505;
+
+}
+
+#adminmenu .wp-has-current-submenu .wp-submenu, #adminmenu .wp-has-current-submenu .wp-submenu.sub-open, #adminmenu .wp-has-current-submenu.opensub .wp-submenu, #adminmenu a.wp-has-current-submenu:focus+.wp-submenu, .no-js li.wp-has-current-submenu:hover .wp-submenu{
+    background-color: #860d0d;
+}
+
+
+
+/**
+* post @age
+*/
+
+#titlewrap{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#titlewrap #title{
+    height: auto;
+    padding: 1em 0.5em;
+    font-weight: bold;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+
+/**
+* custom field template
+*/
+
+.ui-sortable-handle{
+	padding: 1.25em!important;
+    background-color: #860d0d;
+    color: #ffffff;
+}
+.toggle-indicator{
+    color: #ffffff;
+}
+
+
+.cft {
+    padding-top: 2em;
+}
+
+.cft dl{
+    padding-top: 1.5em!important;
+    margin-top: 1.5em!important;
+    border-top: 1px dotted #ccc;
+}
+
+.cft [id*="dl_figure"]:not( :last-of-type ),
+.cft [id*="dl_spec"]:not( :last-of-type ){
+    border: none;
+    margin-top: 0 !important;
+}
+
+.cft #dl_benefit6_0{
+    border-bottom: 1px dotted #ccc;
+}
+
+
+.cft dl dt{
+    text-align: left;
+}
+.cft dl dd{
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.cft dl dd textarea,
+.cft dl dd input[type="text"]{
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+
+.cft textarea,
+.cft input[type="text"]{
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    font-weight: normal;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+
+.cft fieldset{
+    margin-bottom: 2em!important;
+    padding-bottom: 2em;
+    border-bottom: 1px dotted #ccc;
+}
+.cft fieldset dl:last-child{
+    margin-bottom: 0 !important;
+    border: none;
+}
+
+
+.cft .thickbox,
+.cft dt a{
+    margin-top: 5px;
+    font-size: 11px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    display: block;
+    border: 1px solid;
+    text-decoration: none;
+}
+
+.cft dt a{
+    display: inline-block;
+}
