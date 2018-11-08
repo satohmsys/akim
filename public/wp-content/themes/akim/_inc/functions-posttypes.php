@@ -14,6 +14,8 @@ function createPT(){
       'show_admin_column' => true,
       'show_ui' => true,
       'query_var' => true,
+      'hierarchical' => true,
+      'show_admin_column' => true
       // 'capabilities' => array(
       // 	'assign_terms' => 'edit_guides',
       // 	'edit_terms' => 'publish_guides'
@@ -32,7 +34,7 @@ function createPT(){
       'has_archive' => true,
       'show_ui' => true,
       'meun_position' => 0,
-      'supports' => array( 'title', 'editor', 'custom-fields', 'page-attributes'),
+      'supports' => array( 'title'),
       'rewrite' => array('slug' => 'products'),
     )
   );
