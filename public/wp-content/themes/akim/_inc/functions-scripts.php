@@ -3,11 +3,19 @@
  * enqueue scripts
  */
 function enqueueScripts(){
+
+	$postType =  get_post_type( );
+
 	/**
 	 * js
 	 */
 	wp_enqueue_script( 'jq', 'https://code.jquery.com/jquery-3.3.1.min.js', array(), false, true );
 	wp_enqueue_script( 'com', AKIM_JS_URI. 'common.js', array( 'jq' ), 1, true );
+
+	if ( $postType == 'products'  ){
+		wp_enqueue_script( 'slick', AKIM_JS_URI. 'slick/slick.min.js', array( 'jq', 'com' ), 1, true );
+		wp_enqueue_script( 'products', AKIM_JS_URI. 'productdetail.js', array( 'slick' ), 1, true );
+	}
 	
 	// if( is_home() ){
 	// 	wp_enqueue_script( 'top', AKIM_CSS_URI. 'top.min.css', array('com'), 1, false );
@@ -35,12 +43,17 @@ function enqueueScripts(){
 		} else {
 			wp_enqueue_style( 'page', AKIM_CSS_URI. 'page-basic.min.css', array('com'), 1, false );
 		}
-	} else if ( get_post_type( ) == 'news'  ){
+	} else if ( $postType == 'news'  ){
 		wp_enqueue_style( 'news', AKIM_CSS_URI. 'news.min.css', array('com'), 1, false );
-	} else if ( get_post_type( ) == 'products'  ){
-		wp_enqueue_style( 'product', AKIM_CSS_URI. 'proudct.min.css', array('com'), 1, false );
+	} else if ( $postType == 'products'  ){
+		wp_enqueue_style( 'product', AKIM_CSS_URI. 'products.min.css', array('com'), 1, false );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'enqueueScripts' );
 
+
+function adminStyle(){
+    wp_enqueue_style( 'adminStyle', get_template_directory_uri().'/_inc/css/admin-style.css' );
+}
+add_action( 'admin_enqueue_scripts', 'adminStyle' );
 ?>
