@@ -1,0 +1,43 @@
+@import "colors.scss";
+@import "variables.scss";
+@import "fonts.scss";
+@import "mixins.scss";
+
+@import "modules-childpage.scss";
+
+////////////////////////////////////////// 製品情報
+
+
+///////////////////////////////
+
+//module/
+
+///////////////////////////////
+
+.subpageMv{
+    background: $red;
+    // background-image: url(../img/products/mv.jpg);
+
+    @include mq( tab ){
+        // background-image: url(../img/products/_sp/mv.jpg);    
+    }
+}
+
+
+
+///////////////////////////////
+
+//form
+
+///////////////////////////////
+
+.section--postArea{
+    background-color: #ffffff;
+
+
+    .wrap{
+        @include mq( sp,min ){
+            max-width: 1000px;
+        }
+    }
+}

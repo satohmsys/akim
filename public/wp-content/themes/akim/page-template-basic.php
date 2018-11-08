@@ -33,7 +33,11 @@ get_header(); ?>
 	get_template_part( '_inc/template-parts/navigation/breadcrumb');
 ?>
 <main class="mainContent">
-	<?php the_content(); ?>
+	<section class="section section--postArea postArea">
+		<div class="wrap">
+			<?php the_content(); ?>
+		</div>
+	</section>
 </main>       
 <?php
 		}
