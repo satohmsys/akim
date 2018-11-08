@@ -17,8 +17,7 @@ get_header(); ?>
 <?php
 	if( have_posts() ){
 		while( have_posts() ){
-			the_post();
-			
+			the_post();			
 			remove_filter ('the_content', 'wpautop');　
 ?>
 <!-- ***** mv -->
@@ -33,7 +32,6 @@ get_header(); ?>
 <?php
 	get_template_part( '_inc/template-parts/navigation/breadcrumb');
 ?>
-
 <main class="mainContent">
 	<?php the_content(); ?>
 </main>       
