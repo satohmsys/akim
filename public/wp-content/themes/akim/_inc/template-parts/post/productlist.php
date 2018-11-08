@@ -21,6 +21,7 @@
         $name = $term ->name ;
         $count = $term ->count ;
         $link = get_term_link( $slug, 'products_category' );
+        $cssClass = $count ? 'button' : 'button button--disabled';
 ?>
     <li class="productList__item">
         <figure><img src="<?php echo AKIM_IMG_URI; ?>products/productimg-<?php echo $slug ?>.png" alt=""></figure>
@@ -30,7 +31,7 @@
             </p>
             <p class="productList__item__lot"><span><?php echo $count; ?></span>商品</p>
         </header>
-        <div class="button"><a href="<?php echo $link; ?>">詳細</a></div>
+        <div class="<?php echo $cssClass; ?>"><a href="<?php echo $link; ?>">詳細</a></div>
     </li>
     <?php
     }
