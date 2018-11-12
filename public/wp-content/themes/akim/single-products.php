@@ -16,9 +16,7 @@ get_header(); ?>
         the_post();
     $thisPostTermObj = get_the_terms( $post->ID, 'products_category');
     $thisPostTermName = $thisPostTermObj[0] -> name;	
-
-    var_dump( $thisPostTermObj );
-
+    // var_dump( $thisPostTermObj );
 
 	$subpagetitle = $thisPostTermName;
     $termSearchArg = array(
@@ -79,6 +77,9 @@ get_header(); ?>
                             <style>
                                 .emptyImg{
                                     width: 100%;
+                                    height: 200px;
+                                    margin-right:auto;
+                                    margin-left: auto;
                                     display: flex;
                                     justify-content: center;
                                     align-items: center;
@@ -88,7 +89,7 @@ get_header(); ?>
                                     background: #ddd;
                                 }
                             </style>
-                            <div style="emptyImg">
+                            <div class="emptyImg">
                                 NO IMAGE
                             </div>
                         </div> 

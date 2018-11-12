@@ -1,5 +1,5 @@
 <?php
-    $subpagetitle = $subpagetitle ? $subpagetitle :  the_title();
+    $subpagetitle = $subpagetitle ? $subpagetitle :  get_the_title();
 ?>
 <!-- ***** mv -->
 <section class="subpageMv js-effect">
