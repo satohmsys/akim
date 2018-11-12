@@ -1,7 +1,7 @@
 <ul class="productList">
 <?php
     $arg = array(
-        'post_type' => 'product_category',
+        'post_type' => 'products',
         'posts_per_page' => -1,
         'orderby' => 'ID',
         'hide_empty' => false
