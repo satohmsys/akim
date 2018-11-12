@@ -91,5 +91,5 @@ $submenu['edit.php'][10][0] = '新しいニュース';
 $submenu['edit.php'][16][0] = 'タグ';
 //echo ";
 }
-add_action( 'admin_menu', 'change_post_menu_label' );
+// add_action( 'admin_menu', 'change_post_menu_label' );
 ?>
