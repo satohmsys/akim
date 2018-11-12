@@ -27,6 +27,10 @@ Description: Used to style the TinyMCE editor.
     background-color: #860d0d;
 }
 
+#menu-posts{
+    display: none;
+}
+
 
 
 /**
