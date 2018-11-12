@@ -5,7 +5,6 @@
 function enqueueScripts(){
 
 	$postType =  get_post_type( );
-
 	/**
 	 * js
 	 */
@@ -45,7 +44,7 @@ function enqueueScripts(){
 		}
 	} else if ( $postType == 'news'  ){
 		wp_enqueue_style( 'news', AKIM_CSS_URI. 'news.min.css', array('com'), 1, false );
-	} else if ( $postType == 'products'  ){
+	} else if ( $postType == 'products' || get_query_var('taxonomy') == 'products_category'  ){
 		wp_enqueue_style( 'product', AKIM_CSS_URI. 'products.min.css', array('com'), 1, false );
 	}
 }
