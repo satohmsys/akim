@@ -14,6 +14,8 @@ function enqueueScripts(){
 	if ( $postType == 'products'  ){
 		wp_enqueue_script( 'slick', AKIM_JS_URI. 'slick/slick.min.js', array( 'jq', 'com' ), 1, true );
 		wp_enqueue_script( 'products', AKIM_JS_URI. 'productdetail.js', array( 'slick' ), 1, true );
+	} else if( is_page( 'mind' ) ) {
+		wp_enqueue_script( 'fancybox', AKIM_JS_URI. 'fancybox/fancybox.min.js', array( 'jq', 'com' ), 1, true );		
 	}
 	
 	// if( is_home() ){
@@ -34,6 +36,9 @@ function enqueueScripts(){
 		} else if ( is_page( 'privacypolicy') ){
 			wp_enqueue_style( 'privacypolicy', AKIM_CSS_URI. 'privacypolicy.min.css', array('com'), 1, false );
 		} else if ( is_page( 'company') || is_page( 'facility') || is_page( 'mind') || is_page( 'technology') ){
+			if ( is_page( 'mind') ){
+				wp_enqueue_style( 'fancy', AKIM_JS_URI. 'fancybox/fancybox.min.css', array('com'), 1, false );
+			}
 			wp_enqueue_style( 'company', AKIM_CSS_URI. 'company.min.css', array('com'), 1, false );
 		} else if ( is_page( 'contact') ){
 			wp_enqueue_style( 'contact', AKIM_CSS_URI. 'contact.min.css', array('com'), 1, false );

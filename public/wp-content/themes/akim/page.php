@@ -9,7 +9,6 @@
  * @package WordPress
  * @subpackage Akim corpolate
  */
-
 get_header(); ?>
 <?php
 	if( have_posts() ){

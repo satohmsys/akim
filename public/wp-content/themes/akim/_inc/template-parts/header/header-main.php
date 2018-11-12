@@ -12,9 +12,9 @@
 <header class="siteHeader">
 	<div class="wrap">
 		<p class="siteHeader__logo">
-            <?php if( is_home() ){ ?><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php } ?>
+            <?php if( ! is_home() ){ ?><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php } ?>
 			<img src="<?php echo AKIM_IMG_URI; ?>common/logo.svg" width="100" alt="<?php echo AKIM_TEXT_NAME; ?>">
-            <?php if( is_home() ){ ?></a><?php } ?>
+            <?php if( ! is_home() ){ ?></a><?php } ?>
 		</p>		
 		<nav class="siteHeader__nav">
 			<div class="siteHeader__mainNav">
