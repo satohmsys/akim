@@ -32,6 +32,13 @@ Description: Used to style the TinyMCE editor.
 }
 
 
+/* #adminmenu li{
+    border-top: 1px solid rgba( 255,255,255,0.25 )!important;
+}
+#adminmenu .wp-submenu-head, #adminmenu a.menu-top{
+    line-height: 25px;
+} */
+
 
 /**
 * post @age

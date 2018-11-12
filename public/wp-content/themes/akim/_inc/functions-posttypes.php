@@ -26,12 +26,13 @@ function createPT(){
   register_post_type( 'products',
     array(
       'labels' => array(
-        'name' => __( '製品情報' ),
-        'singular_name' => __( '製品' )
+        'name' => __( '製品情報','textdomain' ),
+        'singular_name' => __( '製品','textdomain' )
       ),
       'public' => true,
       'publicly_queryable' => true,	  
       'has_archive' => true,
+      'menu_icon'   => 'dashicons-pressthis',      
       'show_ui' => true,
       'meun_position' => 0,
       'supports' => array( 'title'),
@@ -46,7 +47,8 @@ function createPT(){
       ),
       'public' => true,
 	  'publicly_queryable' => true,	  
-      'has_archive' => true,
+    'has_archive' => true,
+    'menu_icon'   => 'dashicons-testimonial',
 	  'show_ui' => true,
 	  'meun_position' => 0,
 	  'supports' => array( 'title', 'editor', 'page-attributes'),
