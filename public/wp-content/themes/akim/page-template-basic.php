@@ -21,23 +21,15 @@ get_header(); ?>
 			remove_filter ('the_content', 'wpautop');　
 ?>
 <!-- ***** mv -->
-<section class="subpageMv js-effect">
-	<div class="wrap">
-		<h1 class="subpageMv__copy">
-			<span class="mask"><span class="mask__element"><?php the_title(); ?></span></span>
-		</h1>
-	</div>
-</section>
+<?php 
+	get_template_part('_inc/template-parts/header/subpage-mv');
+?>
 <!-- ///// -->
 <?php
 	get_template_part( '_inc/template-parts/navigation/breadcrumb');
 ?>
 <main class="mainContent">
-	<section class="section section--postArea postArea">
-		<div class="wrap">
-			<?php the_content(); ?>
-		</div>
-	</section>
+	<?php the_content(); ?>
 </main>       
 <?php
 		}
