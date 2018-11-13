@@ -1,0 +1,190 @@
+//////////////////////////////////////////
+
+//module
+
+//include by style.scss
+
+//////////////////////////////////////////
+
+
+
+////////////////////
+
+// link
+
+////////////////////
+
+
+.button{
+	min-width: 240px;
+	line-height: 1;
+	height: 60px;
+	display: inline-block;
+
+    @include mq( sp ) {
+		min-width: 100px;
+		height: 50px;
+    }
+
+
+
+	a,
+	span{
+		height: 100%;
+		text-align: center;
+		padding: 10px 20px;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		box-sizing: border-box;
+		text-align: center;
+		font-weight: bold;
+		color: #ffffff;
+		background-color: $red;
+
+
+		&:after{
+			width: 1em;
+			content: "\e901";
+			overflow: hidden;
+			color: #ffffff;
+			position: absolute;
+			right: 20px;
+			height: 1em;
+			margin-top: auto;
+			margin-bottom: auto;
+			top: 0;
+			bottom: 0;
+			transition: transition();
+			@extend %iconfont;
+		}
+		@include mouseOver(){
+			&:after{
+				width: 0;
+			}
+		}
+	}
+
+
+	///////// download
+	&--download{
+		a,span{
+			&:after{
+				content: "\e902";
+			}
+		}
+	}
+
+	///////// secondary
+	&--secondary{
+		a,span{
+			background-color: $basefontColor;
+		}
+	}	
+
+
+}
+
+.button.-outline{
+	
+}
+
+
+
+////////////////////
+
+// backtotop
+
+////////////////////
+
+.backtotop{
+	text-align: center;
+	font-size: 1.4rem;
+	font-style: normal;
+	position: absolute;
+	right: 5%;
+	top: -75px;
+	z-index: 7;
+	cursor: pointer;
+	
+	@include mq( tab ){
+		display: none;
+	}
+	
+	&:before{
+		content: " ";
+		width: 2px;
+		height: 30px;
+		margin-right: auto;
+		margin-bottom: 5px;
+		margin-left: auto;
+		display: block;
+	}
+
+	&:after{
+		content: " ";
+		width: 6px;
+		height: 6px;
+		margin-right: auto;
+		margin-left: auto;
+		transform: rotate(  -45deg );
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+	}
+}
+
+
+////////////////////
+
+// mask efffect
+
+////////////////////
+
+.js-effect {
+    .mask{
+        display: inline-block;
+        overflow: hidden;
+        position: relative;
+        &:before{
+            content: " ";
+            width: 0%;
+            height: 100%;
+            display: block;
+            position: absolute;
+            z-index: 2;
+            left: 0;
+            transition: transition();
+            transition-delay: 0.15s;
+            background-color: $red;
+            will-change: width;
+        }
+        &__element{
+            white-space: nowrap;
+            display: inline-block;
+            transform: translateX( -100% );
+            transition: transition(all, 0.5s);
+            transition-delay: 0.235s;
+            will-change: transform;            
+        }
+    }
+}
+
+.-on{
+    .mask{
+        &:before{
+            content: " ";
+            left: auto;
+            right: 0;
+            animation: maskmove 1s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.15s 1 normal;
+        }
+        &__element{
+            white-space: normal;
+            display: inherit;
+            transform: translateX( 0% );
+        }            
+    }
+}

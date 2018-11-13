@@ -1,0 +1,52 @@
+//////////////////////////////////////////
+
+//アニメーション
+
+//include by style.scss
+
+//////////////////////////////////////////
+
+
+@keyframes scrollbar{
+    0% {
+        transform: translateX( -100% );
+    }
+    75% {
+        transform: translateX( 100% );
+    }
+    100% {
+        transform: translateX( 100% );
+    }
+}
+@keyframes scrollbar-bottom{
+    0% {
+        bottom: -100%;
+    }
+
+    75% {
+        bottom: 100%;
+    }
+
+    100%{
+        bottom: 100%;
+
+    }
+
+}
+
+@keyframes maskmove{
+    0%{
+        width: 0;
+        left: 0;
+    }
+    45%{
+        width: 90%;
+    }
+    75%{    
+        width: 50%;
+    }
+    100%{
+        width: 0;
+        left: 101%;
+    }
+}
