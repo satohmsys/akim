@@ -353,6 +353,9 @@
             position: relative;
             z-index: 1;      
 
+            @include mq( 1024 ){
+                width: 382px;
+            }
             @include mq( tab ){
                 width: auto;
                 margin-bottom: $space_s_sp;
@@ -520,7 +523,7 @@
             margin-left: percentage( 50 / 1000 * 0.45  );
             list-style: none ;
 
-            @include mq( sp ){
+            @include mq( 1024 ){
                 margin-right: 1.6%;
                 margin-bottom: $space_s_sp;
                 margin-left: 1.6%;
