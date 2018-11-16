@@ -566,7 +566,7 @@
             margin-left: percentage( 50 / 1000 * 0.45  );
             list-style: none ;
 
-            @include mq( sp ){
+            @include mq( tab ){
                 margin-right: 1.6%;
                 margin-bottom: $space_s_sp;
                 margin-left: 1.6%;
