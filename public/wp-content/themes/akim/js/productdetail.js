@@ -11,7 +11,7 @@ $( function(){
 
     $lineup.slick({
         speed: 380,
-        slidesToShow: 5,
+        slidesToShow: 4,
         centerPadding: 40,
         centerMode: true,
         dots: true,
@@ -21,8 +21,9 @@ $( function(){
         {
             breakpoint: 480,
             settings: {
-                centerPadding: 30,
-                slidesToShow: 3
+                centerMode: false,
+                centerPadding: '30px',
+                slidesToShow: 2
             }
         }]
 

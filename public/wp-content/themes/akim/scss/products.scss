@@ -448,6 +448,12 @@
                     justify-content: center;
                     // height: 100%;
                     box-sizing: border-box;
+
+                    @include mq( sp ){
+                        line-height: 1.5;
+                        text-align: left;
+                        padding-right: 35px;
+                    }
                 }
             }
         }
@@ -770,7 +776,7 @@
 ///////////////////////////////
 
 
-html{
+html,body{
     overflow-x: hidden;
 }
 .section--lineup{
@@ -779,12 +785,19 @@ html{
 
 
     .wrap{
+        background-color: rgba( $red, 0.8 );
+        
         @include mq(sp, min) {
-            max-width: 1000px;
+            max-width: 800px;
+            width: 90%;
+            padding-top: $space_s;
+            padding-bottom: $space_s + 30px;
         }
         @include mq(sp) {
-            padding-right: 0;
-            padding-left: 0;
+            padding-top: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            padding-left: 20px;
         }
     }
 
@@ -832,8 +845,18 @@ html{
         top: auto;
         bottom: -75px;
 
+            @include mq(sp) {
+                bottom: -65px;
+            }
+
         &:before{
+            width: 30px;
+            height: 30px;
             border-color: #ffffff;
+
+            @include mq( sp ){
+
+            }
         }
     }
     .slick-dots{
