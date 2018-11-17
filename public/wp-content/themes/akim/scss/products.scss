@@ -783,8 +783,26 @@ html,body{
     background: url(../img/products/line-bg.jpg) center center no-repeat;
     background-size: cover;
 
+    &__index{
+        text-align: center;
+        color: #ffffff;
 
-    .wrap{
+        &__text{
+            font-size: $fontsize_l;
+            font-weight: bold;
+
+            @include mq( sp ){
+                font-size: $fontsize_l_sp;
+            }
+        }
+        &__description{
+            margin-bottom: $space_s;
+        }
+    }
+
+    .lineupArea{
+        margin-right: auto;
+        margin-left: auto;
         background-color: rgba( $red, 0.8 );
         
         @include mq(sp, min) {
