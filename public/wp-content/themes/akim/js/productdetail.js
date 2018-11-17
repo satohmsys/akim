@@ -26,7 +26,10 @@ $( function(){
                 slidesToShow: 2
             }
         }]
-
     });
+
+    $('.lineup__item [data-fancybox]').fancybox({
+        baseClass: 'product-fancybox'
+    })
 });
 

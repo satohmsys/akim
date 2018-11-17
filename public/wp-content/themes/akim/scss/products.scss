@@ -227,6 +227,48 @@
 
 
 
+////////fancybox
+
+.product-fancybox{
+    .fancybox-content{
+        // margin-right: auto;
+        // margin-left: auto;
+        // position: relative;
+        padding: 10px 15px!important;
+        background-color: #ffffff!important;
+    }
+    .fancybox-image{
+        // position: static;
+        max-width: 100%;
+        height: auto;
+    }
+
+}
+
+.fancybox-caption{
+    padding-bottom: $space_s;
+    
+    @include mq(sp) {
+        padding-bottom: $space_s_sp;
+    }
+
+
+    &__index{
+        font-weight: bold;
+        font-size: $fontsize_m;
+    }
+    &__description{
+        margin-top: $space_s;
+        line-height: 1.5;
+
+        @include mq( sp ){
+            margin-top: $space_s_sp;
+        }
+    }
+}
+
+
+
 
 
 ///////////////////////////////
