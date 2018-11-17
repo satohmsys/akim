@@ -15,7 +15,9 @@ function enqueueScripts(){
 		wp_enqueue_script( 'fancybox', AKIM_JS_URI. 'fancybox/fancybox.min.js', array( 'jq', 'com' ), 1, true );		
 	} else if ( $postType == 'products'  ){
 		wp_enqueue_script( 'slick', AKIM_JS_URI. 'slick/slick.min.js', array( 'jq', 'com' ), 1, true );
-		wp_enqueue_script( 'products', AKIM_JS_URI. 'productdetail.js', array( 'slick' ), 1, true );
+		wp_enqueue_script( 'fancy', AKIM_JS_URI. 'fancybox/fancybox.min.js', array( 'jq', 'com' ), 1, true );
+		wp_enqueue_script( 'products', AKIM_JS_URI. 'productdetail.js', array( 'slick', 'fancy' ), 1, true );
+
 	}
 	
 	// if( is_home() ){
