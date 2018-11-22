@@ -14,34 +14,6 @@ get_header(); ?>
 <?php
     while( have_posts() ){
         the_post();
-    // $thisPostTermObj = get_the_terms( $post->ID, 'products_category');
-    // $thisPostTermName = $thisPostTermObj[0] -> name;	
-    // // var_dump( $thisPostTermObj );
-
-	// $subpagetitle = $thisPostTermName;
-    // $termSearchArg = array(
-    //     'post_type' => 'product_category',
-    //     'posts_per_page' => -1,
-    //     'orderby' => 'ID',
-    //     'hide_empty' => false
-    // );
-    // $terms = get_terms( 'products_category', $termSearchArg );
-    // $allCustomFields = get_post_custom( $post->ID );
-
-    // // var_dump( $allCustomFields );     
-    // $productImgs = array();
-    // foreach( $allCustomFields['Figure'] as $figure ){
-    //     array_push($productImgs,  wp_get_attachment_url( $figure ) );
-    // }
-    // $productLicenseNum = explode( ',', $allCustomFields['License'][0]);
-    // $productNum = $allCustomFields['ProductNum'][0] ? $allCustomFields['ProductNum'][0] : '---' ;
-    // $productDescription = $allCustomFields['Description'][0];
-    // $productBenefit = explode( ',', $allCustomFields['Benefit'][0]);
-    // $productSpecs = array();
-    // foreach( $allCustomFields['Spec'] as $spec ){
-    //         array_push( $productSpecs, explode( ',', $spec ));
-    // }    
-    // $productText = wp_get_attachment_url( $allCustomFields['Text'][0] );
 ?>    
 <!-- ***** mv -->
 <?php include('_inc/template-parts/header/subpage-mv.php'); ?>
