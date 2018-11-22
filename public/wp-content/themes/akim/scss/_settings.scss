@@ -143,10 +143,12 @@ a
 		border: none;
 	}
 	
-	@include mouseOver(){
-		opacity: 0.75;
-		// color: darken($link , 15);
-	}	
+	@include mq( tab,min ){
+		@include mouseOver(){
+			opacity: 0.75;
+			// color: darken($link , 15);
+		}	
+	}
 	img{		
 	}
 }
