@@ -29,7 +29,7 @@ get_header(); ?>
 		<section class="section__child">
 			<ul class="productBanner">
 				<li class="productBanner__item">
-					<a href="">
+					<a href="<?php echo AKIM_PAGE_HIGHSPEEDLINE; ?>">
 						<div class="button button-secondary">
 							<span>
 								<header class="productBanner__item__index">

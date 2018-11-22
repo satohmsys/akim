@@ -5,4 +5,7 @@ define( 'AKIM_CSS_URI', get_template_directory_uri() . '/css/');
 define( 'AKIM_JS_URI', get_template_directory_uri() . '/js/');
 define( 'AKIM_TEXT_NAME', get_bloginfo( 'name' ) );
 define( 'AKIM_TEXT_DESCRIPTION', get_bloginfo( 'description' ) );
+
+
+define( 'AKIM_PAGE_HIGHSPEEDLINE', get_permalink( 166 ) );
 ?>
