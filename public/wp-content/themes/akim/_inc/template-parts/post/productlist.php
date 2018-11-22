@@ -1,10 +1,13 @@
 <ul class="productList">
 <?php
+    /**
+     * 高速生産ライン( 'highspeedline' )はページ出力のためのカテゴリのため除外。
+     */
     $arg = array(
         'post_type' => 'products',
         'posts_per_page' => -1,
         'orderby' => 'ID',
-        'hide_empty' => false
+        'hide_empty' => false,
     );
     // $wpq = new WP_Query( $arg );
 
@@ -18,6 +21,7 @@
     // var_dump( $terms );
     forEach( $terms as $term ){   
         $slug = $term ->slug ;
+        if( $slug == 'highspeedline' ) return;
         $name = $term ->name ;
         $count = $term ->count ;
         $link = get_term_link( $slug, 'products_category' );
