@@ -52,10 +52,10 @@ get_header(); ?>
 				?>
 				<li class="itemList__item">
 					<?php 
-						if(! count( $productImgs) ){
+						if( count( $productImgs) ){
 					?>
 					<figure class="itemList__item__img">
-						<img src="<?php echo AKIM_IMG_URI; ?>products/productimg-.png" alt="">
+						<img src="<?php echo $productImgs[0]; ?>" alt="">
 					</figure>
 					<?php
 						} else {
@@ -110,6 +110,7 @@ get_header(); ?>
 				</li>
 				<?php
 					}
+					wp_reset_postdata();
 				}
 				?>
 			</ul>			
@@ -121,7 +122,7 @@ get_header(); ?>
 			<div class="wrap">
 				<ul class="productBanner productBanner--main">
 					<li class="productBanner__item">
-						<a href="/products-hightspeedline.html">
+						<a href="<?php echo AKIM_PAGE_HIGHSPEEDLINE; ?>">
 							<div class="button button-secondary">
 								<span>
 									<header class="productBanner__item__index">
@@ -141,7 +142,9 @@ get_header(); ?>
 				</ul>
 				<ul class="productBanner relatedProduct">
 					<li class="productBanner__item relatedProduct__item">
-						<a href="" data-fancybox>							
+						<a data-fancybox href="<?php echo AKIM_IMG_URI; ?>products/detail-link-suisho-modal.png" data-caption='<div class="fancybox-caption__index">
+                                水晶振動子外観・構造
+                            </div>'>							
 							<figure class="relatedProduct__item__img">
 								<img src="<?php echo AKIM_IMG_URI; ?>products/detail-link-suisho.jpg" alt="">
 							</figure>
@@ -151,7 +154,9 @@ get_header(); ?>
 						</a>
 					</li>
 					<li class="productBanner__item relatedProduct__item">
-						<a href=""  data-fancybox>							
+						<a data-fancybox href="<?php echo AKIM_IMG_URI; ?>products/detail-link-crumpcareer-modal.png" data-caption='<div class="fancybox-caption__index">
+                                トレイ・クランプキャリア
+                            </div><div class="fancybox-caption__description"><strong>特許番号</strong>&nbsp;4895061,6068281</div>'>							
 							<figure class="relatedProduct__item__img">
 								<img src="<?php echo AKIM_IMG_URI; ?>products/detail-link-crumpcareer.jpg" alt="">
 							</figure>
@@ -162,12 +167,9 @@ get_header(); ?>
 					</li>
 				</ul>
 			</div>
-			
             <i class="triangle triangle--left"></i>
             <i class="triangle triangle--right"></i>
 		</section>
-
 		<!-- \///// -->	
-  
 </main>       
 <?php get_footer();?>

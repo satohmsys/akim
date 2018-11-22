@@ -342,11 +342,13 @@
 
         &__img{
             max-width: 210px;
+            width: 100%;
             line-height: 1;
             text-align: center;
 
             @include mq( sp ){
                 max-width: 100%;
+                width: auto;
                 margin-right: $space_s_sp;
                 margin-bottom: $space_s_sp;
                 margin-left: $space_s_sp;
