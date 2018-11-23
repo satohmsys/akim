@@ -9,23 +9,16 @@
         'orderby' => 'ID',
         'hide_empty' => false,
     );
-    // $wpq = new WP_Query( $arg );
-
-    // if( $wpq -> have_posts() ){
-    //     while( $wpq -> have_posts() ){
-    //         $wpq -> the_post();
-
-    //         var_dump( $post );
 
     $terms = get_terms( 'products_category', $arg );
     // var_dump( $terms );
     forEach( $terms as $term ){   
         $slug = $term ->slug ;
-        if( $slug == 'highspeedline' ) return;
         $name = $term ->name ;
         $count = $term ->count ;
         $link = get_term_link( $slug, 'products_category' );
         $cssClass = $count ? 'button' : 'button button--disabled';
+        if( $slug !== 'highspeedline' ){
 ?>
     <li class="productList__item">
         <figure><img src="<?php echo AKIM_IMG_URI; ?>products/productimg-<?php echo $slug ?>.png" alt=""></figure>
@@ -33,13 +26,12 @@
             <p class="productList__item__name">
                 <?php echo $name ?>
             </p>
-            <p class="productList__item__lot"><span><?php echo $count; ?></span>商品</p>
+            <?php /*<p class="productList__item__lot"><span><?php echo $count; ?></span>商品</p>*/ ?>
         </header>
         <div class="<?php echo $cssClass; ?>"><a href="<?php echo $link; ?>">詳細</a></div>
     </li>
     <?php
+        }
     }
-    //     }
-    // }
     ?>
 </ul>
