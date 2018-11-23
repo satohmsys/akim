@@ -590,6 +590,15 @@
 
 
     }
+
+    .galleryFooter{
+        margin-top: $space_s;
+        margin-bottom: 0;
+        text-align: center;
+        @include mq( sp ){
+            margin-top: $space_s_sp;
+        }
+    }
 }
 
 
