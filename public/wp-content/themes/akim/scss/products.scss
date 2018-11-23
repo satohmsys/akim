@@ -850,10 +850,12 @@ html,body{
         background-color: rgba( $red, 0.8 );
         
         @include mq(sp, min) {
-            max-width: 800px;
+            // max-width: 800px;
             width: 90%;
             padding-top: $space_s;
+            padding-right: $space_s;
             padding-bottom: $space_s + 30px;
+            padding-left: $space_s;
         }
         @include mq(sp) {
             padding-top: 20px;

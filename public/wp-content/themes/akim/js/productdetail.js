@@ -12,11 +12,9 @@ $( function(){
     $lineup.slick({
         speed: 380,
         slidesToShow: 4,
-        centerPadding: 40,
-        centerMode: true,
         dots: true,
         arrow: true,
-        infinite: true,
+        infinite: false,
         responsive: [
         {
             breakpoint: 480,
