@@ -91,7 +91,7 @@ get_header(); ?>
 							確かな技術、確かな設備で<br>新製品を開発
 						</h2>
 						<div class="section__detail__content">
-							2018年8月に竣工した新工場はこれからの時代に備えた最新設備を完備することでグローバルな案件に対応しています。
+							2018年8月に竣工した新工場はこれからの時代に備えた最新設備を完備することでさまざまな案件に対応しています。
 						</div>
 						<div class="button"><a href="<?php echo AKIM_URI; ?>/company/facility.html">会社施設・設備</a></div>
 					</div>
