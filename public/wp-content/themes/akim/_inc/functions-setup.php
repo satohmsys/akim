@@ -153,4 +153,17 @@ add_filter( 'get_the_archive_title', function ($title) {
         }
     return $title;
 });
+
+
+/**
+ * サムネイル生成の制限
+ * @link https://www.nxworld.net/wordpress/wp-remove-image-sizes.html
+*/
+function remove_image_sizes($sizes) {
+  unset( $sizes['thumbnail'] );
+  unset( $sizes['medium'] );
+  unset( $sizes['large'] );
+  return $sizes;
+}
+add_filter( 'intermediate_image_sizes_advanced', 'remove_image_sizes' );
 ?>
