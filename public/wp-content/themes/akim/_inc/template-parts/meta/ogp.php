@@ -16,7 +16,7 @@ $favicon = AKIM_IMG_URI . 'common/favicon.png';
 ?>
 <meta property="og:title" content="<?php echo $siteTitle; ?>">
 <meta property="og:site_name" content="<?php echo $siteTitle; ?>">
-<meta property="og:description" content="<?phpe cho $siteDescription; ?>">
+<meta property="og:description" content="<?php echo $siteDescription; ?>">
 <meta property="og:type" content="website">
 <meta property="og:image" content="<?php echo $ogImage; ?>">
 <meta property="og:image:width" content="1200" /> 
@@ -25,5 +25,5 @@ $favicon = AKIM_IMG_URI . 'common/favicon.png';
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="<?php echo $siteTitle; ?>">
-<meta name="twitter:description" content="<?phpe cho $siteDescription; ?>">
+<meta name="twitter:description" content="<?php echo $siteDescription; ?>">
 <link rel="icon" type="image/png" href="<?php echo $favicon; ?>"> 
