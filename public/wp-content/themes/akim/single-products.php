@@ -33,14 +33,17 @@ get_header(); ?>
     foreach( $allCustomFields['Figure'] as $figure ){
         array_push($productImgs,  wp_get_attachment_url( $figure ) );
     }
-    $productLicenseNum = explode( ',', $allCustomFields['License'][0]);
+    $productLicenseNum = array_filter( explode( ',', $allCustomFields['License'][0]) );
     $productNum = $allCustomFields['ProductNum'][0] ? $allCustomFields['ProductNum'][0] : '---' ;
     $productDescription = $allCustomFields['Description'][0];
-    $productBenefit = explode( ',', $allCustomFields['Benefit'][0]);
-    $productSpecs = array();
-    foreach( $allCustomFields['Spec'] as $spec ){
-            array_push( $productSpecs, explode( ',', $spec ));
-    }    
+    $productBenefit = array_filter( explode( ',', $allCustomFields['Benefit'][0]) );
+    if( !empty($allCustomFields['Spec']) ){
+        $productSpecs = array();
+        foreach( $allCustomFields['Spec'] as $spec ){
+                array_push( $productSpecs, explode( ',', $spec ));
+        }    
+        $productSpecs =  array_filter( $productSpecs );
+    }
     $productText = wp_get_attachment_url( $allCustomFields['Text'][0] );
 ?>    
 <!-- ***** mv -->
@@ -63,10 +66,10 @@ get_header(); ?>
                 <section class="detail__main">
                     <section class="detail__imgs">
                         <?php 
-                            if( count( $productImgs ) ){
+                            if( !empty( $productImgs ) ){
                                 foreach( $productImgs as $img ){
                         ?>
-                        <div class="detail__img__item">
+                        <div class="detail__imgs__item">
                             <img src="<?php echo $img; ?>" alt="">
                         </div> 
                         <?php
@@ -98,7 +101,7 @@ get_header(); ?>
                         ?>
                     </section>
                     <?php 
-                        if( count( $productLicenseNum ) ){
+                        if( !empty( $productLicenseNum ) ){
                     ?>
                     <dl class="detail__licenseNum">
                         <dt class="detail__licenseNum__index">
@@ -136,7 +139,7 @@ get_header(); ?>
                             </div>
                         </section>
                         <?php
-                            if( count($productBenefit) ){
+                            if( !empty($productBenefit) ){
                         ?>
                         <section class="detail__benefit mainColumnSection">
                             <h4 class="mainColumnSection__index">
@@ -158,7 +161,8 @@ get_header(); ?>
                             }
                         ?>
                         <?php
-                            if( count($productSpecs) ){
+                            if( !empty($productSpecs) ){
+
                         ?>
                         <section class="detail__spec mainColumnSection">
                             <h4 class="mainColumnSection__index">
@@ -216,7 +220,14 @@ get_header(); ?>
                                 $arga = array(
                                     'post_type' => 'products',
                                     'posts_per_page' => -1,
-                                    'terms' => $thisPostTermObj[0]->slug
+                                    'tax_query' => array(
+                                        'relation' => 'AND',
+                                        'tax_query' => array(
+                                            'taxonomy' => $thisPostTermObj[0]->taxonomy,
+                                            'field' => 'slug',
+                                            'terms' => $thisPostTermObj[0]->slug,
+                                        )
+                                    )
                                 );
                                 $wpq = new WP_Query( $arga );
                                 if( $wpq -> have_posts() ){
