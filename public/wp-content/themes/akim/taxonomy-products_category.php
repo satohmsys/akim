@@ -29,13 +29,15 @@ get_header(); ?>
 				
 				$arg = array(
 					'post_type' => 'products',
-					'tax_query' => array(
-						'relation' => 'AND',
+
+					'tax_query' => array(                      //タクソノミーに関する指定はこの中にすべて
+						'relation' => 'AND',                     //条件1,2をどのような関係で指定するか
 						array(
 							'taxonomy' => $taxonomy,
-							'terms' => $term 
+							'field' => 'slug',
+							'terms' => array($term)             //タームをスラッグで指定('field'が'slug'なので)
 						)
-					)
+				    )					
 				);
 				$wpq = new WP_Query( $arg );
 
@@ -45,6 +47,7 @@ get_header(); ?>
 
 						$allCustomFields = get_post_custom( $post -> ID);		
 						$productBenefit = explode( ',', $allCustomFields['Benefit'][0]);
+						$productBenefit = array_filter( $productBenefit, 'strlen');
 						$productImgs = array();
 						foreach( $allCustomFields['Figure'] as $figure ){
 							array_push($productImgs,  wp_get_attachment_url( $figure ) );
@@ -89,7 +92,7 @@ get_header(); ?>
 						</h2>
 						<div class="itemList__item__detail">
 							<?php 
-							if( count($productBenefit) ){
+							if(! empty($productBenefit) ){
 							?>
 							<ul class="itemList__item__benefit">
 							<?php 
