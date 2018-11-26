@@ -611,12 +611,19 @@
         &__imgs{
 
             transition: transition();
+            border: 1px solid $color_border;
+            box-sizing: border-box;
 
             .slick-slider{
-                opacity: 0;
+                    .slick-slide{
+                        opacity: 0;
+                    }
 
                 &.slick-initialized{
-                    opacity: 1;
+
+                    .slick-slide{
+                        opacity: 1;
+                    }
                 }
             }
 
@@ -626,14 +633,18 @@
             }
 
 
-            .slick-slide{
-                transform: scale(0.95);
-                transition: transition();
-
-                &.slick-current{
-                    transform: scale(1);                                    
-                }
+            &__item{
             }
+
+
+            // .slick-slide{
+            //     transform: scale(0.95);
+            //     transition: transition();
+
+            //     &.slick-current{
+            //         transform: scale(1);                                    
+            //     }
+            // }
         }
 
 
@@ -664,7 +675,7 @@
         /// 特許
         &__licenseNum{
 
-            width: 350px;
+            // width: 350px;
             margin-top: 1em;
             margin-right: 0;margin-bottom: 0;
             margin-left: auto;
@@ -787,7 +798,7 @@
                     overflow: hidden;
                     color: $red;
                     position: absolute;
-                    right: 20px;
+                    right: 0px;
                     height: 1em;
                     margin-top: auto;
                     margin-bottom: auto;
