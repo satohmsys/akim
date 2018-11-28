@@ -187,6 +187,20 @@
 /////////ニュース記事
 
 .section--single{
+    
+    .newstopic{
+        &__thumbnail{
+            margin-top: $space_s/-2;
+            margin-bottom: $space_s / 2 ;
+
+            @include mq( sp ){
+                margin-top: 0;
+                margin-bottom: $space_s / 2;
+
+            }
+        }
+    }
+
 
     .news__item__index__text{
         font-size: 1em;
@@ -196,9 +210,8 @@
         border-bottom: none;
     }
 }
-.newstopic{
 
-}
+
 
 
 

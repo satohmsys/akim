@@ -10,9 +10,9 @@
  * @subpackage Akim corpolate
  */
 
-get_header(); ?>
-<?php
+get_header();
 	$subpagetitle = 'お知らせ';		
+    $thumbnailSrc = get_the_post_thumbnail_url( get_the_ID(), 'full' );
 ?>
 <!-- ***** mv -->
 <?php include('_inc/template-parts/header/subpage-mv.php'); ?>
@@ -37,6 +37,11 @@ get_header(); ?>
                             <time><?php the_time( 'Y.m.d' ); ?></time>
                         </div>
                     </header>
+                    <?php if( $thumbnailSrc ) {  ?>
+                    <figure class="newstopic__thumbnail">
+                        <img src="<?php echo $thumbnailSrc; ?>" alt="<?php echo get_the_title() . ' | ' . AKIM_TEXT_DESC ?>">
+                    </figure>
+                    <?php } ?>
                     <div class="newstopic__content postArea__content">
                         <?php the_content(); ?>
                     </div>
@@ -71,7 +76,7 @@ get_header(); ?>
                                         <time><?php the_time( 'Y.m.d' ); ?></time>
                                     </div>
                                 </header>
-                                <div class="button"><a href="<?php the_permalink(); ?>">お知らせを読む</a></div>
+                                <div class="button button--secondary"><a href="<?php the_permalink(); ?>">お知らせを読む</a></div>
                             </article>
                         </li>			
                         <?php
