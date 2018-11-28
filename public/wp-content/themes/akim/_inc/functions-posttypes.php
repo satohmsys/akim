@@ -51,7 +51,7 @@ function createPT(){
     'menu_icon'   => 'dashicons-testimonial',
 	  'show_ui' => true,
 	  'meun_position' => 0,
-	  'supports' => array( 'title', 'editor', 'page-attributes'),
+	  'supports' => array( 'title', 'editor', 'page-attributes','thumbnail'),
       'rewrite' => array('slug' => 'news'),
     )
   );  
