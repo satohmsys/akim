@@ -399,6 +399,9 @@
             position: relative;
             z-index: 1;      
 
+            @include mq( 1024 ){
+                width: 382px;
+            }
             @include mq( tab ){
                 width: auto;
                 margin-bottom: $space_s_sp;
@@ -416,7 +419,7 @@
             &:nth-child( even ) {
                 @include mq( tab,min ){
                 margin-right: auto;
-                transform: translateX( 7px );
+                transform: translateX( 8px );
                 flex-direction: row-reverse;
                 }
             }
