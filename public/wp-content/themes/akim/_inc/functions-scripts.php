@@ -11,7 +11,7 @@ function enqueueScripts(){
 	wp_enqueue_script( 'jq', 'https://code.jquery.com/jquery-3.3.1.min.js', array(), false, true );
 	wp_enqueue_script( 'com', AKIM_JS_URI. 'common.js', array( 'jq' ), 1, true );
 
-	if( $postType == 'products' && is_archive() || is_page( 'profile' ) || is_page( 'recruit' ) ){
+	if( $postType == 'products' && is_archive() || is_page( 'profile' ) || is_page( 'recruit' ) || is_page( 'facility' ) ){
 		wp_enqueue_script( 'fancybox', AKIM_JS_URI. 'fancybox/fancybox.min.js', array( 'jq', 'com' ), 1, true );		
 	} else if ( $postType == 'products'  ){
 		wp_enqueue_script( 'slick', AKIM_JS_URI. 'slick/slick.min.js', array( 'jq', 'com' ), 1, true );
