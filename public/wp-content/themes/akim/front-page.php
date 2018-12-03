@@ -57,7 +57,7 @@ get_header(); ?>
 						<div class="section__detail__content">
 							カメラモジュール・水晶デバイス・センサデバイスなど電子部品の生産設備を複合的な技術と視点で、計画から開発・運用サポートまでのソリューション型製品として提供しています。
 						</div>
-						<div class="button"><a href="<?php echo AKIM_URI; ?>/company/mind.html">企業理念・会社概要</a></div>
+						<div class="button"><a href="<?php echo AKIM_URI; ?>/company/profile/">会社概要</a></div>
 					</div>
 				</div>
 				<i class="triangle"></i>
@@ -93,7 +93,7 @@ get_header(); ?>
 						<div class="section__detail__content">
 							2018年8月に竣工した新工場はこれからの時代に備えた最新設備を完備することでさまざまな案件に対応しています。
 						</div>
-						<div class="button"><a href="<?php echo AKIM_URI; ?>/company/facility.html">会社施設・設備</a></div>
+						<div class="button"><a href="<?php echo AKIM_URI; ?>/company/facility/">会社施設</a></div>
 					</div>
 				</div>
 				<i class="triangle"></i>
@@ -128,7 +128,7 @@ get_header(); ?>
 							ビジョンとテクノロジー
 						</h2>
 						<div class="section__detail__content">
-							高精度組立技術・高速搬送技術・画像処理技術・真空技術・温度制御技術・計測技術をコア技術として電子部品関連事業・水晶関連事業・センサ関連事業を展開
+							高精度組立技術・高速搬送技術・画像処理技術・真空技術・温度制御技術・計測技術をコア技術として電子部品関連装置を開発しています。
 						</div>
 						<div class="button"><a href="<?php echo AKIM_URI; ?>//technology.html">テクノロジー</a></div>
 					</div>
@@ -156,7 +156,7 @@ get_header(); ?>
 					製品情報
 				</h2>
 				<p class="productsBlock__description">
-					社会のニーズとお客さまのご要望を的確に、確実に具現化してきた、水晶関連装置・センサ関連装置・その他関連装置をご紹介します。
+					社会のニーズとお客さまのご要望を的確に具現化してきた、水晶関連装置・センサ関連装置・カメラモジュール関連装置・その他の装置をご紹介します。
 				</p>
 			</header>
 			<!-- *** products -->
@@ -167,6 +167,9 @@ get_header(); ?>
 						その他の装置
 					</h3>
 					<ul class="otherProducts__list">
+						<li>
+							ハードディスク関連
+						</li>
 						<li>
 							コイル関連
 						</li>
@@ -190,6 +193,15 @@ get_header(); ?>
 						</li>
 						<li>
 							光学関連
+						</li>
+						<li>
+							コネクタ関連
+						</li>
+						<li>
+							SAWデバイス関連
+						</li>
+						<li>
+							LED関連
 						</li>
 					</ul>
 				</aside>
