@@ -24,7 +24,7 @@
 		</div>
 	</section>
 	<section class="siteFooter__copyright">
-		© AKIM CORPOLATION
+		© AKIM CORPORATION
 	</section>
 </footer>
 <?php wp_footer(); ?>
