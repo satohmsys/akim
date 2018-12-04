@@ -17,13 +17,12 @@ INSERT INTO `wp_usermeta` VALUES
 (13,1,"wp_user_level","10"),
 (14,1,"dismissed_wp_pointers","wp496_privacy,lingotek-professional-translation,lingotek-translation"),
 (15,1,"show_welcome_panel","1"),
-(16,1,"session_tokens","a:1:{s:64:\"a33c94e44af1fee79912898bb1930bb06cade2de34f6a9a3640da9fe2d31ad1a\";a:4:{s:10:\"expiration\";i:1541853684;s:2:\"ip\";s:10:\"172.17.0.1\";s:2:\"ua\";s:114:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36\";s:5:\"login\";i:1541680884;}}"),
-(17,1,"wp_dashboard_quick_press_last_post_id","4"),
+(17,1,"wp_dashboard_quick_press_last_post_id","394"),
 (18,1,"community-events-location","a:1:{s:2:\"ip\";s:12:\"192.168.95.0\";}"),
 (19,1,"managenav-menuscolumnshidden","a:5:{i:0;s:11:\"link-target\";i:1;s:11:\"css-classes\";i:2;s:3:\"xfn\";i:3;s:11:\"description\";i:4;s:15:\"title-attribute\";}"),
 (20,1,"metaboxhidden_nav-menus","a:1:{i:0;s:12:\"add-post_tag\";}"),
 (21,1,"wp_user-settings","libraryContent=browse&editor=html&post_dfw=off"),
-(22,1,"wp_user-settings-time","1541604768"),
+(22,1,"wp_user-settings-time","1542413754"),
 (23,1,"nav_menu_recently_edited","2"),
 (24,1,"closedpostboxes_page","a:1:{i:0;s:11:\"commentsdiv\";}"),
 (25,1,"metaboxhidden_page","a:5:{i:0;s:10:\"postcustom\";i:1;s:16:\"commentstatusdiv\";i:2;s:11:\"commentsdiv\";i:3;s:7:\"slugdiv\";i:4;s:9:\"authordiv\";}"),
@@ -31,4 +30,5 @@ INSERT INTO `wp_usermeta` VALUES
 (27,1,"closedpostboxes_products","a:0:{}"),
 (28,1,"metaboxhidden_products","a:1:{i:0;s:7:\"slugdiv\";}"),
 (29,1,"meta-box-order_products","a:3:{s:4:\"side\";s:44:\"submitdiv,products_categorydiv,pageparentdiv\";s:6:\"normal\";s:15:\"slugdiv,cftdiv1\";s:8:\"advanced\";s:0:\"\";}"),
-(30,1,"screen_layout_products","2");
+(30,1,"screen_layout_products","2"),
+(31,1,"session_tokens","a:1:{s:64:\"8f2f261156e9d4fdfd8a8c9f9bc1f117fe9587327f732782fc965a179f63be1e\";a:4:{s:10:\"expiration\";i:1543998959;s:2:\"ip\";s:10:\"172.17.0.1\";s:2:\"ua\";s:121:\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36\";s:5:\"login\";i:1543826159;}}");
