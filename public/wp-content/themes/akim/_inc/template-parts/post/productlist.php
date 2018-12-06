@@ -5,8 +5,8 @@
      */
     $arg = array(
         'post_type' => 'products',
+        'orderby'       => 'description',         
         'posts_per_page' => -1,
-        'orderby' => 'ID',
         'hide_empty' => false,
     );
 
