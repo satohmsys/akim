@@ -565,10 +565,10 @@
             margin-left: percentage( 50 / 1000 * 0.45  );
             list-style: none ;
 
-            @include mq( tab ){
-                margin-right: 1.6%;
+            @include mq( 1024 ){
+                margin-right: 1.5%;
                 margin-bottom: $space_s_sp;
-                margin-left: 1.6%;
+                margin-left: 1.5%;
             }
 
             figcaption{
