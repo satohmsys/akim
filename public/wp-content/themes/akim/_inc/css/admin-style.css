@@ -31,6 +31,10 @@ Description: Used to style the TinyMCE editor.
     display: none;
 }
 
+#wp-admin-bar-site-name >a {
+  font-weight: bold;
+  background-color: red;
+}
 
 /* #adminmenu li{
     border-top: 1px solid rgba( 255,255,255,0.25 )!important;
