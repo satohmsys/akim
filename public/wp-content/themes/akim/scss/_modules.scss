@@ -450,13 +450,40 @@
 
 
 
-	&__copyright{
+	&__bottom{
 		font-size: $fontsize_s;
 		padding: 40px 30px;
 		text-align: center;
 		color: #ccc;
 		background-color: $basefontColor;
 	}
+
+  &__links{
+    line-height: 1;
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    li:not( :last-child ){
+      a{
+        
+      }
+      &:after{
+        content: "|";
+        margin-right: 1em;
+        margin-left: 1em;
+        opacity: 0.4;
+        display: inline-block;
+      }
+    }
+  }
+
+  &__copyright{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
 }
 
 

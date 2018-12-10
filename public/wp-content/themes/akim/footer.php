@@ -23,8 +23,15 @@
 			<div class="button"><a href="<?php echo AKIM_URI; ?>/contact/">お問い合わせ</a></div>
 		</div>
 	</section>
-	<section class="siteFooter__copyright">
-		© AKIM CORPORATION
+	<section class="siteFooter__bottom">
+    <ul class="siteFooter__links">
+      <li>
+        <a href="<?php echo AKIM_URI; ?>/privacypolicy/">個人情報保護方針</a>
+      </li>
+    </ul>
+		<div class="siteFooter__copyirght">
+      © AKIM CORPORATION
+    </div>
 	</section>
 </footer>
 <?php wp_footer(); ?>
