@@ -3,7 +3,6 @@ include( '_inc/variables.php');
 include( '_inc/functions-setup.php');
 include( '_inc/functions-cleanheader.php');
 include( '_inc/functions-adminscreen.php');
-include( '_inc/functions-originaltitle.php');
 include( '_inc/functions-scripts.php');
 include( '_inc/functions-posttypes.php');
 include( '_inc/functions-shortcodes.php');
