@@ -34,6 +34,7 @@ get_header(); ?>
         array_push($productImgs,  wp_get_attachment_url( $figure ) );
     }
     $productLicenseNum = array_filter( explode( ',', $allCustomFields['License'][0]) );
+    $productControlNum = array_filter( explode( ',', $allCustomFields['Control'][0]) );
     $productNum = $allCustomFields['ProductNum'][0] ? $allCustomFields['ProductNum'][0] : '---' ;
     $productDescription = $allCustomFields['Description'][0];
     $productBenefit = array_filter( explode( ',', $allCustomFields['Benefit'][0]) );
