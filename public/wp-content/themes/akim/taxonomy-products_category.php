@@ -26,10 +26,11 @@ get_header(); ?>
 		<div class="wrap">
 			<ul class="itemList">
 				<?php
+				
 				$arg = array(
 					'post_type' => 'products',
           'posts_per_page' => -1,
-          'orderby' => 'menu_order',
+          'orderby' => 'date',
           'order' => 'ASC',
 					'tax_query' => array(                      //タクソノミーに関する指定はこの中にすべて
 						'relation' => 'AND',                     //条件1,2をどのような関係で指定するか
