@@ -35,7 +35,7 @@ function createPT(){
       'menu_icon'   => 'dashicons-pressthis',      
       'show_ui' => true,
       'meun_position' => 0,
-      'supports' => array( 'title'),
+      'supports' => array( 'title', 'page-attributes'),
       'rewrite' => array('slug' => 'products'),
     )
   );
@@ -94,4 +94,7 @@ $submenu['edit.php'][16][0] = 'タグ';
 //echo ";
 }
 // add_action( 'admin_menu', 'change_post_menu_label' );
+
+
+
 ?>

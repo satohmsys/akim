@@ -34,6 +34,7 @@ get_header(); ?>
         array_push($productImgs,  wp_get_attachment_url( $figure ) );
     }
     $productLicenseNum = array_filter( explode( ',', $allCustomFields['License'][0]) );
+    $productControlNum = array_filter( explode( ',', $allCustomFields['Control'][0]) );
     $productNum = $allCustomFields['ProductNum'][0] ? $allCustomFields['ProductNum'][0] : '---' ;
     $productDescription = $allCustomFields['Description'][0];
     $productBenefit = array_filter( explode( ',', $allCustomFields['Benefit'][0]) );
@@ -101,26 +102,52 @@ get_header(); ?>
                         ?>
                     </section>
                     <?php 
-                        if( !empty( $productLicenseNum ) ){
+                      if( !empty( $productLicenseNum ) && !empty( $productControlNum ) ){
                     ?>
-                    <dl class="detail__licenseNum">
-                        <dt class="detail__licenseNum__index">
-                            特許番号
-                        </dt>
-                        <dd class="detail__licenseNum__content">
-                            <ul class="licenseNum">
-                                <?php 
-                                    foreach( $productLicenseNum as $num ){
-                                ?>
-                                <li><?php echo $num; ?></li>
-                                <?php
-                                    }
-                                ?>
-                            </ul>
-                        </dd>
-                    </dl>
+                    <?php 
+                        if( !empty( $productControlNum ) ){
+                    ?>
+                    <div class="detail__numArea">
+                      <dl class="detail__num detail__num--control">
+                          <dt class="detail__num__index">
+                              管理番号
+                          </dt>
+                          <dd class="detail__num__content">
+                              <ul class="numbers">
+                                  <?php 
+                                      foreach( $productControlNum as $num ){
+                                  ?>
+                                  <li><?php echo $num; ?></li>
+                                  <?php
+                                      }
+                                  ?>
+                              </ul>
+                          </dd>
+                      </dl>          
                     <?php 
                         }
+                        if( !empty( $productLicenseNum ) ){
+                    ?>
+                      <dl class="detail__num detail__num--license">
+                          <dt class="detail__num__index">
+                              特許番号
+                          </dt>
+                          <dd class="detail__num__content">
+                              <ul class="numbers">
+                                  <?php 
+                                      foreach( $productLicenseNum as $num ){
+                                  ?>
+                                  <li><?php echo $num; ?></li>
+                                  <?php
+                                      }
+                                  ?>
+                              </ul>
+                          </dd>
+                      </dl>
+                    </div>
+                    <?php 
+                        }
+                      }
                     ?>
                     <!-- ** 商品詳細 -->
                     <section class="detail__content">

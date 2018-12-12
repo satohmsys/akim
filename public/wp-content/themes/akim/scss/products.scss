@@ -650,19 +650,25 @@
 
         ///gaiyou 
         &__index{
-            line-height: 1;
+            line-height: 1.25;
             font-weight: bold;
 
             p{
+                margin-top: $space_s;
                 @include mq( sp ){
+                    margin-top: $space_s_sp;
                     font-size: $fontsize_m_sp;
                 }            
             }
 
             &__text{
-                margin-top: 20px;
+                margin-top: 15px;
                 font-size: $fontsize_l;
                 color: $red;
+
+                small{
+                  font-feature-settings: 'palt';
+                }
 
                 @include mq( sp ){
                     font-size: $fontsize_l_sp;
@@ -672,48 +678,73 @@
         }
 
 
-        /// 特許
-        &__licenseNum{
+        /// 特許、管理番号
+        &__numArea{
+          display: flex;
+          line-height: 1;
+          margin-top: 1em;
+          font-size: 1rem;
 
-            // width: 350px;
-            margin-top: 1em;
-            margin-right: 0;margin-bottom: 0;
-            margin-left: auto;
-            display: table;
-            table-layout: fixed;
-            font-size: 1rem;
+            @include mq(sp){
+              flex-direction: column;
+            }
+        }
+
+        /// 番号系コンポーネント
+        &__num{
+            // width: 45%;
+            margin-bottom: 0;
+            display: flex;
+ 
+            &:nth-child( even ){
+              margin-left: auto;
+              @include mq(sp) {
+                margin-left: 0;
+              }
+            }
+            &:nth-child( odd ){
+              margin-right: 1em;
+              @include mq(sp) {
+                margin-right: 0;
+              }
+            }
+
+            &:not( :last-child ){
+              @include mq(sp) {
+                margin-top: 0.5em;
+              }
+            }
 
             @include mq( sp ){
                 width: auto;
-                margin-left: 0;
-                margin-right: auto;
-                margin-bottom: $space_m_sp;
             }
-
-
-            &__index,
-            &__content{
-                display: table-cell;
-                vertical-align: top;
-            }
-
 
             &__index{
-                width: 5em;
                 font-weight: bold;
-                padding-right: $space_s;
+                // padding-right: $space_s;
+
+                &:after{
+                  content: ":";
+                  display: inline-block;
+                  margin-right: 0.5em;
+                  margin-left: 0.5em;
+                }
 
                 @include mq( sp ){
                     padding-right: 10px;
                 }
+            }
 
+            &__content{
+              padding-left: 0;
+              margin-left: 0;
             }
 
 
-            .licenseNum{
+            .numbers{
                 li{
                     display: inline;
-                    &:after{
+                    &:not(:last-child ):after{
                         content: ","
                     }
                 }
