@@ -29,7 +29,9 @@ get_header(); ?>
 				
 				$arg = array(
 					'post_type' => 'products',
-
+          'posts_per_page' => -1,
+          'orderby' => 'date',
+          'order' => 'ASC',
 					'tax_query' => array(                      //タクソノミーに関する指定はこの中にすべて
 						'relation' => 'AND',                     //条件1,2をどのような関係で指定するか
 						array(
@@ -37,9 +39,10 @@ get_header(); ?>
 							'field' => 'slug',
 							'terms' => array($term)             //タームをスラッグで指定('field'が'slug'なので)
 						)
-				    )					
+				  )					
 				);
 				$wpq = new WP_Query( $arg );
+        $wpq->set( 'orderby', 'menu_order' );
 
 				if( $wpq -> have_posts() ){
 					while( $wpq->have_posts() ){
