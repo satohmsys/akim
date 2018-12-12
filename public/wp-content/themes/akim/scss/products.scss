@@ -650,19 +650,25 @@
 
         ///gaiyou 
         &__index{
-            line-height: 1;
+            line-height: 1.25;
             font-weight: bold;
 
             p{
+                margin-top: $space_s;
                 @include mq( sp ){
+                    margin-top: $space_s_sp;
                     font-size: $fontsize_m_sp;
                 }            
             }
 
             &__text{
-                margin-top: 20px;
+                margin-top: 15px;
                 font-size: $fontsize_l;
                 color: $red;
+
+                small{
+                  font-feature-settings: 'palt';
+                }
 
                 @include mq( sp ){
                     font-size: $fontsize_l_sp;
