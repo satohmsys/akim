@@ -30,7 +30,7 @@ function enqueueScripts(){
 	 */
 	wp_enqueue_style( 'com', AKIM_CSS_URI. 'common.min.css', array(), 1, false );
 	
-	if( is_home() ){
+	if( is_home() || is_page( 'sampletop') ){
 		wp_enqueue_style( 'top', AKIM_CSS_URI. 'top.min.css', array('com'), 1, false );
 	} else if ( is_page() ){
 		if( is_page( 'recruit') ){
