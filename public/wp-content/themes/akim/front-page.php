@@ -24,7 +24,7 @@ get_header(); ?>
 		<div class="wrap">
 			<section class="mv__copy">
 				<p class="mv__copy__en">
-					<img src="<?php echo AKIM_IMG_URI; ?>top/mv-copy.svg" srcset="<?php echo AKIM_IMG_URI; ?>_sp/mv-copy.svg 480w, <?php echo AKIM_IMG_URI; ?>top/mv-copy.svg" width="838" alt="DEVELOPING TECHNOLOGY INTO THE FUTURE">
+					<img src="<?php echo AKIM_IMG_URI; ?>top/mv-copy.svg" srcset="<?php echo AKIM_IMG_URI; ?>top/_sp/mv-copy.svg 480w, <?php echo AKIM_IMG_URI; ?>top/mv-copy.svg" width="838" alt="DEVELOPING TECHNOLOGY INTO THE FUTURE">
 				</p>
 				<h1 class="mv__copy__ja">
 					<span class="-no-tab">わたしたちは、<br></span>
@@ -33,8 +33,13 @@ get_header(); ?>
 				</h1>
 			</section>
 		</div>
+		<div class="mv__movie">
+			<div class="mv__movieArea">
+        <video src="<?php echo AKIM_IMG_URI; ?>/top/mv.mp4" autoplay muted loop poster="<?php echo AKIM_IMG_URI; ?>/top/mv.jpg"></video>
+      </div>
+		</div>
 		<div class="mv__img">
-			<img src="<?php echo AKIM_IMG_URI; ?>top/mv.jpg" srcset="<?php echo AKIM_IMG_URI; ?>_sp/mv.jpg 768w, <?php echo AKIM_IMG_URI; ?>top/mv.jpg" width="1050" alt="">
+			<img src="<?php echo AKIM_IMG_URI; ?>top/mv.jpg" srcset="<?php echo AKIM_IMG_URI; ?>top/_sp/mv.jpg 768w, <?php echo AKIM_IMG_URI; ?>top/mv.jpg" width="1050" alt="">
 		</div>
 		<i class="mv__scroll"></i>
 	</section>
