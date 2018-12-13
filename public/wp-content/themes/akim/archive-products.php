@@ -51,7 +51,7 @@ get_header(); ?>
 						</a>
 					</li>
 					<li class="productBanner__item productBanner--movie">
-						<a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-fancybox>
+						<a href="https://youtu.be/LupeHnDB1gE" data-fancybox>
 							<div class="button button-secondary">
 								<span>
 									<header class="productBanner__item__index">
