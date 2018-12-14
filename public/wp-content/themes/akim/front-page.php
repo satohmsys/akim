@@ -11,12 +11,10 @@
  * @since 1.0
  * @version 1.0
  */
-
 get_header(); ?>
 <?php
   global $wp_post_types;
   $supports = &$wp_post_types['post']->supports;
-
 //   var_dump($wp_post_types['post'] );
 ?>
 	<!-- ***** mv -->
