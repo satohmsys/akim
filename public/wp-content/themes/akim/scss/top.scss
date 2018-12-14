@@ -426,14 +426,14 @@
         // @include mq( 1921,min ){
         //     width: 74.69vw;
         // }
+
+      img {
+        width: 100%;
+      }
     }
 
     &__img{
       display: none;
-      
-      img {
-        width: 100%;
-      }
 
       @include mq( tab ){
         display: block;
@@ -448,6 +448,7 @@
         overflow: hidden;
         position: relative;
       }
+      
 
       iframe,
       video{
