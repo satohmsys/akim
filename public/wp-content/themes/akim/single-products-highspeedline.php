@@ -36,6 +36,16 @@ get_header(); ?>
                 <div class="lineupArea">
                     <div class="lineup">
                         <div class="lineup__item">
+                            <a data-fancybox href="<?php echo AKIM_IMG_URI; ?>products/line-slider-8-modal.png" data-caption='<div class="fancybox-caption__index">
+                                ブランマスク詰め装置
+                            </div><div class="fancybox-caption__description">W1100☓D1200☓H1700<br>水晶素板をマスクに挿入します。<br>パッケージ品の整列移載にも対応。</div>'>
+                                <figure class="lineup__item__img">
+                                    <img src="<?php echo AKIM_IMG_URI; ?>products/line-slider-8.png" width="200" alt="">
+                                    <figcaption class="lineup__item__name">ブランマスク詰め装置</figcaption>
+                                </figure>
+                            </a>
+                        </div>                
+                        <div class="lineup__item">
                             <a data-fancybox href="<?php echo AKIM_IMG_URI; ?>products/line-slider-1-modal.png" data-caption='<div class="fancybox-caption__index">
                                 ブランクマウンタ
                             </div><div class="fancybox-caption__description">W1700☓D1400☓H1700<br>セラミックパッケージに水晶素板を接着搭載します。</div>'>
@@ -102,16 +112,6 @@ get_header(); ?>
                                 <figure class="lineup__item__img">
                                     <img src="<?php echo AKIM_IMG_URI; ?>products/line-slider-7.png" width="200" alt="">
                                     <figcaption class="lineup__item__name">抜き取り装置</figcaption>
-                                </figure>
-                            </a>
-                        </div>
-                        <div class="lineup__item">
-                            <a data-fancybox href="<?php echo AKIM_IMG_URI; ?>products/line-slider-8-modal.png" data-caption='<div class="fancybox-caption__index">
-                                ブランマスク詰め装置
-                            </div><div class="fancybox-caption__description">W1100☓D1200☓H1700<br>水晶素板をマスクに挿入します。<br>パッケージ品の整列移載にも対応。</div>'>
-                                <figure class="lineup__item__img">
-                                    <img src="<?php echo AKIM_IMG_URI; ?>products/line-slider-8.png" width="200" alt="">
-                                    <figcaption class="lineup__item__name">ブランマスク詰め装置</figcaption>
                                 </figure>
                             </a>
                         </div>
