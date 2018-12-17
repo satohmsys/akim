@@ -336,7 +336,7 @@
 
 
     .historyTl{
-        max-width: 840px;
+        max-width: 800px;
         margin-right: auto;
         margin-left: auto;
         position: relative;
@@ -347,7 +347,7 @@
         }
 
         &__event{
-            width: 420px;
+            width: 480px;
             // margin-bottom: -30px;
             display: flex;
             align-items: flex-start;
@@ -355,7 +355,7 @@
             position: relative;
             z-index: 1;      
 
-            @include mq( 1024 ){
+            @include mq( 1124 ){
                 width: auto;
                 margin-bottom: $space_s_sp;
                 transform: translateX( -6px );                
@@ -367,15 +367,15 @@
 
 
             &:nth-child( odd ) {
-                @include mq( 1025,min ){
+                @include mq( 1125,min ){
                     margin-left: auto;
-                    transform: translateX( -7px );
+                    transform: translateX( 73px );
                 }              
             }
             &:nth-child( even ) {
-                @include mq( 1025,min ){
+                @include mq( 1125,min ){
                 margin-right: auto;
-                transform: translateX( 8px );
+                transform: translateX( -72px );
                 flex-direction: row-reverse;
                 }
             }
@@ -389,7 +389,7 @@
             &:nth-child( odd ) .historyTl__event__heading{
             }
             &:nth-child( even ) .historyTl__event__heading{
-                @include mq( 1025,min ){
+                @include mq( 1125,min ){
                 flex-direction: row-reverse;
                 }
             }            
@@ -420,7 +420,7 @@
               vertical-align: middle;
               background-color: $red;
 
-              @include mq( 1024 ){
+              @include mq( 1124 ){
                 margin-right: 15px;
               }              
             }
@@ -428,7 +428,7 @@
                 margin-right: 15px;
             }
             &:nth-child( even ) .historyTl__event__line{
-                @include mq( 1025,min ){
+                @include mq( 1125,min ){
                     margin-left: 15px;
                 }              
             }              
@@ -443,7 +443,7 @@
             &__content{
                 margin-top: -0.25em;
 
-                @include mq( 1024 ){
+                @include mq( 1124 ){
                     margin-left: 10px;
                 }
 
@@ -453,12 +453,12 @@
                 }
             }
             &:nth-child( odd )  .historyTl__event__content{
-                @include mq( 1025,min ){
+                @include mq( 1125,min ){
                     margin-left: 30px;
                 }
             }
             &:nth-child( even )   .historyTl__event__content{
-                @include mq( 1025,min ){
+                @include mq( 1125,min ){
                     margin-right: 30px;
                 }
             }
@@ -478,7 +478,7 @@
             left: 0;
             background-color: $red;
 
-            @include mq( 1024 ){
+            @include mq( 1124 ){
                 margin-left : 0;
             }              
         }
