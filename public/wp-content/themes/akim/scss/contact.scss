@@ -302,13 +302,30 @@
     }    
 }
 
+
 .mw_wp_form_input{
+
+    .message--input{
+      display: block;
+    }
+    .message--preview{
+      display: none;
+    }
+
     .button--submit,
     .button--inputback{
         display: none;
     }
 }
 .mw_wp_form_preview{
+
+    .message--input {
+      display: none;
+    }
+    .message--preview {
+      display: block;
+    }
+
     .button--confirm{
         display: none;
     }
