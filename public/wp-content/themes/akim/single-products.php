@@ -102,14 +102,40 @@ get_header(); ?>
                         ?>
                     </section>
                     <?php 
+                        if( !empty( $productControlNum ) || !empty( $productLicenseNum )){
+                    ?>
+                    <div class="detail__numArea">
+                    <?php 
+                        if( !empty( $productControlNum ) ){
+                    ?>
+                    <dl class="detail__num detail__num--control">
+                        <dt class="detail__num__index">
+                            管理番号
+                        </dt>
+                        <dd class="detail__num__content">
+                            <ul class="num">
+                                <?php 
+                                    foreach( $productControlNum as $num ){
+                                ?>
+                                <li><?php echo $num; ?></li>
+                                <?php
+                                    }
+                                ?>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <?php 
+                        }
+                    ?>                    
+                    <?php 
                         if( !empty( $productLicenseNum ) ){
                     ?>
-                    <dl class="detail__licenseNum">
-                        <dt class="detail__licenseNum__index">
+                    <dl class="detail__num detail__num--license">
+                        <dt class="detail__num__index">
                             特許番号
                         </dt>
-                        <dd class="detail__licenseNum__content">
-                            <ul class="licenseNum">
+                        <dd class="detail__num__content">
+                            <ul class="num">
                                 <?php 
                                     foreach( $productLicenseNum as $num ){
                                 ?>
@@ -120,6 +146,10 @@ get_header(); ?>
                             </ul>
                         </dd>
                     </dl>
+                    <?php 
+                        }
+                    ?>
+                    </div>
                     <?php 
                         }
                     ?>
