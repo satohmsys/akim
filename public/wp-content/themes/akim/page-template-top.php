@@ -295,8 +295,8 @@ get_header(); ?>
           playerVars: {
             'autoplay' : 1 ,
             'playlist': 'UtaAjpEHO7c',
-            // 'list': 'PLUbU4xPGhzUcsg1hDfVFGDZzIGuhQAU6G',
-            // 'listType': 'playlist',
+            'list': 'PLUbU4xPGhzUcsg1hDfVFGDZzIGuhQAU6G',
+            'listType': 'playlist',
             'rel' :0,
             'controls' : 0,
             'showinfo': 0,
