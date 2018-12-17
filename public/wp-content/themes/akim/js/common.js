@@ -1,6 +1,4 @@
-$( function(){
-
-    var $w = $( window ),
+ var $w = $( window ),
         $ww = $w.width(),
         $wh = $w.height(),
         $breakpoint_mobile = 768,
@@ -51,7 +49,6 @@ $( function(){
     });
 
 
-});
 
 
 /**
