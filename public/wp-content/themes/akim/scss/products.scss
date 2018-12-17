@@ -678,48 +678,48 @@
         }
 
 
-        /// 特許
-        &__licenseNum{
+        ///番号エリア
+        &__numArea{
+          line-height: 1;
+          margin-bottom: $space_m_sp;
+          margin-top: 1em;
+          display: flex;
+          justify-content: space-between;
+          font-size: 1rem;
 
-            // width: 350px;
-            margin-top: 1em;
-            margin-right: 0;margin-bottom: 0;
-            margin-left: auto;
-            display: table;
-            table-layout: fixed;
-            font-size: 1rem;
+          @include mq(sp) {
+            flex-direction: column;
+          }
 
-            @include mq( sp ){
-                width: auto;
-                margin-left: 0;
-                margin-right: auto;
-                margin-bottom: $space_m_sp;
-            }
-
-
-            &__index,
-            &__content{
-                display: table-cell;
-                vertical-align: top;
-            }
-
+        }
+        /// 特許 / 管理番号
+        &__num{
+            margin-right: 0;
+            margin-bottom: 0;
+            margin-left: 0;
+            display: flex;
 
             &__index{
-                width: 5em;
                 font-weight: bold;
-                padding-right: $space_s;
 
-                @include mq( sp ){
-                    padding-right: 10px;
+                &:after{
+                  content: ":";
+                  display: inline-block;
+                  margin-right: 0.5em;
+                  margin-left: 0.5em;
                 }
+            }
 
+            &__content{
+              margin-left: 0;
+              padding-left: 0;
             }
 
 
-            .licenseNum{
+            .num{
                 li{
                     display: inline;
-                    &:after{
+                    &:not(:last-child):after{
                         content: ","
                     }
                 }
