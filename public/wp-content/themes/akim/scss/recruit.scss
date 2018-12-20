@@ -82,8 +82,7 @@
 
 
             &__img{
-                height: 100%;
-                position: relative;
+                flex-shrink: none;
                 line-height: 0;
 
                 a{
