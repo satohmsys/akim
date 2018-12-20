@@ -82,6 +82,7 @@
 
 
             &__img{
+                height: 100%;
                 position: relative;
                 line-height: 0;
 
@@ -89,13 +90,13 @@
                     display: block;
 
                     @include mouseOver(){
-                        .button span:after{
-                            width: 0;
-                        }
+                      .button span:after{
+                          width: 0;
+                      }
 
-                        .icon--play{
-                            width: 0;
-                        }
+                      .icon--play{
+                          width: 0;
+                      }
                     }
                 }
 
