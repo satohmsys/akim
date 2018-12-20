@@ -33,7 +33,7 @@ get_header(); ?>
 		</div>
 		<div class="mv__movie">
 			<div class="mv__movieArea">
-        <video src="<?php echo AKIM_IMG_URI; ?>/top/mv.mp4" autoplay muted loop poster="<?php echo AKIM_IMG_URI; ?>/top/mv.jpg"></video>
+        <video src="<?php echo AKIM_IMG_URI; ?>/top/mv.mp4" autoplay muted loop></video>
       </div>
 		</div>
 		<div class="mv__img">

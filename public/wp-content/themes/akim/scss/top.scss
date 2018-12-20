@@ -447,6 +447,12 @@
         padding-top: #{( 590 / 1400 * 100)}vw;
         overflow: hidden;
         position: relative;
+        background: url(../img/top/mv.jpg) center center no-repeat;
+        background-size: 100% auto;
+
+        @include mq( tab ){
+          background-image: url(../img/top/_sp/mv.jpg);
+        }
       }
       
 
