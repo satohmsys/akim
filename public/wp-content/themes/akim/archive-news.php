@@ -33,9 +33,7 @@ get_header(); ?>
 					'paged' => $paged
 				);
 				$wpq = new WP_Query( $arg );
-				if( $wpq->have_posts() ){
-
-					
+				if( $wpq->have_posts() ){					
 			?>
 			<ul class="news">
 			<?php
@@ -61,7 +59,6 @@ get_header(); ?>
 			<?php
 				}
 			?>
-
 			</ul>
 			<?php 		
 				}
@@ -81,11 +78,13 @@ get_header(); ?>
 							'prev_text' => '<i class="prevIcon"></i>',
 							'next_text' => '<i class="nextIcon"></i>',
 						));			
-						foreach( $pagelinks as $pagelink ){
+            if( $pagelinks ){
+						  foreach( $pagelinks as $pagelink ){
 					?>
 					<li class="pagerlist__item"><?php echo $pagelink; ?></li>
 					<?php		
-						}	
+						  }	
+            }
 					?>
 					<!-- <li class="pagerlist__item pagerlist__item--prev">
 						<a href=""><i class="prevIcon"></i></a>
