@@ -51,9 +51,11 @@ get_header(); ?>
 						$productBenefit = explode( ',', $allCustomFields['Benefit'][0]);
 						$productBenefit = array_filter( $productBenefit, 'strlen');
 						$productImgs = array();
-						foreach( $allCustomFields['Figure'] as $figure ){
-							array_push($productImgs,  wp_get_attachment_url( $figure ) );
-						}
+            if( count($allCustomFields['Figure']) ){
+              foreach( $allCustomFields['Figure'] as $figure ){
+                array_push($productImgs,  wp_get_attachment_url( $figure ) );
+              }
+            }
 				?>
 				<li class="itemList__item">
 					<?php 
