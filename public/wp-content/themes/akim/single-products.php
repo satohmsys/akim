@@ -131,15 +131,12 @@ get_header(); ?>
                         if( !empty( $productLicenseNum ) ){
                     ?>
                     <dl class="detail__num detail__num--license">
-                        <dt class="detail__num__index">
-                            特許番号
-                        </dt>
                         <dd class="detail__num__content">
                             <ul class="num">
                                 <?php 
                                     foreach( $productLicenseNum as $num ){
                                 ?>
-                                <li><?php echo $num; ?></li>
+                                <li>特許第<?php echo $num; ?>号</li>
                                 <?php
                                     }
                                 ?>
@@ -251,6 +248,7 @@ get_header(); ?>
                                 $arga = array(
                                     'post_type' => 'products',
                                     'posts_per_page' => -1,
+                                    'orderby' => 'menu_order',
                                     'tax_query' => array(
                                         'relation' => 'AND',
                                         'tax_query' => array(
