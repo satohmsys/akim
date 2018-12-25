@@ -126,7 +126,7 @@
 
         &:before{
             content: " ";
-            width: 000%;
+            width: 0%;
             position: absolute;
             top: 0;
             left: 0;
@@ -142,6 +142,10 @@
             padding: 15px;
             font-size: 2.1rem;
         }        
+
+        .mask{
+          padding-top: 5px;
+        }
 
 
         .mask:before{
