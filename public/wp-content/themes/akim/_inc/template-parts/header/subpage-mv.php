@@ -1,5 +1,5 @@
 <?php
-    $subpagetitle = !isset($subpagetitle) ? $subpagetitle :  get_the_title();
+    $subpagetitle = $subpagetitle ? $subpagetitle :  get_the_title();
     if( is_404() ){
       $subpagetitle = 'ページが見つかりません';
     }
