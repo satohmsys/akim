@@ -19,6 +19,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <?php get_template_part( '_inc/template-parts/meta/ogp'); ?>
 <?php wp_head(); ?>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131371877-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-131371877-1');
+</script>
 </head>
 <body <?php body_class(); ?>>
 <?php get_template_part( '_inc/template-parts/header/header-main' ); ?>
