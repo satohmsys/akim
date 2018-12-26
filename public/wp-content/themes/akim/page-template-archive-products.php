@@ -14,9 +14,6 @@
  */
 
 get_header(); ?>
-<?php
-	$subpagetitle = get_the_title();		
-?>
 <!-- ***** mv -->
 <?php include('_inc/template-parts/header/subpage-mv.php'); ?>
 <!-- ///// -->

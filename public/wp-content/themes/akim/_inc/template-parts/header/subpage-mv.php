@@ -1,5 +1,8 @@
 <?php
-    $subpagetitle = $subpagetitle ? $subpagetitle :  get_the_title();
+    $subpagetitle = !isset($subpagetitle) ? $subpagetitle :  get_the_title();
+    if( is_404() ){
+      $subpagetitle = 'ページが見つかりません';
+    }
 ?>
 <!-- ***** mv -->
 <section class="subpageMv js-effect">

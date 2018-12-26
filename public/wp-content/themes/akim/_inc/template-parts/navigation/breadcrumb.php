@@ -14,6 +14,7 @@
     $isPage = is_page();
     $isArchive = is_archive();
     $isTax = is_tax();
+    $is404 = is_404();
 
     // シングルページかどうか
     if($isSinglePage){
@@ -58,6 +59,8 @@
 			<li><?php echo $archiveTitle; ?></li>
             <?php } else if( $isArchive ){  ?>
 			<li><?php echo $archiveTitle; ?></li>
+            <?php } else if( $is404 ){  ?>
+			<li>ページが見つかりません</li>
             <?php } ?>
 		</ul>
 	</div>
