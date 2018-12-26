@@ -24,4 +24,14 @@ function remove_menus () {
     // unset($menu[90]); // メニューの線3
 }
 add_action('admin_menu', 'remove_menus');
+
+/**
+ * アップデート通知の非表示
+ */
+function update_nag_hide() {
+    if (!current_user_can('level_10')) { //level10以下のユーザーの場合
+      remove_action( 'admin_notices', 'update_nag', 3 );
+    }    
+}
+add_action( 'admin_init', 'update_nag_hide' );
 ?>
