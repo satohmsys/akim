@@ -2,4 +2,4 @@
 /*!40014 SET FOREIGN_KEY_CHECKS=0*/;
 /*!40103 SET TIME_ZONE='+00:00' */;
 INSERT INTO `wp_site` VALUES
-(1,"is-test.site","/");
+(1,"akim.local","/");

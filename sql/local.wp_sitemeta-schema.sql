@@ -9,4 +9,4 @@ CREATE TABLE `wp_sitemeta` (
   PRIMARY KEY (`meta_id`),
   KEY `meta_key` (`meta_key`(191)),
   KEY `site_id` (`site_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=79 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=214 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
