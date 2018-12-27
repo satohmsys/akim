@@ -19,6 +19,14 @@ get_header(); ?>
 ?>
 	<!-- ***** mv -->
 	<section class="mv">
+		<div class="mv__img">
+    <?php for($i=1;$i<8;$i++ ) { ?>
+      <div class="mv__img__slide">
+			  <img src="<?php echo AKIM_IMG_URI; ?>top/_sp/mv-<?php echo $i ;?>.jpg" alt="">
+      </div>
+    <?php } ?>
+			<!-- <img src="<?php echo AKIM_IMG_URI; ?>top/mv.jpg" srcset="<?php echo AKIM_IMG_URI; ?>top/_sp/mv.jpg 768w, <?php echo AKIM_IMG_URI; ?>top/mv.jpg" width="1050" alt=""> -->
+		</div>  
 		<div class="wrap">
 			<section class="mv__copy">
 				<p class="mv__copy__en">
@@ -35,14 +43,6 @@ get_header(); ?>
 			<div class="mv__movieArea">
         <video src="<?php echo AKIM_IMG_URI; ?>/top/mv.mp4" autoplay muted loop></video>
       </div>
-		</div>
-		<div class="mv__img">
-    <?php for($i=1;$i<8;$i++ ) { ?>
-      <div class="mv__img__slide">
-			  <img src="<?php echo AKIM_IMG_URI; ?>top/_sp/mv-<?php echo $i ;?>.jpg" alt="">
-      </div>
-    <?php } ?>
-			<!-- <img src="<?php echo AKIM_IMG_URI; ?>top/mv.jpg" srcset="<?php echo AKIM_IMG_URI; ?>top/_sp/mv.jpg 768w, <?php echo AKIM_IMG_URI; ?>top/mv.jpg" width="1050" alt=""> -->
 		</div>
 		<i class="mv__scroll"></i>
 	</section>

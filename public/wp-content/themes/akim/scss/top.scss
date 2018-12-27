@@ -368,6 +368,9 @@
         @include mq( 1921,min ){
             left: -20vw;
         }
+        @include mq( tab ){
+          position: static;
+        }
     }
 
 
@@ -389,6 +392,7 @@
             margin-bottom: 60px;
 
             @include mq( tab ){
+                margin-top: $space_s_sp;
                 max-height: none;
             }
 
@@ -409,13 +413,17 @@
             color: $red;
             writing-mode: vertical-rl;
 
+
+            @include mq(tab) {
+              writing-mode: horizontal-tb;
+            }
+
             @include mq(sp) {
                font-size: 1.2rem;
             }
             @include mq( 320 ){
                 font-size: 1rem
             }
-            
         }
     }
 
@@ -439,6 +447,7 @@
       display: none;
 
       @include mq( tab ){
+        width: 100%;
         display: block;
 
 
