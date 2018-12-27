@@ -1,0 +1,349 @@
+@import "colors.scss";
+@import "variables.scss";
+@import "fonts.scss";
+@import "mixins.scss";
+
+@import "modules-childpage.scss";
+
+////////////////////////////////////////// 製品情報
+
+
+///////////////////////////////
+
+//module/
+
+///////////////////////////////
+
+.subpageMv{
+    background: $red;
+    // background-image: url(../img/products/mv.jpg);
+
+    @include mq( tab ){
+        // background-image: url(../img/products/_sp/mv.jpg);    
+    }
+}
+
+
+
+///////////////////////////////
+
+//form
+
+///////////////////////////////
+
+.section--form{
+    background-color: #ffffff;
+
+
+    .wrap{
+        @include mq( sp,min ){
+            max-width: 1000px;
+        }
+    }
+
+            
+    ::placeholder{
+        color: #e9e9e9;
+    }    
+
+
+    .formTable{
+        width: 100%;
+        border-collapse: collapse;
+
+
+        input[ type="text"],
+        input[ type="name"],
+        input[ type="email"],
+        input[ type="tel"],
+        input[ type="radio"]{
+            -webkit-appearance: none;
+        }
+        input[ type="text"],
+        input[ type="name"],
+        input[ type="email"],
+        input[ type="tel"],
+        input[ type="radio"],
+        textarea{
+            @include mouseOver{
+                background-color: rgba(yellow,0.05);
+            }
+        }
+
+
+        input[type="radio"]{
+            display: none;
+
+            & + i{
+                width: 1em;
+                height: 1em;
+                margin-right: 5px;
+                display: inline-block;
+                position: relative;
+                border: 1px solid $color_border;
+                border-radius: 100px;
+                vertical-align: middle;
+
+                &:before{
+                    content: " ";
+                    width: 10px;
+                    height: 10px;
+                    margin: auto;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    display: block;
+                    transform: scale(0);
+                    transition: easeInOutBack();
+                    border-radius: 100px;                    
+                    background-color: $red;
+                }
+            }
+            &:checked + i {
+                &:before{
+                    transform: scale( 1 );
+                }
+            }
+        }
+    
+
+
+        input[ type="text"],
+        input[ type="name"],
+        input[ type="email"],
+        input[ type="tel"],
+        textarea
+         {
+            width: 100%;
+            padding: 1em;
+            display: block;
+            box-sizing: border-box;
+            border-radius: 3px;
+            border:solid 1px $color_border;
+            box-shadow: none;
+            transition: transition();
+
+
+            @include mq( tab ){
+                font-size: 1.6rem;
+            }            
+        }
+
+
+        &__tr{
+            border-bottom: 1px solid $color_border;
+
+            @include mq( tab ){
+                &:last-child{
+                    border-bottom: none;
+                }
+            }
+
+            &:first-child{
+                    .formTable__th,
+                    .formTable__td{
+                        padding-top: 0;
+                    }
+            }
+        }
+
+        &__th{
+            width: 200px;    
+            line-height: 1.35;
+            padding-right: 20px;
+            position: relative;
+            text-align: left;
+
+            @include mq( sp ){
+                width: 100px;
+            }
+        }
+        &__td,&__th{
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        &__index{
+            font-size: $fontsize_m;
+
+            .formTable__th{
+                padding-top: 0;
+            }
+        }
+
+
+        &__th{
+            &.-must:before{
+                content: "必須";
+                width: 30px;
+                line-height: 1;
+                margin-bottom: 5px;
+                padding: 5px 10px;
+                display: block;
+                text-align: center;
+                font-size: $fontsize_s;
+                color: #ffffff;
+                background-color: $red;
+                
+            }
+        }
+
+
+        &__td{
+            label{
+                display: inline-block;
+                margin-right: $space_s;
+                cursor: pointer;
+            }
+        }
+
+
+        ol{
+            padding-left: 0;
+            list-style-position: inside;
+        }
+
+
+        &__attention{
+            display: inline-block;
+            line-height: 1.35;
+            margin-bottom: 1em;
+            font-weight: bold;
+            font-size: $fontsize_s;
+        }
+    }
+
+
+    .buttons{
+        margin-top: $space_m;
+        line-height: 1;
+        display: flex;
+        margin-right: -1* $space_s/2;
+        margin-left: -1* $space_s/2;
+
+        @include mq( tab ){
+            margin-top: $space_m_sp;
+        }
+        @include mq( sp ){
+            margin-right: -1* $space_s_sp/5;
+            margin-left: -1* $space_s_sp/5;
+        }
+
+        @include mq( 320 ){
+            flex-wrap: wrap;
+        }            
+        
+
+        .button{
+            width: 100%;
+            margin-right: $space_s /2 ;
+            margin-left: $space_s / 2;
+
+            button,
+            span,
+            a{
+                width: 100%;
+            }
+
+            @include mq( sp ){
+                margin-right: $space_s_sp / 5 ;
+                margin-left: $space_s_sp / 5;
+            }
+            @include mq( 320 ){
+                margin-bottom: 1em;
+            }            
+
+        }
+    }
+}
+
+
+///////// MW WP FORM
+
+.mwform-radio-field label{
+    span{
+        position: relative;
+        padding-left: 2em;
+
+        &:before{
+            content: " ";
+            width: 1em;
+            height: 1em;
+            margin: auto;
+            display: inline-block;
+            vertical-align: middle;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 2px;            
+            border: 1px solid $color_border;
+            border-radius: 100px;
+        }
+        &:after{
+            content: " ";
+            width: 0.75em;
+            height: 0.75em;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 5px;
+            display: block;
+            transform: scale(0);
+            transition: easeInOutBack();
+            border-radius: 100px;                    
+            background-color: $red;
+        }
+    }
+
+    input:checked + span:after{
+       transform: scale( 1 );      
+    }    
+}
+
+
+.mw_wp_form_input{
+
+    .message--input{
+      display: block;
+    }
+    .message--preview{
+      display: none;
+    }
+
+    .button--submit,
+    .button--inputback{
+        display: none;
+    }
+}
+.mw_wp_form_preview{
+
+    .message--input {
+      display: none;
+    }
+    .message--preview {
+      display: block;
+    }
+
+    .button--confirm{
+        display: none;
+    }
+
+    .mailaddressConfirm{
+        display: none;
+    }
+
+    input[type="radio"]{
+    
+        &:not(:checked) + i {
+            display: none;
+        }
+    }    
+}
+
+.mw_wp_form_complete{
+    .subPageIntro{
+        display: none;
+    }
+}

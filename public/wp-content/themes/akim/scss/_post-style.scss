@@ -1,0 +1,115 @@
+//////////////////////////////////////////
+
+//post style
+
+//include by style.scss
+
+//////////////////////////////////////////
+
+.postArea{
+    padding-bottom: $space_m;
+    margin-bottom: $space_l;
+    // border-bottom: 1px solid $color_border;
+
+    @include mq( tab ){
+        margin-bottom: $space_m_sp;
+    }        
+    @include mq( sp ){
+        margin-bottom: $space_s_sp;
+        padding-bottom: $space_s_sp;
+    }     
+
+    &,
+    &__content{
+        p:first-child{
+            margin-top: 0;
+        }
+        p:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    &__index{
+        font-weight: bold;
+        padding-bottom: $space_s;
+        margin-bottom: $space_m;
+        border-bottom: 1px solid $color_border;
+
+        @include mq( tab ){
+            margin-bottom: $space_m_sp;
+        }        
+        @include mq( sp ){
+            margin-bottom: $space_s_sp;
+            padding-bottom: $space_s_sp;
+        }        
+
+        &__text{
+            line-height: 1.4;
+            font-size: $fontsize_l;
+            color: $red;
+
+            @include mq( tab ){
+                font-size: $fontsize_l_sp;
+            }
+        }
+
+        &__date{
+            line-height: 1;
+            margin-top: 1em;
+        }
+    }
+
+
+
+    &__content{
+         
+
+    }    
+
+
+
+
+
+    ul{
+        padding-left: 0;        
+        li{
+            list-style: none;
+            text-indent: -1em;
+            padding-left: 1em;
+
+            &:before{
+                content:  "";
+                width: 0.3em;
+                height: 0.3em;
+                margin-right: 0.75em;
+                border-radius: 100%;
+                display: inline-block;
+                vertical-align: middle;
+                background-color: $red;
+            }
+        }
+    }
+
+    ol{
+        padding-left: 0;
+        counter-reset: c;
+
+        li{
+            counter-increment: c;
+            list-style: none;
+            text-indent: -0.65em;
+            padding-left: 1.05em;            
+
+            &:before{
+                content:  counter(c)".";
+                margin-right: 0.5em;
+                display: inline-block;
+                vertical-align: middle;
+                color: $red;
+                font-family: $fontFamily_en;
+            }            
+        }
+    }
+    
+
+}

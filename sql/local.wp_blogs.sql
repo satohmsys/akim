@@ -1,0 +1,5 @@
+/*!40101 SET NAMES binary*/;
+/*!40014 SET FOREIGN_KEY_CHECKS=0*/;
+/*!40103 SET TIME_ZONE='+00:00' */;
+INSERT INTO `wp_blogs` VALUES
+(1,1,"akim.local","/","2018-12-09 18:30:40","2018-12-26 09:33:59",1,0,0,0,0,0);

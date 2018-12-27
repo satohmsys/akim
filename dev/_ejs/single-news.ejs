@@ -1,0 +1,117 @@
+
+<% 
+	include( '_include/_function.ejs' );
+	$active = 'news';
+	$css = ['<link rel="stylesheet" href="/css/news.min.css" />'];
+	$src = '/img/products/';
+%>
+<!DOCTYPE html>
+<html>
+<head>
+	<%- include( '_include/head.ejs' ); %>
+</head>
+<body class="page">
+	<%- include( '_include/header.ejs' ); %>
+	<!-- ***** mv -->
+	<section class="subpageMv js-effect">
+		<div class="wrap">
+			<h1 class="subpageMv__copy">
+                <span class="mask"><span class="mask__element">お知らせ</span></span>
+			</h1>
+		</div>
+	</section>
+	<!-- ///// -->
+	<div class="breadcrumbSection">
+		<div class="wrap">
+			<ul class="breadcrumb">
+				<li><a href="">TOP</a></li>
+				<li><a href="">お知らせ</a></li>
+			</ul>
+		</div>
+	</div>
+	<main class="mainContent">
+        <section class="section section--single">
+            <div class="wrap column">
+                <article class="section__child postArea newstopic column__main">
+                    <header class="postArea__index newstopic__index">
+                            <h2 class="postArea__index__text newstopic__index__text">
+                                ニュースタイトルニュースタイトルニュースタイトルニュースタイトルニュースタイトルニュースタイトルニュースタイトルニュースタイトルニュースタイトル
+                            </h2>
+                            <div class="postArea__index__date newstopic__index__date">
+                                <time>2018.10.11</time>
+                            </div>
+                    </header>
+                    <div class="newstopic__content postArea__content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur illum necessitatibus ea ad laudantium natus expedita maiores, ipsum reiciendis nostrum corrupti, aliquam maxime corporis molestiae? Fugiat sapiente earum ullam consequuntur.</p>
+                            <ul>
+                                <li>aaaaaaaa</li>
+                                <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime obcaecati mollitia tempora iste, sint id perferendis in facere cum nesciunt porro voluptate ea pariatur, magnam ex eligendi culpa voluptatum! Saepe!</li>
+                                <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime obcaecati mollitia tempora iste,</li>
+                            </ul>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime officia tenetur vero? Quis, nulla ducimus numquam
+                                itaque, quaerat autem architecto iste repellat enim at, neque esse fugit illo facilis quos.
+                            </p>
+                            <ol>
+                                <li>aaaaaaaa</li>
+                                <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime obcaecati mollitia tempora iste, sint id
+                                    perferendis in facere cum nesciunt porro voluptate ea pariatur, magnam ex eligendi culpa voluptatum! Saepe!</li>
+                                <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime obcaecati mollitia tempora iste,</li>
+                            </ol>
+                        </div>
+                </article>
+                <aside class="column__sub otherNews">
+                    <section class="subColumnSection">
+                        <h3 class="subColumnSection__index">
+                            その他のニュース
+                        </h3>
+                        <ul class="news">
+                            <li class="news__item">
+                                <article>
+                                    <header class="news__item__index">
+                                        <h2 class="news__item__index__text">
+                                            ニュースのタイトル
+                                        </h2>
+                                        <div class="news__item__index__date">
+                                            <time>2018.10.11</time>
+                                        </div>
+                                    </header>
+                                    <div class="button"><a href="">お知らせを読む</a></div>
+                                </article>
+                            </li>
+                            <li class="news__item">
+                                <article>
+                                    <header class="news__item__index">
+                                        <h2 class="news__item__index__text">
+                                            ニュースのタイトル
+                                        </h2>
+                                        <div class="news__item__index__date">
+                                            <time>2018.10.11</time>
+                                        </div>
+                                    </header>
+                                    <div class="button"><a href="">お知らせを読む</a></div>
+                                </article>
+                            </li>
+                            <li class="news__item">
+                                <article>
+                                    <header class="news__item__index">
+                                        <h2 class="news__item__index__text">
+                                            ニュースのタイトル
+                                        </h2>
+                                        <div class="news__item__index__date">
+                                            <time>2018.10.11</time>
+                                        </div>
+                                    </header>
+                                    <div class="button"><a href="">お知らせを読む</a></div>
+                                </article>
+                            </li>
+                        </ul>
+                    </section>
+                </aside>
+            </div>
+        </section>
+        <!-- /////  -->       
+	</main>		
+	<%- include( '_include/footer.ejs' ); %>
+</body>
+</html>

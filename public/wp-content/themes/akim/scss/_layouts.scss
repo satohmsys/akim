@@ -1,0 +1,85 @@
+//////////////////////////////////////////
+
+//layout
+
+//include by style.scss
+
+//////////////////////////////////////////
+
+%lastChild{
+	&:last-child{
+		margin-right: 0;
+	}	
+}
+
+
+.horizontalCard{
+	display: flex;
+
+	@include mq( tab ) {
+		flex-wrap: wrap;
+	}
+
+	&__img,
+	&__fill{
+		width: 50%;
+
+        @include mq( tab ) {
+        	width: 100%;
+        }
+	}
+
+	&__img{
+		line-height: 0;
+	}
+
+	&__fill{
+		padding-right: 60px;
+		padding-left: 60px;
+		background-color: #ffffff;
+		display: flex;
+		flex-direction: column;
+		// align-items: ;
+		box-sizing: border-box;
+		justify-content: center;
+
+
+        @include mq( tab ) {
+        	padding: 30px;
+        }
+	}
+
+	.button{
+
+        @include mq(sp) {
+        	width: 100%;
+        }
+
+	}
+}
+
+
+
+////////// 2カラムレイアウト
+
+.column{
+	display: flex;
+
+	@include mq( tab ){
+		flex-direction: column;
+	}
+
+	&__main{
+		@include mq( tab,min ){
+			width: percentage( 710 / 1000 );
+			margin-right: $space_s;                
+		}
+	}
+	&__sub{
+		margin-top: $space_m_sp;
+		@include mq( tab,min ){
+			margin-top: 0;
+			width: percentage( 250 / 1000 );
+		}
+	}	
+}

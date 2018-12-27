@@ -1,8 +1,4 @@
-dev/node_modules
+dev/node_modules/
 dev/.sass-cache/
-akim.com/wp-content/themes/akim/_include/_module-products.html
-akim.com/wp-content/themes/akim/_include/_scripts.html
-akim.com/wp-content/themes/akim/_include/head.html
-akim.com/wp-content/themes/akim/_include/footer.html
-ws.code-workspace
-akim.com/wp-content/themes/akim/_include/header.html
+public/wp-content/themes/akim/_include/
+public/sr

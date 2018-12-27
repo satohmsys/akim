@@ -1,0 +1,225 @@
+@import "colors.scss";
+@import "variables.scss";
+@import "mixins.scss";
+@import "fonts.scss";
+
+@import "modules-childpage.scss";
+////////////////////////////////////////// kaishaannai
+
+
+///////////////////////////////
+
+//module/
+
+///////////////////////////////
+
+.subpageMv{
+    background-image: url(../img/news/mv.jpg);
+
+    @include mq( tab ){
+        background-image: url(../img/news/_sp/mv.jpg);    
+    }
+}
+
+
+
+// .innerContent{
+//     padding: $space_m;
+//     background-color: #ffffff;
+
+//     @include mq( sp ){
+//         padding: $space_s_sp;
+//     }      
+// }
+
+
+
+///////////////////////////////
+
+//our style
+
+///////////////////////////////
+
+
+.wrap{
+    @include mq( sp,min ){
+        max-width: 1000px;
+    }
+}
+
+.section--single,
+.section--archive{
+    background-color: #ffffff;
+}
+
+
+///////// ニュース一覧
+.news{
+    padding-left: 0;
+
+    &__item{
+        list-style: none;
+        padding-bottom: $space_s;
+        border-bottom: 1px solid $color_border;
+
+        @include mq( sp ){
+            padding-bottom: $space_s_sp;
+        }
+
+
+        &:not( :first-child ){
+            padding-top: $space_s;
+        
+            @include mq( sp ){
+                padding-top: $space_s_sp;
+            }            
+        }
+
+        &__index{
+            font-weight: bold;
+
+            &__text{
+                font-size: $fontsize_m;
+                color: $red;
+
+                @include mq( sp ){
+                    font-size: $fontsize_m_sp;
+                }
+
+            }
+        }
+
+        .button{
+            margin-top: $space_s/2;
+
+            @include mq( sp ){
+                width: 100%;
+            }
+        }
+
+    }
+    
+}
+
+
+
+////////// nav
+.pager{
+    margin-top: $space_l;
+    &list{
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+
+        &__item{
+            list-style: none;
+            color: $red;
+            margin-right: 5px;
+            margin-left: 5px;
+        }
+
+        span,
+        a{
+            display: inline-block;
+            padding: 5px;
+            position: relative;
+
+			&:after{
+				content: " ";
+				width: 0;
+				height: 2px;
+				display: block;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				background-color: $red;
+				transition: transition(all,0.38s);
+			}
+        }        
+
+        a{
+			@include mq( tab,min ){
+				@include mouseOver(){
+					&:after{
+						width: 100%;
+						right: 0;
+						left: auto;
+					}
+				}
+			}
+        }
+        span{
+            color: $basefontColor;
+        }
+
+		.current {
+			pointer-events:none;
+			
+			&:after{
+				width: 100%;
+			}
+		}        
+
+        &__item--prev{}
+        &__item--next{}
+
+        .prevIcon,
+        .nextIcon{
+            &:before{
+                content: "\e901";
+                display: inline-block;
+                color: $red;
+                @extend %iconfont;
+            }
+        }
+
+        .prevIcon{
+            &:before{
+
+                transform: rotateY( 180deg ) ;
+            }
+        }
+    }
+}
+
+
+
+/////////ニュース記事
+
+.section--single{
+    
+    .newstopic{
+        &__thumbnail{
+            margin-top: $space_s/-2;
+            margin-bottom: $space_s / 2 ;
+
+            @include mq( sp ){
+                margin-top: 0;
+                margin-bottom: $space_s / 2;
+
+            }
+        }
+    }
+
+
+    .news__item__index__text{
+        font-size: 1em;
+    }
+
+    .news__item:last-child{
+        border-bottom: none;
+    }
+}
+
+
+
+
+
+///////// その他のニュース
+.otherNews{
+    .section{
+        &__index{
+            text-align: left;
+        }
+    }
+}
