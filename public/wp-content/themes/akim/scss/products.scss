@@ -236,11 +236,25 @@
         // position: relative;
         padding: 10px 15px!important;
         background-color: #ffffff!important;
+
+        @include mq(tab) {
+          background-color: transparent!important;
+        }
     }
     .fancybox-image{
         // position: static;
         max-width: 100%;
         height: auto;
+
+        @include mq( tab ){
+          max-width: 80%;
+          display: block;
+          margin: auto;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+        }
     }
 
 }
@@ -891,9 +905,15 @@ html,body{
             display: flex;
             flex-direction: column;
 
+              @include mq(tab){
+                margin-right: 2.5vw;
+                margin-left: 2.5vw;
+              }
+
             img{
                 margin-right: auto;
                 margin-left: auto;
+
 
                 filter: drop-shadow( 5px 5px 5px rgba( #000,0.35));
             }
