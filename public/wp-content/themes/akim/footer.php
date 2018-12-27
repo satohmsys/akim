@@ -18,7 +18,7 @@
 				お気軽にお問い合わせください。
 			</p>
 			<p>
-				<span>〒350-0045 埼玉県東松山市宮鼻860-12</span><span>TEL.<a href="tel:0493-35-1140">0493-35-1140</a></span><span>FAX.0493-35-1141</span>
+				<span>〒355-0045 埼玉県東松山市宮鼻860-12</span><span>TEL.<a href="tel:0493-35-1140">0493-35-1140</a></span><span>FAX.0493-35-1141</span>
 			</p>
 			<div class="button"><a href="<?php echo AKIM_URI; ?>/contact/">お問い合わせ</a></div>
 		</div>
