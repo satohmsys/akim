@@ -37,7 +37,12 @@ get_header(); ?>
       </div>
 		</div>
 		<div class="mv__img">
-			<img src="<?php echo AKIM_IMG_URI; ?>top/mv.jpg" srcset="<?php echo AKIM_IMG_URI; ?>top/_sp/mv.jpg 768w, <?php echo AKIM_IMG_URI; ?>top/mv.jpg" width="1050" alt="">
+    <?php for($i=1;$i<8;$i++ ) { ?>
+      <div class="mv__img__slide">
+			  <img src="<?php echo AKIM_IMG_URI; ?>top/_sp/mv-<?php echo $i ;?>.jpg" alt="">
+      </div>
+    <?php } ?>
+			<!-- <img src="<?php echo AKIM_IMG_URI; ?>top/mv.jpg" srcset="<?php echo AKIM_IMG_URI; ?>top/_sp/mv.jpg 768w, <?php echo AKIM_IMG_URI; ?>top/mv.jpg" width="1050" alt=""> -->
 		</div>
 		<i class="mv__scroll"></i>
 	</section>

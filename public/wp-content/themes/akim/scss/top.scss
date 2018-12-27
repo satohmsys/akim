@@ -1,6 +1,9 @@
 @import "colors.scss";
 @import "variables.scss";
 @import "mixins.scss";
+@import "../js/slick/slick.css";
+@import "../js/slick/slick-theme.css";
+
 ////////////////////////////////////////// top page
 
 
@@ -437,6 +440,15 @@
 
       @include mq( tab ){
         display: block;
+
+
+        .mv__img__slide{
+          opacity: 0;
+          transition: transition();
+        }
+        &.slick-initialized .mv__img__slide{
+          opacity: 1;
+        }
       }
     }
 
