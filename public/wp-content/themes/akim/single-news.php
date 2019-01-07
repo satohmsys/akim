@@ -49,7 +49,7 @@ get_header();
                 <?php } ?>
                 <aside class="column__sub otherNews">
                     <h3 class="subColumnSection__index">
-                        その他のニュース
+                        <?php echo __('その他のニュース', 'akim_tr' ); ?>
                     </h3>
                     <?php
                         $arg = array(
@@ -76,7 +76,7 @@ get_header();
                                         <time><?php the_time( 'Y.m.d' ); ?></time>
                                     </div>
                                 </header>
-                                <div class="button button--secondary"><a href="<?php the_permalink(); ?>">お知らせを読む</a></div>
+                                <div class="button button--secondary"><a href="<?php the_permalink(); ?>"><?php echo __('お知らせを読む', 'akim_tr'); ?></a></div>
                             </article>
                         </li>			
                         <?php

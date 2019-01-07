@@ -23,7 +23,7 @@ get_header(); ?>
 <main class="mainContent">
 	<section class="subpageIntro">
 		<div class="wrap">
-			<strong>カメラモジュール・水晶デバイス・センサデバイスなど電子部品の生産設備を複合的な技術と視点で、<br>計画から開発・運用サポートまでのソリューション型製品として提供しています。</strong>
+			<strong><?php echo __('カメラモジュール・水晶デバイス・センサデバイスなど電子部品の生産設備を複合的な技術と視点で、<br>計画から開発・運用サポートまでのソリューション型製品として提供しています。', 'akim_tr' ); ?></strong>
 		</div>
 	</section>	
 	<section class="section section--products">
@@ -38,10 +38,10 @@ get_header(); ?>
 							<div class="button button-secondary">
 								<span>
 									<header class="productBanner__item__index">
-										高速生産ライン
+										<?php echo __('高速生産ライン', 'akim_tr'); ?>
 									</header>
 									<p class="productBanner__item__description">
-										タクト0.6secを実現
+										<?php echo __('タクト0.6secを実現', 'akim_tr'); ?>
 									</p>
 								</span>
 							</div>
@@ -58,7 +58,7 @@ get_header(); ?>
 										MOVIE
 									</header>
 									<p class="productBanner__item__description">
-										Akimの機械技術を一部紹介
+										<?php echo __('Akimの機械技術を一部紹介', 'akim_tr'); ?>
 									</p>
 								</span>
 							</div>

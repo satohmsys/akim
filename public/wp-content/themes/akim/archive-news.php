@@ -53,7 +53,7 @@ get_header(); ?>
 					<div class="news__item__description">
 						<?php the_excerpt(); ?>
 					</div>
-					<div class="button"><a href="<?php the_permalink(); ?>">お知らせを読む</a></div>
+					<div class="button"><a href="<?php the_permalink(); ?>"><?php echo __('お知らせを読む', 'akim_tr'); ?></a></div>
 				</article>
 			</li>			
 			<?php

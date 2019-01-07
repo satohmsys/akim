@@ -30,15 +30,15 @@
         $link = get_the_permalink( $parent->ID );
     } else if( $isSingle || $isTax ) {
         $postTypeObj = get_post_type_object( get_post_type() );
-        $postTypeName = $postTypeObj ? $postTypeObj -> label : null;
+        $postTypeName = $postTypeObj ? __($postTypeObj -> label, 'akim_tr') : null;
         $postTypeLink = get_post_type_archive_link( get_post_type() );
     }
 
     // アーカイブページかどうか
     if( $isTax ){
-        $archiveTitle = single_term_title( false, false );
+        $archiveTitle = __(single_term_title( false, false ), 'akim_tr');
     } else if( $isArchive ){
-        $archiveTitle = get_the_archive_title(); 
+        $archiveTitle = __(get_the_archive_title(), 'akim_tr'); 
     }
 ?>
 <div class="breadcrumbSection">
@@ -60,7 +60,7 @@
             <?php } else if( $isArchive ){  ?>
 			<li><?php echo $archiveTitle; ?></li>
             <?php } else if( $is404 ){  ?>
-			<li>ページが見つかりません</li>
+			<li><?php echo __('ページが見つかりません', 'akim_tr'); ?></li>
             <?php } ?>
 		</ul>
 	</div>

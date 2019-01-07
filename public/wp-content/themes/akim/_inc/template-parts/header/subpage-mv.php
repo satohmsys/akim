@@ -1,7 +1,7 @@
 <?php
-    $subpagetitle = $subpagetitle ? $subpagetitle :  get_the_title();
+    $subpagetitle = $subpagetitle ? __($subpagetitle, 'akim_tr') :  get_the_title();
     if( is_404() ){
-      $subpagetitle = 'ページが見つかりません';
+      $subpagetitle = __('ページが見つかりません', 'akim_tr');
     }
 ?>
 <!-- ***** mv -->

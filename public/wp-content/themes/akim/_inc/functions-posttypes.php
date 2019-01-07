@@ -26,8 +26,8 @@ function createPT(){
   register_post_type( 'products',
     array(
       'labels' => array(
-        'name' => __( '製品情報','textdomain' ),
-        'singular_name' => __( '製品','textdomain' )
+        'name' => __( '製品情報',null ),
+        'singular_name' => __( '製品',null )
       ),
       'public' => true,
       'publicly_queryable' => true,	  
@@ -42,8 +42,8 @@ function createPT(){
  register_post_type( 'news',
     array(
       'labels' => array(
-        'name' => __( 'お知らせ' ),
-        'singular_name' => __( 'お知らせ事項' )
+        'name' => __( 'お知らせ', null ),
+        'singular_name' => __( 'お知らせ事項', null )
       ),
       'public' => true,
 	  'publicly_queryable' => true,	  
@@ -57,41 +57,9 @@ function createPT(){
   );  
 
 
-
-/**
- * 「投稿」の扱い変更
- */
-  global $wp_post_types;
-  $has = &$wp_post_types['post']->has_archive;
-  $labels = &$wp_post_types['post']->labels;
-  $labels->name = 'ニュース';
-  $labels->singular_name = 'ニュース';
-  $labels->add_new = _x('追加', 'ニュース');
-  $labels->add_new_item = 'ニュースの新規追加';
-  $labels->edit_item = 'ニュースの編集';
-  $labels->new_item = '新規ニュース';
-  $labels->view_item = 'ニュースを表示';
-  $labels->search_items = 'ニュースを検索';
-  $labels->not_found = '記事が見つかりませんでした';
-  $labels->not_found_in_trash = 'ゴミ箱に記事は見つかりませんでした';
-  $has = true;
-
 }
 
 add_action('init', 'createPT');
 
-
-/**
- * 「投稿」の扱い変更
- */
-function change_post_menu_label() {
-global $menu;
-global $submenu;
-$menu[5][0] = 'ニュース';
-$submenu['edit.php'][5][0] = 'ニュース一覧';
-$submenu['edit.php'][10][0] = '新しいニュース';
-$submenu['edit.php'][16][0] = 'タグ';
-//echo ";
-}
 // add_action( 'admin_menu', 'change_post_menu_label' );
 ?>
