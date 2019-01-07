@@ -1,0 +1,63 @@
+# Translation of Themes - Twenty Seventeen in Japanese
+# This file is distributed under the same license as the Themes - Twenty Seventeen package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2019-01-07 18:44+0900\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 2.2\n"
+"Language: en_US\n"
+"Project-Id-Version: Themes - AKIM CORPOLATE\n"
+"POT-Creation-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+#. ----------------- TEMPLATE | footer.php--------------------
+msgid "資料請求・お見積り・製品に関するご質問など<br>お気軽にお問い合わせください。"
+msgstr ""
+
+msgid "〒355-0045 埼玉県東松山市宮鼻860-12"
+msgstr ""
+
+msgid "お問い合わせ"
+msgstr ""
+
+msgid "個人情報保護方針"
+msgstr ""
+
+#. ----------------- custom post type setting--------------------
+msgid "お知らせ"
+msgstr "NEWS"
+
+msgid "製品情報"
+msgstr "PRODUCTS"
+
+msgid "製品カテゴリ"
+msgstr ""
+
+#. ----------------- PAGE | 404--------------------
+msgid "ページが見つかりません"
+msgstr "Page is not found"
+
+#. ----------------- PAGE | news archive--------------------
+msgid "お知らせを読む"
+msgstr "Read more"
+
+#. ----------------- PAGE | news single--------------------
+msgid "その他のニュース"
+msgstr "Other"
+
+#. ----------------- PAGE | products archive--------------------
+msgid "Akimの機械技術を一部紹介"
+msgstr ""
+
+msgid "高速生産ライン"
+msgstr ""
+
+msgid "タクト0.6secを実現"
+msgstr ""
+
+msgid "カメラモジュール・水晶デバイス・センサデバイスなど電子部品の生産設備を複合的な技術と視点で、<br>計画から開発・運用サポートまでのソリューション型製品として提供しています。"
+msgstr "ssss<br>aaaa"
