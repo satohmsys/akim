@@ -21,10 +21,10 @@ get_header(); ?>
   <section class="section">
     <div class="wrap center">
         <p>
-          ページが削除されたか、URLが変更されている可能性があります。
+          <?php echo __('ページが削除されたか、URLが変更されている可能性があります。', 'akim_tr'); ?>
         </p>
-        <p><a href="/">TOPページ</a>へ戻って再度サイトの表示にしたがって再度検索していただくか、<a href="/contact">お問い合わせ</a>ください。</p>
-        <p>3秒後にTOPページに自動転送されます。</p>
+        <p><?php echo __('<a href="/">TOPページ</a>へ戻って再度サイトの表示にしたがって再度検索していただくか、<a href="/contact">お問い合わせ</a>ください。', 'akim_tr'); ?></p>
+        <p><?php echo __('3秒後にTOPページに自動転送されます。', 'akim_tr'); ?></p>
             <script>
                 setTimeout( function(){
                     location.href = '<?php echo AKIM_URI; ?>';

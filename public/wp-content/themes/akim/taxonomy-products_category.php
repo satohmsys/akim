@@ -112,7 +112,7 @@ get_header(); ?>
 							?>
 			
 						</div>
-						<div class="button"><a href="<?php the_permalink(); ?>">詳細</a></div>
+						<div class="button"><a href="<?php the_permalink(); ?>"><?php echo __('詳細', 'akim_tr'); ?></a></div>
 					</div>
 				</li>
 				<?php

@@ -41,6 +41,15 @@ msgstr ""
 msgid "ページが見つかりません"
 msgstr "Page is not found"
 
+msgid "ページが削除されたか、URLが変更されている可能性があります。"
+msgstr ""
+
+msgid "<a href='/'>TOPページ</a>へ戻って再度サイトの表示にしたがって再度検索していただくか、<a href='/contact'>お問い合わせ</a>ください。"
+msgstr ""
+
+msgid "3秒後にTOPページに自動転送されます。"
+msgstr ""
+
 #. ----------------- PAGE | news archive--------------------
 msgid "お知らせを読む"
 msgstr "Read more"
@@ -61,3 +70,37 @@ msgstr ""
 
 msgid "カメラモジュール・水晶デバイス・センサデバイスなど電子部品の生産設備を複合的な技術と視点で、<br>計画から開発・運用サポートまでのソリューション型製品として提供しています。"
 msgstr "ssss<br>aaaa"
+
+msgid "詳細"
+msgstr "Detail"
+
+#. ----------------- PAGE | products single--------------------
+
+msgid "管理番号"
+msgstr ""
+
+msgid "商品型番："
+msgstr ""
+
+msgid "概要"
+msgstr ""
+
+msgid "特徴"
+msgstr ""
+
+msgid "仕様"
+msgstr ""
+
+msgid "お問い合わせフォームへ"
+msgstr ""
+
+msgid "一覧"
+msgstr ""
+
+msgid "特許第"
+msgstr ""
+
+msgid "号"
+msgstr ""
+
+#. ----------------- PAGE | products single 高速ライン--------------------

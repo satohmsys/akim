@@ -110,7 +110,7 @@ get_header(); ?>
                     ?>
                     <dl class="detail__num detail__num--control">
                         <dt class="detail__num__index">
-                            管理番号
+                            <?php echo __('管理番号','akim_tr'); ?>
                         </dt>
                         <dd class="detail__num__content">
                             <ul class="num">
@@ -136,7 +136,7 @@ get_header(); ?>
                                 <?php 
                                     foreach( $productLicenseNum as $num ){
                                 ?>
-                                <li>特許第<?php echo $num; ?>号</li>
+                                <li><?php echo __('特許第', 'akim_tr'); ?><?php echo $num; ?><?php echo __('号', 'akim_tr'); ?></li>
                                 <?php
                                     }
                                 ?>
@@ -153,14 +153,14 @@ get_header(); ?>
                     <!-- ** 商品詳細 -->
                     <section class="detail__content">
                         <header class="detail__index">
-                            <p>商品型番：</p>
+                            <p><?php echo __('商品型番：','akim_tr'); ?></p>
                             <h3 class="detail__index__text">
                                 <?php echo $productNum; ?>
                             </h3>
                         </header>
                         <section class="detail__description mainColumnSection">
                             <h4 class="mainColumnSection__index">
-                                概要 
+                                <?php echo __('概要','akim_tr'); ?> 
                             </h4>
                             <div class="mainColumnSecion">
                                 <?php echo $productDescription; ?>
@@ -171,7 +171,7 @@ get_header(); ?>
                         ?>
                         <section class="detail__benefit mainColumnSection">
                             <h4 class="mainColumnSection__index">
-                                特徴
+                                <?php echo __('特徴','akim_tr'); ?>
                             </h4>
                             <div class="mainColumnSecion mainColumnSection__content">
                                 <ul class="bullet">
@@ -194,7 +194,7 @@ get_header(); ?>
                         ?>
                         <section class="detail__spec mainColumnSection">
                             <h4 class="mainColumnSection__index">
-                                仕様
+                                <?php echo __('仕様','akim_tr'); ?>
                             </h4>
                             <div class="mainColumnSecion">
                                 <table class="detailTable">
@@ -231,13 +231,13 @@ get_header(); ?>
                                 }
                             ?>
                             <li class="textsdownload__item">
-                                <div class="button button--secondary"><a href="/contact/">お問い合わせフォームへ</a></div>
+                                <div class="button button--secondary"><a href="/contact/"><?php echo __('お問い合わせフォームへ','akim_tr'); ?></a></div>
                             </li>
                         </ul>
                     </section>
                     <section class="subColumnSection">
                         <h5 class="subColumnSection__index">
-                            <?php echo $thisPostTermName; ?>一覧
+                            <?php echo $thisPostTermName; ?><?php echo __('一覧','akim_tr'); ?>
                         </h5>
                         <div class="subColumnSection__content">
                             <?php
