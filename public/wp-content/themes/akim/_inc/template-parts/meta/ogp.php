@@ -9,7 +9,7 @@
  */
 
 $siteTitle = AKIM_TEXT_NAME;
-$siteDesc = AKIM_TEXT_DESCRIPTION;
+$siteDescription = AKIM_TEXT_DESCRIPTION;
 $ogImage = AKIM_IMG_URI . 'common/ogp.png';
 $siteUrl = AKIM_URI;
 $favicon = AKIM_IMG_URI . 'common/favicon.png';

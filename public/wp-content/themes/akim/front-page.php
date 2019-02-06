@@ -33,7 +33,7 @@ get_header(); ?>
 					<img src="<?php echo AKIM_IMG_URI; ?>top/mv-copy.svg" srcset="<?php echo AKIM_IMG_URI; ?>top/_sp/mv-copy.svg 480w, <?php echo AKIM_IMG_URI; ?>top/mv-copy.svg" width="838" alt="DEVELOPING TECHNOLOGY INTO THE FUTURE">
 				</p>
 				<h1 class="mv__copy__ja">
-					<span class="-no-tab">わたしたちは、<br></span>
+          わたしたちは、<br>
 					トータルな視野でシステムを捉え、<br>
 					お客様の個別のニーズに対応します。
 				</h1>
@@ -60,7 +60,7 @@ get_header(); ?>
 					</figure>
 					<div class="section__detail">
 						<h2 class="section__detail__index">
-							水晶デバイス生産設備開発で培った高度な技術で、様々な電子デバイスの生産設備を提供します
+							水晶デバイス生産設備開発で培った高度な技術で、様々な電子デバイスの生産設備を提供します。
 						</h2>
 						<div class="section__detail__content">
 							カメラモジュール・水晶デバイス・センサデバイスなど電子部品の生産設備を複合的な技術と視点で、計画から開発・運用サポートまでのソリューション型製品として提供しています。
