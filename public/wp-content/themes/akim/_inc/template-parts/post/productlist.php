@@ -35,3 +35,46 @@
     }
     ?>
 </ul>
+<aside class="otherProducts">
+  <h3 class="otherProducts__index">
+    その他の装置
+  </h3>
+  <ul class="otherProducts__list">
+    <li>
+      ハードディスク関連
+    </li>
+    <li>
+      コイル関連
+    </li>
+    <li>
+      セラミックPKG関連
+    </li>
+    <li>
+      小型ブレーカ関連
+    </li>
+    <li>
+      スイッチ関連
+    </li>
+    <li>
+      EDLC関連
+    </li>
+    <li>
+      プローブ関連
+    </li>
+    <li>
+      コンデンサ関連
+    </li>
+    <li>
+      光学関連
+    </li>
+    <li>
+      コネクタ関連
+    </li>
+    <li>
+      SAWデバイス関連
+    </li>
+    <li>
+      LED関連
+    </li>
+  </ul>
+</aside>

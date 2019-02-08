@@ -138,7 +138,7 @@ get_header(); ?>
 						<div class="section__detail__content">
 							高精度組立技術・高速搬送技術・画像処理技術・真空技術・温度制御技術・計測技術をコア技術として電子部品関連装置を開発しています。
 						</div>
-						<div class="button"><a href="<?php echo AKIM_URI; ?>//technology.html">テクノロジー</a></div>
+						<div class="button"><a href="<?php echo AKIM_URI; ?>/company/technology/">テクノロジー</a></div>
 					</div>
 				</div>
 				<i class="triangle"></i>
@@ -170,49 +170,6 @@ get_header(); ?>
 			<!-- *** products -->
 			<div class="productsSection">				
 				<?php get_template_part( '_inc/template-parts/post/productlist'); ?>
-				<aside class="otherProducts">
-					<h3 class="otherProducts__index">
-						その他の装置
-					</h3>
-					<ul class="otherProducts__list">
-						<li>
-							ハードディスク関連
-						</li>
-						<li>
-							コイル関連
-						</li>
-						<li>
-							セラミックPKG関連
-						</li>
-						<li>
-							小型ブレーカ関連
-						</li>
-						<li>
-							スイッチ関連
-						</li>
-						<li>
-							EDLC関連
-						</li>
-						<li>
-							プローブ関連
-						</li>
-						<li>
-							コンデンサ関連
-						</li>
-						<li>
-							光学関連
-						</li>
-						<li>
-							コネクタ関連
-						</li>
-						<li>
-							SAWデバイス関連
-						</li>
-						<li>
-							LED関連
-						</li>
-					</ul>
-				</aside>
 			</div>
 			<!-- /// -->
 		</div>
