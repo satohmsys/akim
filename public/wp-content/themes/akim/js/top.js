@@ -3,7 +3,7 @@ $( function(){
 
     if( $detailImgs.is(':visible') ){
       $detailImgs.slick({
-          speed: 3000,
+          speed: 2000,
           autoplay: true,
           autoplayspeed: 1500,
           fade: true,
