@@ -7,6 +7,11 @@ function imageUri() {
 }
 add_shortcode('akim_img_uri', 'imageUri');
 
+function localImageUri() {
+    return AKIM_LOCALIMG_URI;
+}
+add_shortcode('akim_localimg_uri', 'localImageUri');
+
 function cssUri() {
     return AKIM_CSS_URI;
 }
