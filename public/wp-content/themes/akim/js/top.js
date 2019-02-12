@@ -3,9 +3,9 @@ $( function(){
 
     if( $detailImgs.is(':visible') ){
       $detailImgs.slick({
-          speed: 2000,
-          autoplay: true,
-          autoplayspeed: 1500,
+          speed: 1000,
+            autoplay: true,
+            autoplaySpeed: 1000,
           fade: true,
           infinite: true,
           arrows: false,
