@@ -40,17 +40,6 @@
 						<div class="language"><a href=""><span class="language__label">Global</span><span>EN</span></a></div>
 					</nav>
 				<?php } ?>
-				<!-- <nav>
-					<ul>
-						<li ><a href="/page-archive-company.html">会社案内</a></li>
-						<li >
-								<a href="/products.html">製品情報</a>
-						</li>
-						<li ><a href="/page-recruit.html">採用情報</a></li>
-						<li ><a href="/news.html">お知らせ</a></li>
-						<li ><a href="/page-contact.html">お問い合わせ</a></li>
-					</ul>
-				</nav> -->
 			</div>
 			<div class="navtoggle navtoggle--open">
 				<span class="navtoggle__label">MENU</span>

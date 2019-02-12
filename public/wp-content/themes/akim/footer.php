@@ -14,8 +14,7 @@
 	<section class="siteFooter__top">
 		<div class="wrap">
 			<p>
-				<?php echo __('資料請求・お見積り・製品に関するご質問など', 'akim_tr'); ?><br>
-				お気軽にお問い合わせください。
+				<?php echo __('資料請求・お見積り・製品に関するご質問など<br>お気軽にお問い合わせください。', 'akim_tr'); ?>
 			</p>
 			<p>
 				<span><?php echo __('〒355-0045 埼玉県東松山市宮鼻860-12', 'akim_tr'); ?></span><span>TEL.<a href="tel:0493-35-1140">0493-35-1140</a></span><span>FAX.0493-35-1141</span>

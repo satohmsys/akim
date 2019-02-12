@@ -1,5 +1,5 @@
 <ul class="productList">
-<?php
+  <?php
     /**
      * 高速生産ライン( 'highspeedline' )はページ出力のためのカテゴリのため除外。
      */
@@ -20,61 +20,61 @@
         $cssClass = $count ? 'button' : 'button button--disabled';
         if( $slug !== 'highspeedline' ){
 ?>
-    <li class="productList__item">
-        <figure><img src="<?php echo AKIM_IMG_URI; ?>products/productimg-<?php echo $slug ?>.png" alt=""></figure>
-        <header class="productList__item__index">
-            <p class="productList__item__name">
-                <?php echo $name ?>
-            </p>
-            <?php /*<p class="productList__item__lot"><span><?php echo $count; ?></span>商品</p>*/ ?>
-        </header>
-        <div class="<?php echo $cssClass; ?>"><a href="<?php echo $link; ?>">詳細</a></div>
-    </li>
-    <?php
+  <li class="productList__item">
+    <figure><img src="<?php echo AKIM_IMG_URI; ?>products/productimg-<?php echo $slug ?>.png" alt=""></figure>
+    <header class="productList__item__index">
+      <p class="productList__item__name">
+        <?php echo $name ?>
+      </p>
+      <?php /*<p class="productList__item__lot"><span><?php echo $count; ?></span>商品</p>*/ ?>
+    </header>
+    <div class="<?php echo $cssClass; ?>"><a href="<?php echo $link; ?>"><?php echo __('詳細', 'akim_tr'); ?></a></div>
+  </li>
+  <?php
         }
     }
     ?>
 </ul>
 <aside class="otherProducts">
   <h3 class="otherProducts__index">
-    その他の装置
+    <?php echo __('その他の装置', 'akim_tr'); ?>
   </h3>
   <ul class="otherProducts__list">
     <li>
-      ハードディスク関連
+      <?php echo __('ハードディスク関連', 'akim_tr'); ?><br>
     </li>
     <li>
-      コイル関連
+      <?php echo __('コイル関連', 'akim_tr'); ?><br>
     </li>
     <li>
-      セラミックPKG関連
+      <?php echo __('セラミックPKG関連', 'akim_tr'); ?><br>
     </li>
     <li>
-      小型ブレーカ関連
+      <?php echo __('小型ブレーカ関連', 'akim_tr'); ?><br>
     </li>
     <li>
-      スイッチ関連
+      <?php echo __('スイッチ関連', 'akim_tr'); ?><br>
     </li>
     <li>
-      EDLC関連
+      <?php echo __('EDLC関連', 'akim_tr'); ?><br>
     </li>
     <li>
-      プローブ関連
+      <?php echo __('プローブ関連', 'akim_tr'); ?><br>
     </li>
     <li>
-      コンデンサ関連
+      <?php echo __('コンデンサ関連', 'akim_tr'); ?><br>
     </li>
     <li>
-      光学関連
+      <?php echo __('光学関連', 'akim_tr'); ?><br>
     </li>
     <li>
-      コネクタ関連
+      <?php echo __('コネクタ関連', 'akim_tr'); ?><br>
     </li>
     <li>
-      SAWデバイス関連
+      <?php echo __('SAWデバイス関連', 'akim_tr'); ?><br>
     </li>
     <li>
-      LED関連
+      <?php echo __('LED関連', 'akim_tr'); ?><br>
     </li>
   </ul>
 </aside>
