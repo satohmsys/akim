@@ -48,7 +48,7 @@ get_header(); ?>
 						$wpq -> the_post();			
 
 						$allCustomFields = get_post_custom( $post -> ID);		
-						$productBenefit = explode( ',', $allCustomFields['Benefit'][0]);
+						$productBenefit = explode( "\n", $allCustomFields['Benefit'][0]);
 						$productBenefit = array_filter( $productBenefit, 'strlen');
 						$productImgs = array();
             if( count($allCustomFields['Figure']) ){

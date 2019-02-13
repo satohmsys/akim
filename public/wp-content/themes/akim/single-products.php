@@ -37,11 +37,12 @@ get_header(); ?>
     $productControlNum = array_filter( explode( ',', $allCustomFields['Control'][0]) );
     $productNum = $allCustomFields['ProductNum'][0] ? $allCustomFields['ProductNum'][0] : '---' ;
     $productDescription = $allCustomFields['Description'][0];
-    $productBenefit = array_filter( explode( ',', $allCustomFields['Benefit'][0]) );
+    $productBenefit = array_filter( explode( "\n", $allCustomFields['Benefit'][0]) );
+    // $productBenefit = array_filter( explode( ',', $allCustomFields['Benefit'][0]) );
     if( !empty($allCustomFields['Spec']) ){
         $productSpecs = array();
         foreach( $allCustomFields['Spec'] as $spec ){
-                array_push( $productSpecs, explode( ',', $spec ));
+                array_push( $productSpecs, explode( ',', $spec, 2 ));
         }    
         $productSpecs =  array_filter( $productSpecs );
     }
@@ -200,12 +201,14 @@ get_header(); ?>
                                 <table class="detailTable">
                                     <?php
                                         foreach ($productSpecs as $spec ) {
+                                          if( ! empty($spec[0]) || ! empty($spec[1]) ){
                                     ?>
                                     <tr class="detailTable__tr">
                                         <th class="detailTable__th"><?php echo $spec[0]; ?></th>
                                         <td class="detailTable__td"><?php echo $spec[1]; ?></td>
                                     </tr>
                                     <?php
+                                          }
                                         }
                                     ?>
                                 </table>
