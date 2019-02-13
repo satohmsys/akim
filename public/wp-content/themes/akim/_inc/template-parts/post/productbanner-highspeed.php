@@ -4,10 +4,10 @@
             <div class="button button-secondary">
                 <span>
                     <header class="productBanner__item__index">
-                        高速生産ライン
+                        <?php echo __('高速生産ライン', 'akim_tr'); ?>
                     </header>
                     <p class="productBanner__item__description">
-                        タクト0.6secを実現
+                        <?php echo __('タクト0.6secを実現', 'akim_tr'); ?>
                     </p>
                 </span>
             </div>

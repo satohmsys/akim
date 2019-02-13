@@ -125,12 +125,6 @@ msgstr ""
 msgid "水晶振動子外観・構造"
 msgstr ""
 
-msgid "水晶振動子外観・構造"
-msgstr ""
-
-
-
-
 #. ----------------- PAGE | products single--------------------
 
 msgid "管理番号"
