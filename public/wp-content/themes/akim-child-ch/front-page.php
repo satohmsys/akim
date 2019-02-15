@@ -33,9 +33,8 @@ get_header(); ?>
 					<img src="<?php echo AKIM_IMG_URI; ?>top/mv-copy.svg" srcset="<?php echo AKIM_IMG_URI; ?>top/_sp/mv-copy.svg 480w, <?php echo AKIM_IMG_URI; ?>top/mv-copy.svg" width="838" alt="DEVELOPING TECHNOLOGY INTO THE FUTURE">
 				</p>
 				<h1 class="mv__copy__ja">
-          저희는, <br>
-          넓은 시야로 시스템을 구축하여,<br>
-          고객의 각각의 니즈에 대응합니다. <br>
+          我們以全面的視角通過完善系統<br>
+          來回應客護的個別所有定制需求。
 				</h1>
 			</section>
 		</div>
@@ -60,12 +59,12 @@ get_header(); ?>
 					</figure>
 					<div class="section__detail">
 						<h2 class="section__detail__index">
-							수정 디바이스 생산 설비 개발로 키운 고도의 기술로, 다양한 전자 디바이스의 생산 설비를 제공합니다.
+							我們通過石英晶體器件生產設備所開發培養的先進技術、提供各種電子器件的生產設備。
 						</h2>
 						<div class="section__detail__content">
-							카메라 모듈・수정 디바이스・센서 디바이스 등 전자 부품의 생산 설비를 복합 기술과 시야로, 설계부터 개발・운용 서포트까지 솔루션형 제품을 제공하고 있습니다.
+							我們從提供微型相機模組，石英晶體器件，傳感器器件等電子零件的生產設備所擁有多種技術和觀點，來提供規劃到開發・運營支持的解抉方案類型的產品。
 						</div>
-						<div class="button"><a href="<?php echo AKIM_URI; ?>/company/profile/">회사 개요</a></div>
+						<div class="button"><a href="<?php echo AKIM_URI; ?>/company/profile/">公司簡介</a></div>
 					</div>
 				</div>
 				<i class="triangle"></i>
@@ -96,12 +95,12 @@ get_header(); ?>
 					</figure>
 					<div class="section__detail">
 						<h2 class="section__detail__index">
-							확실한 기술,<br>확실한 설비로 신제품을 개발
+							用可靠先進的技術，<br>可靠先進的設備進行新產品的開發
 						</h2>
 						<div class="section__detail__content">
-							2018년 8월에 준공한 신공장은 앞으로의 시대를 대비한 최신 설비를 완비함으로서 글로벌한 안건에 대응합니다.
+							2018年8月新工廠竣工建成了響應未來時代的最新裝備可對應全球的各種案例。
 						</div>
-						<div class="button"><a href="<?php echo AKIM_URI; ?>/company/facility/">회사 시설</a></div>
+						<div class="button"><a href="<?php echo AKIM_URI; ?>/company/facility/">公司設施</a></div>
 					</div>
 				</div>
 				<i class="triangle"></i>
@@ -132,12 +131,12 @@ get_header(); ?>
 					</figure>
 					<div class="section__detail">
 						<h2 class="section__detail__index">
-							차세대를 담당할<br>명확한 비전과 테크놀러지
+							為下一時代提供明確的願景和技術
 						</h2>
 						<div class="section__detail__content">
-							고정도조립기술・고속반송기술・화상처리기술・진공기술・온도제어기술・계측기술을 핵심기술로서 전자부품관련 장비를 개발하고 있습니다.
+							我們擁有高精度裝配技術，高速搬送技術，圖像處理技術，真空技術，溫控技術，測量技術為核心技術開發，發展電子零件相關產品業務·石英晶體器件相關業務·傳感器相關業務 。
 						</div>
-						<div class="button"><a href="<?php echo AKIM_URI; ?>/company/technology/">테크놀러지</a></div>
+						<div class="button"><a href="<?php echo AKIM_URI; ?>/company/technology/">技術</a></div>
 					</div>
 				</div>
 				<i class="triangle"></i>
@@ -160,10 +159,10 @@ get_header(); ?>
 		<div class="wrap">
 			<header class="section--sub__heading productsBlock__heading">
 				<h2 class="section--sub__index productsBlock__index">
-					제품정보
+					產品信息
 				</h2>
 				<p class="productsBlock__description">
-					사회의 니즈와 고객의 요구를 정확하게 구현화한, 수정관련장비・센서관련장비・카메라모듈관련장비・그외 장비를 소개합니다.
+					介紹我們根據社會需求和客護要求準確可靠地體現所實現的石英晶體器件設備，傳感器相關設備以及其他相關設備。
 				</p>
 			</header>
 			<!-- *** products -->
@@ -179,7 +178,7 @@ get_header(); ?>
 		<div class="wrap">
 			<header class="section--sub__heading recruitBlock__heading">
 				<h2 class="section--sub__index recruitBlock__index">
-					채용정보
+					招聘信息
 				</h2>
 			</header>
 			<section class="horizontalCard">
@@ -188,12 +187,12 @@ get_header(); ?>
 				</figure>
 				<div class="horizontalCard__fill">
 					<h3 class="recruitBlock__copy horizontalCard__index">
-						AKIM의 미래를 담당할 인재를 <br>폭넓게 모집하고 있습니다.
+						我們正在廣泛招募擔起AKIM未來的人才。
 					</h3>
 					<div class="recruitBlock__description">
-						저희와 함께 고도의 기술과 커리어를 축적해가지 않으시겠습니까. 사원은 중식이 무료, 헬스장과 테니스코드를 완비하였습니다.
+						讓我們一起來積累先進的技術和經驗。 員工可免費享用午餐，並配有健身房和網球場。
 					</div>
-					<div class="button"><a href="<?php echo AKIM_URI; ?>/recruit">채용정보</a></div>
+					<div class="button"><a href="<?php echo AKIM_URI; ?>/recruit">招聘</a></div>
 				</div>
 			</section>
 		</div>
@@ -205,7 +204,7 @@ get_header(); ?>
 		<div class="wrap">
 			<header class="section--sub__heading newsBlock__heading">
 				<h2 class="section--sub__index newsBlock__index">
-        공지사항
+        通知
 				</h2>
 			</header>
 			<!-- *** products -->
