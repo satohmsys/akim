@@ -3,7 +3,7 @@
  * Displays header media
  *
  * @package WordPress
- * @subpackage Twenty_Seventeen
+ * @subpackage Akim corp
  * @since 1.0
  * @version 1.0
  */
@@ -38,8 +38,8 @@
 							) );
 						?>
             <?php
-            $protocol =  empty($_SERVER["HTTPS"]) ? "http://" : "https://";
-            $host =  $_SERVER["HTTP_HOST"];
+            // $protocol =  empty($_SERVER["HTTPS"]) ? "http://" : "https://";
+            // $host =  $_SERVER["HTTP_HOST"];
             $url = (empty($_SERVER["HTTPS"]) ? "http://" : "https://" ) . $_SERVER["HTTP_HOST"];
             $currentPage = $_SERVER["REQUEST_URI"];
             $langlist =  array(
