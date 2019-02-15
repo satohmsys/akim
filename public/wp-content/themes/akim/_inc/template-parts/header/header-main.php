@@ -37,7 +37,59 @@
 								'link_after'     => '',
 							) );
 						?>
-						<div class="language"><a href=""><span class="language__label">Global</span><span>EN</span></a></div>
+            <?php
+            $protocol =  empty($_SERVER["HTTPS"]) ? "http://" : "https://";
+            $host =  $_SERVER["HTTP_HOST"];
+            $url = (empty($_SERVER["HTTPS"]) ? "http://" : "https://" ) . $_SERVER["HTTP_HOST"];
+            $currentPage = $_SERVER["REQUEST_URI"];
+            $langlist =  array(
+              'ja' => '日本語',
+              'en' => 'ENGLISH',
+              'ch' => '中文',
+              'kr' => '한국어'
+              );
+
+            preg_match("/ko|kr|en|ch/",$currentPage, $result);
+            $selectedLang = $result ? $result[0] : 'ja';
+            $selectedLang_display = 'JPN';
+
+            
+            if($selectedLang == 'ko'||$selectedLang == 'kr'){
+              $selectedLang_display = 'KOREAN';
+            } elseif ($selectedLang == 'ch') {
+              $selectedLang_display = 'CHINESE';
+            } elseif ($selectedLang == 'en') {
+              $selectedLang_display = 'ENGLISH';
+            }
+            ?>
+						<div class="language">
+              <div class="language__area">
+                <div class="language__index">Global</div>
+                <div class="language__selected">
+                  <?php echo $selectedLang_display; ?>
+                </div>
+              </div>
+              <div class="language__select">
+                <ul id="lang">
+                <?php
+                  foreach ($langlist as $key => $value) {
+                    $prefix = $key == 'ja' ? "" : '/' . $key;
+                    $isCurrentLang = $selectedLang == $key ? true : false;
+                    $currentPagePath = preg_replace("/\/(ko|kr|en|ch)/", "", $currentPage );
+                ?>                  
+                <li <?php if( $isCurrentLang ){ echo 'class="selected"'; }?>>
+                  <?php 
+                    if(! $isCurrentLang ) echo '<a href="' . $url . $prefix . $currentPagePath . '">';
+                    echo $value;
+                    if(! $isCurrentLang ) echo '</a>';
+                  ?>
+                </li>
+                <?php
+                  }
+                ?>
+                </ul>
+              </div>
+            </div>
 					</nav>
 				<?php } ?>
 			</div>
