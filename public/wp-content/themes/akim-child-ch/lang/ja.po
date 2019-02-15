@@ -2,13 +2,13 @@
 # This file is distributed under the same license as the Themes - Twenty Seventeen package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-01-07 18:44+0900\n"
+"PO-Revision-Date: 2019-02-15 12:31+0900\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.2\n"
-"Language: ko_KR\n"
+"X-Generator: Poedit 2.2.1\n"
+"Language: zh_CN\n"
 "Project-Id-Version: Themes - AKIM CORPOLATE\n"
 "POT-Creation-Date: \n"
 "Last-Translator: \n"
@@ -16,26 +16,26 @@ msgstr ""
 
 #. ----------------- TEMPLATE | footer.php--------------------
 msgid "資料請求・お見積り・製品に関するご質問など<br>お気軽にお問い合わせください。"
-msgstr "자료청구・견적・제품에 관해서<br>문의 바랍니다."
+msgstr "索取產品信息，報價，產品問題等<br>請隨時與我們聯系。"
 
 msgid "〒355-0045 埼玉県東松山市宮鼻860-12"
-msgstr "〒355-0045 사이타마현 히가시마츠야마시 미야하나 860-12"
+msgstr "〒355-0045 埼玉県東松山市宮鼻860-12"
 
 msgid "お問い合わせ"
-msgstr "온라인 문의"
+msgstr "聯系我們"
 
 msgid "個人情報保護方針"
-msgstr "개인정보보호방침"
+msgstr "個人信息保護"
 
 #. ----------------- custom post type setting--------------------
 msgid "お知らせ"
-msgstr "공지사항"
+msgstr "通知"
 
 msgid "製品情報"
-msgstr "제품정보"
+msgstr "產品信息"
 
 msgid "製品カテゴリ"
-msgstr "카테고리"
+msgstr "产品类别"
 
 #. ----------------- PAGE | 404--------------------
 msgid "ページが見つかりません"
@@ -52,70 +52,68 @@ msgstr ""
 
 #. ----------------- PAGE | news archive--------------------
 msgid "お知らせを読む"
-msgstr "공지사항 내용
+msgstr "閱讀通知"
 
 #. ----------------- PAGE | news single--------------------
 msgid "その他のニュース"
-msgstr "Other"
+msgstr "其他通知"
 
 #. ----------------- PAGE | products archive--------------------
 msgid "Akimの機械技術を一部紹介"
 msgstr ""
 
 msgid "高速生産ライン"
-msgstr "소형수정진동작고속생산라인"
+msgstr "高速自動生產線"
 
 msgid "タクト0.6secを実現"
-msgstr "택트 타임0.6sec을 달성"
+msgstr "其生產節拍時間為0.6秒"
 
 msgid "カメラモジュール・水晶デバイス・センサデバイスなど電子部品の生産設備を複合的な技術と視点で、<br>計画から開発・運用サポートまでのソリューション型製品として提供しています。"
-msgstr "카메라모듈・수정디바이스・센서디바이스등 전자부품의 생산설비를 복합적인 기술과 시야로,<br>설계에서개발・운용서포트까지 솔루션형 제품으로서 제공합니다."
+msgstr "我們從提供微型相機模組，石英晶體器件，傳感器器件等電子零件的生產設備所擁有多種技術和觀點<br>來提供規劃到開發・運營支持的解抉方案類型的產品。"
 
 msgid "詳細"
-msgstr "상세"
+msgstr "詳細信息"
 
 msgid "その他の装置"
-msgstr "그외 장비"
+msgstr "其他設備"
 
 msgid "ハードディスク関連"
-msgstr "하드디스크관련"
+msgstr "硬盤相關"
 
 msgid "コイル関連"
-msgstr "코일관련"
+msgstr "線圈相關"
 
 msgid "セラミックPKG関連"
-msgstr "세라믹PKG관련"
+msgstr "陶瓷基座相關"
 
 msgid "小型ブレーカ関連"
-msgstr "소형브레이커관련"
+msgstr "小型斷路器相關"
 
 msgid "スイッチ関連"
-msgstr "스위치관련"
+msgstr "開關相關"
 
 msgid "EDLC関連"
-msgstr "EDLC관련"
+msgstr "EDLC相關"
 
 msgid "プローブ関連"
-msgstr "프로브관련"
+msgstr "探針相關"
 
 msgid "コンデンサ関連"
-msgstr "콘덴서관련"
+msgstr "電容器相關"
 
 msgid "光学関連"
-msgstr "광학관련"
+msgstr "光學關連"
 
 msgid "コネクタ関連"
-msgstr "커넥터관련"
+msgstr "連接器相關"
 
 msgid "SAWデバイス関連"
-msgstr "SAW디바이스관련"
+msgstr "SAW器件相關"
 
 msgid "LED関連"
-msgstr "LED관련"
-
+msgstr "LED相關"
 
 #. ----------------- PAGE | products footer component --------------------
-
 msgid "<p>トレイ</p><p>クランプキャリア<br><strong>特許番号</strong>"
 msgstr ""
 
@@ -126,32 +124,29 @@ msgid "水晶振動子外観・構造"
 msgstr ""
 
 #. ----------------- PAGE | products single--------------------
-
 msgid "管理番号"
-msgstr "관리번호"
+msgstr "管理號"
 
 msgid "商品型番："
-msgstr "장비형번"
+msgstr "商品型號："
 
 msgid "概要"
-msgstr "개요"
+msgstr "概要"
 
 msgid "特徴"
-msgstr "특징"
+msgstr "特征"
 
 msgid "仕様"
-msgstr "사양"
+msgstr "規格"
 
 msgid "お問い合わせフォームへ"
-msgstr "온라인 문의"
+msgstr "聯系我們"
 
 msgid "一覧"
-msgstr "목록"
+msgstr "名单"
 
 msgid "特許第"
-msgstr "특허제"
+msgstr "專利第"
 
 msgid "号"
-msgstr "호"
-
-#. ----------------- PAGE | products single 高速ライン--------------------
+msgstr "號"
