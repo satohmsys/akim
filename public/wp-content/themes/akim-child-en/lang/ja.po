@@ -2,12 +2,12 @@
 # This file is distributed under the same license as the Themes - Twenty Seventeen package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-01-07 18:44+0900\n"
+"PO-Revision-Date: 2019-02-27 00:54+0900\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.2\n"
+"X-Generator: Poedit 2.2.1\n"
 "Language: en_US\n"
 "Project-Id-Version: Themes - AKIM CORPOLATE\n"
 "POT-Creation-Date: \n"
@@ -16,26 +16,26 @@ msgstr ""
 
 #. ----------------- TEMPLATE | footer.php--------------------
 msgid "資料請求・お見積り・製品に関するご質問など<br>お気軽にお問い合わせください。"
-msgstr ""
+msgstr "Feel free to contact with us for document requests, <br>quotations about products."
 
 msgid "〒355-0045 埼玉県東松山市宮鼻860-12"
-msgstr ""
+msgstr "〒355-0045 860-12 Miyahana, Higashimatsuyama-shi, Saitama, Japan"
 
 msgid "お問い合わせ"
-msgstr ""
+msgstr "Contact"
 
 msgid "個人情報保護方針"
-msgstr ""
+msgstr "Policy on the protection of personal information"
 
 #. ----------------- custom post type setting--------------------
 msgid "お知らせ"
-msgstr "NEWS"
+msgstr "AKIM’s news"
 
 msgid "製品情報"
-msgstr "PRODUCTS"
+msgstr "Products information"
 
 msgid "製品カテゴリ"
-msgstr ""
+msgstr "Products categories"
 
 #. ----------------- PAGE | 404--------------------
 msgid "ページが見つかりません"
@@ -52,7 +52,7 @@ msgstr ""
 
 #. ----------------- PAGE | news archive--------------------
 msgid "お知らせを読む"
-msgstr "Read more"
+msgstr "Reads AKIM’ news"
 
 #. ----------------- PAGE | news single--------------------
 msgid "その他のニュース"
@@ -63,44 +63,90 @@ msgid "Akimの機械技術を一部紹介"
 msgstr ""
 
 msgid "高速生産ライン"
-msgstr ""
+msgstr "High speed crystal production line"
 
 msgid "タクト0.6secを実現"
-msgstr ""
+msgstr "achieved cycle time of 0.6sec."
 
 msgid "カメラモジュール・水晶デバイス・センサデバイスなど電子部品の生産設備を複合的な技術と視点で、<br>計画から開発・運用サポートまでのソリューション型製品として提供しています。"
-msgstr "ssss<br>aaaa"
+msgstr "We provide customers with production equipment for producing electronics components such as camera module, <br>crystal, and sensor devices. Our total solution systems cover inception to completion, including support from planning and development through management, leveraging our engineering capability and expert oversight."
 
 msgid "詳細"
-msgstr "Detail"
+msgstr "Details"
+
+msgid "その他の装置"
+msgstr "Other production machines"
+
+msgid "ハードディスク関連"
+msgstr "Hard Disc-related machines"
+
+msgid "コイル関連"
+msgstr "Coil-related machines"
+
+msgid "セラミックPKG関連"
+msgstr "Ceramic-related machines"
+
+msgid "小型ブレーカ関連"
+msgstr "Compact sized breaker machines"
+
+msgid "スイッチ関連"
+msgstr "Switch-related machines"
+
+msgid "EDLC関連"
+msgstr "EDLC-related machines"
+
+msgid "プローブ関連"
+msgstr "Probe-related machines"
+
+msgid "コンデンサ関連"
+msgstr "Condenser-related machines"
+
+msgid "光学関連"
+msgstr "Optical-related machines"
+
+msgid "コネクタ関連"
+msgstr "Connector-related machines"
+
+msgid "SAWデバイス関連"
+msgstr "SAW Device-related machines"
+
+msgid "LED関連"
+msgstr "LED-related machines"
+
+#. ----------------- PAGE | products footer component --------------------
+msgid "<p>トレイ</p><p>クランプキャリア<br><strong>特許番号</strong>"
+msgstr ""
+
+msgid "トレイ・クランプキャリア"
+msgstr ""
+
+msgid "水晶振動子外観・構造"
+msgstr ""
 
 #. ----------------- PAGE | products single--------------------
-
 msgid "管理番号"
-msgstr ""
+msgstr "Control No"
 
 msgid "商品型番："
-msgstr ""
+msgstr "Model No."
 
 msgid "概要"
-msgstr ""
+msgstr "Descriptions"
 
 msgid "特徴"
-msgstr ""
+msgstr "Features"
 
 msgid "仕様"
-msgstr ""
+msgstr "Specification"
 
 msgid "お問い合わせフォームへ"
-msgstr ""
+msgstr "Contact"
 
 msgid "一覧"
-msgstr ""
+msgstr "List"
 
 msgid "特許第"
-msgstr ""
+msgstr "Patent No"
 
 msgid "号"
-msgstr ""
-
-#. ----------------- PAGE | products single 高速ライン--------------------
+msgstr " "

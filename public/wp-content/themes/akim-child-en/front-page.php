@@ -33,9 +33,7 @@ get_header(); ?>
 					<img src="<?php echo AKIM_IMG_URI; ?>top/mv-copy.svg" srcset="<?php echo AKIM_IMG_URI; ?>top/_sp/mv-copy.svg 480w, <?php echo AKIM_IMG_URI; ?>top/mv-copy.svg" width="838" alt="DEVELOPING TECHNOLOGY INTO THE FUTURE">
 				</p>
 				<h1 class="mv__copy__ja">
-          저희는, <br>
-          넓은 시야로 시스템을 구축하여,<br>
-          고객의 각각의 니즈에 대응합니다. <br>
+            We take a holistic view<br>in embracing the systems carefullyand tailor<br>our solutions to the individual needs of each customer.          
 				</h1>
 			</section>
 		</div>
@@ -60,10 +58,10 @@ get_header(); ?>
 					</figure>
 					<div class="section__detail">
 						<h2 class="section__detail__index">
-							수정 디바이스 생산 설비 개발로 키운 고도의 기술로, 다양한 전자 디바이스의 생산 설비를 제공합니다.
+							For many years, AKIM Corp. has been providing customers with production equipment developed by crystal devices that enable the manufacturing of a variety of electronics devices.
 						</h2>
 						<div class="section__detail__content">
-							카메라 모듈・수정 디바이스・센서 디바이스 등 전자 부품의 생산 설비를 복합 기술과 시야로, 설계부터 개발・운용 서포트까지 솔루션형 제품을 제공하고 있습니다.
+							We provide customers with production equipment for producing electronics components such as camera module, crystal, and sensor devices.  Our total solution systems cover inception to completion, including support from planning and development through management, leveraging our engineering capability and expert oversight.
 						</div>
 						<div class="button"><a href="<?php echo AKIM_URI; ?>/company/profile/">회사 개요</a></div>
 					</div>
@@ -96,12 +94,12 @@ get_header(); ?>
 					</figure>
 					<div class="section__detail">
 						<h2 class="section__detail__index">
-							확실한 기술,<br>확실한 설비로 신제품을 개발
+							Developing new products with<br>solid technology and equipment
 						</h2>
 						<div class="section__detail__content">
-							2018년 8월에 준공한 신공장은 앞으로의 시대를 대비한 최신 설비를 완비함으로서 글로벌한 안건에 대응합니다.
+							By consummating cutting-edge equipment which will correspond to the next generation in the new factory completed on August of 2018, we deal with any global trend.
 						</div>
-						<div class="button"><a href="<?php echo AKIM_URI; ?>/company/facility/">회사 시설</a></div>
+						<div class="button"><a href="<?php echo AKIM_URI; ?>/company/facility/">Company facilities</a></div>
 					</div>
 				</div>
 				<i class="triangle"></i>
@@ -132,12 +130,12 @@ get_header(); ?>
 					</figure>
 					<div class="section__detail">
 						<h2 class="section__detail__index">
-							차세대를 담당할<br>명확한 비전과 테크놀러지
+							Clear Vision and Technology<br>which will bear the next generation
 						</h2>
 						<div class="section__detail__content">
-							고정도조립기술・고속반송기술・화상처리기술・진공기술・온도제어기술・계측기술을 핵심기술로서 전자부품관련 장비를 개발하고 있습니다.
+							Introducing electronic components, crystal, and sensor-related product lines by utilizing core technologies such as high accuracy assembly, high speed transfer, image processing, vacuum, temperature control and measurement.
 						</div>
-						<div class="button"><a href="<?php echo AKIM_URI; ?>/company/technology/">테크놀러지</a></div>
+						<div class="button"><a href="<?php echo AKIM_URI; ?>/company/technology/">Technology</a></div>
 					</div>
 				</div>
 				<i class="triangle"></i>
@@ -160,10 +158,10 @@ get_header(); ?>
 		<div class="wrap">
 			<header class="section--sub__heading productsBlock__heading">
 				<h2 class="section--sub__index productsBlock__index">
-					제품정보
+					Products information
 				</h2>
 				<p class="productsBlock__description">
-					사회의 니즈와 고객의 요구를 정확하게 구현화한, 수정관련장비・센서관련장비・카메라모듈관련장비・그외 장비를 소개합니다.
+					Introducing equipment related to crystals, sensors, camera modules and others, that have been meeting the needs of industries and demands from customers accurately and reliably in the past.
 				</p>
 			</header>
 			<!-- *** products -->
@@ -179,7 +177,7 @@ get_header(); ?>
 		<div class="wrap">
 			<header class="section--sub__heading recruitBlock__heading">
 				<h2 class="section--sub__index recruitBlock__index">
-					채용정보
+					Careers Information
 				</h2>
 			</header>
 			<section class="horizontalCard">
@@ -188,12 +186,13 @@ get_header(); ?>
 				</figure>
 				<div class="horizontalCard__fill">
 					<h3 class="recruitBlock__copy horizontalCard__index">
-						AKIM의 미래를 담당할 인재를 <br>폭넓게 모집하고 있습니다.
+						We seek diversity on our teams, dedicated to the next generation of AKIM.
 					</h3>
 					<div class="recruitBlock__description">
-						저희와 함께 고도의 기술과 커리어를 축적해가지 않으시겠습니까. 사원은 중식이 무료, 헬스장과 테니스코드를 완비하였습니다.
+						Let's keep advancing technologies and fulfilling career achievements together. Free lunch for employees.  Fully equipped with the gym and tennis court.
+
 					</div>
-					<div class="button"><a href="<?php echo AKIM_URI; ?>/recruit">채용정보</a></div>
+					<div class="button"><a href="<?php echo AKIM_URI; ?>/recruit">Career</a></div>
 				</div>
 			</section>
 		</div>
@@ -205,7 +204,7 @@ get_header(); ?>
 		<div class="wrap">
 			<header class="section--sub__heading newsBlock__heading">
 				<h2 class="section--sub__index newsBlock__index">
-        공지사항
+        AKIM's news
 				</h2>
 			</header>
 			<!-- *** products -->
