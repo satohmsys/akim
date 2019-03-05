@@ -8,6 +8,48 @@ Version: 0.1
 
 /******************************
 
+TOp
+
+******************************/
+
+@media screen and (min-width: 781px){
+  .home .section:nth-child(odd) .section__detail {
+    padding-right: calc(30vw + 10%);
+    padding-left: 7.5vw;
+  }
+  .home .section:nth-child(2n) .section__detail {
+    padding-right: 7.5vw;
+    padding-left: calc(30vw + 10%);
+  }
+
+  .home .section .section__detail {
+    width: 85%;
+  }
+}
+
+
+/******************************
+
+製品情報
+
+******************************/
+.productBanner .productBanner__item__index{
+  font-size: 1em;
+  text-align: left;
+}
+
+.productBanner .productBanner__item .button span{
+  font-size: small;
+  justify-content: flex-start;
+}
+.productBanner .productBanner__item .button p {
+  margin-top: 10px;
+  text-align: left;
+}
+
+
+/******************************
+
 お問い合わせ
 
 ******************************/
