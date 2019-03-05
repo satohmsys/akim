@@ -6,6 +6,7 @@ include( '_inc/functions-adminscreen.php');
 include( '_inc/functions-scripts.php');
 include( '_inc/functions-posttypes.php');
 include( '_inc/functions-shortcodes.php');
+include( '_inc/functions-aio-custom-meta.php');
 
 /**
  * Twenty Seventeen only works in WordPress 4.7 or later.
