@@ -9,7 +9,7 @@ function createPT(){
     'products_category',// 新規カスタムタクソノミー名
     'products',// 新規カスタムタクソノミーを反映させる投稿タイプの定義名
     array(
-      'label' => __( '製品カテゴリ' ),// 表示するカスタムタクソノミー名
+      'label' => __( '製品カテゴリ','akim_tr' ),// 表示するカスタムタクソノミー名
       'rewrite' => array( 'slug' => 'products_category' ),// カスタムタクソノミースラッグ名
       'show_admin_column' => true,
       'show_ui' => true,
@@ -26,8 +26,8 @@ function createPT(){
   register_post_type( 'products',
     array(
       'labels' => array(
-        'name' => __( '製品情報',null ),
-        'singular_name' => __( '製品',null )
+        'name' => __( '製品情報','akim_tr' ),
+        'singular_name' => __( '製品','akim_tr' )
       ),
       'public' => true,
       'publicly_queryable' => true,	  
@@ -42,8 +42,8 @@ function createPT(){
  register_post_type( 'news',
     array(
       'labels' => array(
-        'name' => __( 'お知らせ', null ),
-        'singular_name' => __( 'お知らせ事項', null )
+        'name' => __( 'お知らせ', 'akim_tr' ),
+        'singular_name' => __( 'お知らせ事項', 'akim_tr' )
       ),
       'public' => true,
 	  'publicly_queryable' => true,	  
