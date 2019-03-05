@@ -31,6 +31,37 @@
 
 ///////////////////////////////
 
+.walfareInfo{
+  margin-bottom: $space_s;
+  text-align: center;
+
+  @include mq('sp') {
+    margin-bottom: $space_s_sp;
+  }
+
+  & + .walfareInfo{
+    margin-top: $space_s;
+
+    @include mq('sp'){
+      margin-top: $space_s_sp;
+    }
+  }
+  
+  &__index{
+    color: $red;
+    font-weight: bold;
+  }
+
+  &__content{
+    margin-top: 15px;
+
+    a{
+      color: inherit;
+      text-decoration: underline;
+    }
+  }
+}
+
 .section--walfare{
     padding-top: 0;
     padding-bottom: 40px;
