@@ -2,12 +2,12 @@
 # This file is distributed under the same license as the Themes - Twenty Seventeen package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-01-07 18:44+0900\n"
+"PO-Revision-Date: 2019-03-05 22:34+0900\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.2\n"
+"X-Generator: Poedit 2.2.1\n"
 "Language: ko_KR\n"
 "Project-Id-Version: Themes - AKIM CORPOLATE\n"
 "POT-Creation-Date: \n"
@@ -39,28 +39,28 @@ msgstr "카테고리"
 
 #. ----------------- PAGE | 404--------------------
 msgid "ページが見つかりません"
-msgstr "Page is not found"
+msgstr "페이지를 찾을 수 없습니다"
 
 msgid "ページが削除されたか、URLが変更されている可能性があります。"
-msgstr ""
+msgstr "페이지가 삭제되었거나, URL가 변경되었을 가능성이 있습니다."
 
 msgid "<a href='/'>TOPページ</a>へ戻って再度サイトの表示にしたがって再度検索していただくか、<a href='/contact'>お問い合わせ</a>ください。"
-msgstr ""
+msgstr "<a href=‘/kr/’>TOP</a>페이지로 돌아가 다시 사이트의 표시에 따라 검색하거나, <a href=‘/kr/contact/’>당사에 문의바랍니다</a>."
 
 msgid "3秒後にTOPページに自動転送されます。"
-msgstr ""
+msgstr "3초후에 TOP페이지로 자동 전송됩니다."
 
 #. ----------------- PAGE | news archive--------------------
 msgid "お知らせを読む"
-msgstr "공지사항 내용
+msgstr "공지사항 내"
 
 #. ----------------- PAGE | news single--------------------
 msgid "その他のニュース"
-msgstr "Other"
+msgstr "기타 뉴스"
 
 #. ----------------- PAGE | products archive--------------------
 msgid "Akimの機械技術を一部紹介"
-msgstr ""
+msgstr "AKIM 기계 기술을 일부 소개"
 
 msgid "高速生産ライン"
 msgstr "소형수정진동작고속생산라인"
@@ -113,20 +113,17 @@ msgstr "SAW디바이스관련"
 msgid "LED関連"
 msgstr "LED관련"
 
-
 #. ----------------- PAGE | products footer component --------------------
-
 msgid "<p>トレイ</p><p>クランプキャリア<br><strong>特許番号</strong>"
-msgstr ""
+msgstr "<p>트레이・클램프 캐리어</p><p><strong>특허번호</strong>"
 
 msgid "トレイ・クランプキャリア"
-msgstr ""
+msgstr "트레이・클램프 캐리어"
 
 msgid "水晶振動子外観・構造"
-msgstr ""
+msgstr "수정진동자외관・구조"
 
 #. ----------------- PAGE | products single--------------------
-
 msgid "管理番号"
 msgstr "관리번호"
 
@@ -153,5 +150,3 @@ msgstr "특허제"
 
 msgid "号"
 msgstr "호"
-
-#. ----------------- PAGE | products single 高速ライン--------------------
