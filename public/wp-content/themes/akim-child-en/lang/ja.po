@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Themes - Twenty Seventeen package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-02-27 00:54+0900\n"
+"PO-Revision-Date: 2019-03-05 17:12+0900\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -42,13 +42,13 @@ msgid "ページが見つかりません"
 msgstr "Page is not found"
 
 msgid "ページが削除されたか、URLが変更されている可能性があります。"
-msgstr ""
+msgstr "The page may have been deleted or the URL may have been changed."
 
 msgid "<a href='/'>TOPページ</a>へ戻って再度サイトの表示にしたがって再度検索していただくか、<a href='/contact'>お問い合わせ</a>ください。"
-msgstr ""
+msgstr "Please return to the <a href=‘/‘>TOP</a> page and search again according to the display of the site, or please <a href=‘/en/contact’>contact us</a>."
 
 msgid "3秒後にTOPページに自動転送されます。"
-msgstr ""
+msgstr "It will be automatically transferred to the TOP page after 3 seconds."
 
 #. ----------------- PAGE | news archive--------------------
 msgid "お知らせを読む"
@@ -56,11 +56,11 @@ msgstr "Reads AKIM’ news"
 
 #. ----------------- PAGE | news single--------------------
 msgid "その他のニュース"
-msgstr "Other"
+msgstr "Other News"
 
 #. ----------------- PAGE | products archive--------------------
 msgid "Akimの機械技術を一部紹介"
-msgstr ""
+msgstr "Some of Akim’s machine technology introduced"
 
 msgid "高速生産ライン"
 msgstr "High speed crystal production line"
@@ -115,13 +115,13 @@ msgstr "LED-related machines"
 
 #. ----------------- PAGE | products footer component --------------------
 msgid "<p>トレイ</p><p>クランプキャリア<br><strong>特許番号</strong>"
-msgstr ""
+msgstr "<p>Tray,Clamp Carrier</p><p><strong>Patent no.</strong></p>"
 
 msgid "トレイ・クランプキャリア"
-msgstr ""
+msgstr "Tray,Clamp Carrier"
 
 msgid "水晶振動子外観・構造"
-msgstr ""
+msgstr "Crystal Appearance,Structure"
 
 #. ----------------- PAGE | products single--------------------
 msgid "管理番号"
