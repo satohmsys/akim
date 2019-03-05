@@ -10,10 +10,20 @@ Version: 0.1
 
 /******************************
 
+TOP
+
+******************************/
+.home .mv__copy__ja{
+  letter-spacing: inherit;
+}
+
+
+/******************************
+
 お問い合わせ
 
 ******************************/
 
-.section--form .formTable__th.-must:before{
+.mw_wp_form .section--form .formTable__th.-must:before {
   content:"필수"
 }
