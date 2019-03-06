@@ -40,8 +40,8 @@
             <?php
             // $protocol =  empty($_SERVER["HTTPS"]) ? "http://" : "https://";
             // $host =  $_SERVER["HTTP_HOST"];
-            $url = (empty($_SERVER["HTTPS"]) ? "http://" : "https://" ) . $_SERVER["HTTP_HOST"];
-            $currentPage = $_SERVER["REQUEST_URI"];
+            $siteUrl = (empty($_SERVER["HTTPS"]) ? "http://" : "https://" ) . $_SERVER["HTTP_HOST"];
+            $currentPageUrl = $_SERVER["REQUEST_URI"];
             $langlist =  array(
               'ja' => '日本語',
               'en' => 'ENGLISH',
@@ -49,7 +49,7 @@
               'kr' => '한국어'
               );
 
-            preg_match("/ko|kr|en|ch/",$currentPage, $result);
+            preg_match("/ko|kr|en|ch/",$currentPageUrl, $result);
             $selectedLang = $result ? $result[0] : 'ja';
             $selectedLang_display = 'JPN';
 
@@ -75,11 +75,11 @@
                   foreach ($langlist as $key => $value) {
                     $prefix = $key == 'ja' ? "" : '/' . $key;
                     $isCurrentLang = $selectedLang == $key ? true : false;
-                    $currentPagePath = preg_replace("/\/(ko|kr|en|ch)/", "", $currentPage );
+                    $currentPagePath = preg_replace("/\/(ko|kr|en|ch)/", "", $currentPageUrl, 1 );
                 ?>                  
                 <li <?php if( $isCurrentLang ){ echo 'class="selected"'; }?>>
                   <?php 
-                    if(! $isCurrentLang ) echo '<a href="' . $url . $prefix . $currentPagePath . '">';
+                    if(! $isCurrentLang ) echo '<a href="' . $siteUrl . $prefix . $currentPagePath . '">';
                     echo $value;
                     if(! $isCurrentLang ) echo '</a>';
                   ?>
