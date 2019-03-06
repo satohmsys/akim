@@ -33,7 +33,7 @@ get_header(); ?>
 					<img src="<?php echo AKIM_IMG_URI; ?>top/mv-copy.svg" srcset="<?php echo AKIM_IMG_URI; ?>top/_sp/mv-copy.svg 480w, <?php echo AKIM_IMG_URI; ?>top/mv-copy.svg" width="838" alt="DEVELOPING TECHNOLOGY INTO THE FUTURE">
 				</p>
 				<h1 class="mv__copy__ja">
-            We take a holistic view<br>in embracing the systems carefullyand tailor<br>our solutions to the individual needs of each customer.          
+            We take a holistic view <br class="-no-tab">in embracing the systems carefully <br class="-no-tab">and tailor our solutions to the <br class="-no-tab">individual needs of each customer.          
 				</h1>
 			</section>
 		</div>
