@@ -36,6 +36,11 @@ TOp
   .home .section .section__detail {
     width: 85%;
   }
+
+  .home .section .section__detail__index{
+    line-height: 1.5;
+    margin-bottom: 25px;
+  }
 }
 
 
