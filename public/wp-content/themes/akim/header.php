@@ -29,7 +29,7 @@ if( $akimLang['lang'] == 'ch' ) $akimLang['lang'] = 'zh';
  * @link https://satohtabcode.slack.com/files/UD2G85BTQ/FGYTPLDSR/____________________________2019-03-14_18.29.49.png
  * @link https://support.google.com/webmasters/answer/189077
  */
-    $langlist =  array('en','ch','kr');
+    $langlist =  array('en','zh','kr');
     $akimLang = akim_lang();
 
     foreach( $langlist as $lang ){
