@@ -22,7 +22,7 @@ if( $akimLang['lang'] == 'ch' ) $akimLang['lang'] = 'zh';
 <?php get_template_part( '_inc/template-parts/meta/ogp'); ?>
 <?php wp_head(); ?>
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<link rel="alternate" lang="<?php echo $akimLang['lang'] ?>" href="<?php echo $akimLang['url']; ?>">
+<link rel="alternate" hreflang="<?php echo $akimLang['lang'] ?>" href="<?php echo $akimLang['url']; ?>">
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131371877-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
