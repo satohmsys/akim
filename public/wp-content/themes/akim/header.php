@@ -22,7 +22,21 @@ if( $akimLang['lang'] == 'ch' ) $akimLang['lang'] = 'zh';
 <?php get_template_part( '_inc/template-parts/meta/ogp'); ?>
 <?php wp_head(); ?>
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<link rel="alternate" hreflang="<?php echo $akimLang['lang'] ?>" href="<?php echo $akimLang['url']; ?>">
+<link rel="alternate" hreflang="x-default" href="<?php echo network_home_url(); ?>" />
+<?php
+/**
+ * <link rel="alternate" hreflang="" href="">
+ * @link https://satohtabcode.slack.com/files/UD2G85BTQ/FGYTPLDSR/____________________________2019-03-14_18.29.49.png
+ * @link https://support.google.com/webmasters/answer/189077
+ */
+    $langlist =  array('en','ch','kr');
+    $akimLang = akim_lang();
+
+    foreach( $langlist as $lang ){
+      $currentPagePath = preg_replace("/\/(ko|kr|en|ch)/", "", $akimLang['currenturl'], 1 );
+      echo '<link rel="alternate" hreflang="' . $lang . '" href="' . $akimLang['siteurl'] . '/' . $lang . $currentPagePath . '" />';
+    }
+?>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131371877-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];

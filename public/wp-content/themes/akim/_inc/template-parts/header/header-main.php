@@ -38,6 +38,10 @@
 							) );
 						?>
             <?php
+            /**
+             * 201903現在 日本URL：'', 英URL：'/en/', 韓URL, '/kr/', 中URL, '/ch/'
+             * wordpressマルチサイトURL変更時にはリンク出力しているheader-main.phpに影響。
+             */
             $langlist =  array(
               'ja' => '日本語',
               'en' => 'ENGLISH',
