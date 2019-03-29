@@ -20,6 +20,21 @@ TOP
 
 /******************************
 
+製品情報
+
+******************************/
+.single-products .productBanner__item__index {
+  font-size: 1em;
+}
+
+@media screen and (max-width: 414px) {
+  .single-products .productBanner__item__index {
+    font-size: 0.95em;
+  }
+}
+
+/******************************
+
 お問い合わせ
 
 ******************************/

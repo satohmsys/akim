@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Themes - Twenty Seventeen package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-03-06 00:51+0900\n"
+"PO-Revision-Date: 2019-03-29 17:46+0900\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -70,7 +70,7 @@ msgid "Akimの機械技術を一部紹介"
 msgstr "AKIM 기계 기술을 일부 소개"
 
 msgid "高速生産ライン"
-msgstr "소형수정진동작고속생산라인"
+msgstr "소형수정진동자 고속생산라인"
 
 msgid "タクト0.6secを実現"
 msgstr "택트 타임0.6sec을 달성"
