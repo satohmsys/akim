@@ -36,7 +36,7 @@ get_header(); ?>
       <div class="lineupArea">
         <div class="lineup">
           <div class="lineup__item">
-            <a data-fancybox href="<?php echo AKIM_IMG_URI; ?>products/line-slider-8-modal.png"
+            <a data-fancybox href="<?php echo AKIM_LOCALIMG_URI; ?>products/line-slider-8-modal.png"
               data-caption='<div class="fancybox-caption__index">
                                 Blank mask inserter
                             </div><div class="fancybox-caption__description">W1100☓D1200☓H1700<br>Inserts crystal blanks into the mask Accommodates package transfer in order.</div>'>
@@ -47,7 +47,7 @@ get_header(); ?>
             </a>
           </div>
           <div class="lineup__item">
-            <a data-fancybox href="<?php echo AKIM_IMG_URI; ?>products/line-slider-1-modal.png"
+            <a data-fancybox href="<?php echo AKIM_LOCALIMG_URI; ?>products/line-slider-1-modal.png"
               data-caption='<div class="fancybox-caption__index">
                                 Blank Mounter
                             </div><div class="fancybox-caption__description">"W1700☓D1400☓H1700 <br>Mounts crystal blank onto ceramic packages."</div>'>
@@ -58,7 +58,7 @@ get_header(); ?>
             </a>
           </div>
           <div class="lineup__item">
-            <a data-fancybox href="<?php echo AKIM_IMG_URI; ?>products/line-slider-2-modal.png"
+            <a data-fancybox href="<?php echo AKIM_LOCALIMG_URI; ?>products/line-slider-2-modal.png"
               data-caption='<div class="fancybox-caption__index">
                                 Clean curing oven
                             </div><div class="fancybox-caption__description">W2800☓D1400☓H1700 <br>Heats and hardens bond under the condition of<br>N2 Cures bond in a clean atmosphere (Class 100)</div>'>
@@ -69,7 +69,7 @@ get_header(); ?>
             </a>
           </div>
           <div class="lineup__item">
-            <a data-fancybox href="<?php echo AKIM_IMG_URI; ?>products/line-slider-3-modal.png"
+            <a data-fancybox href="<?php echo AKIM_LOCALIMG_URI; ?>products/line-slider-3-modal.png"
               data-caption='<div class="fancybox-caption__index">
                                 Freq. control loader / unloader
                             </div><div class="fancybox-caption__description">W2300☓D1300☓H1700<br>Transfers packages onto the trays on the transfer carriers<br>Transfers carriers onto frequency control machine</div>'>
@@ -80,7 +80,7 @@ get_header(); ?>
             </a>
           </div>
           <div class="lineup__item">
-            <a data-fancybox href="<?php echo AKIM_IMG_URI; ?>products/line-slider-4-modal.png"
+            <a data-fancybox href="<?php echo AKIM_LOCALIMG_URI; ?>products/line-slider-4-modal.png"
               data-caption='<div class="fancybox-caption__index">
                                 Lid tacking machine
                             </div><div class="fancybox-caption__description">W1200☓D1000☓H1700<br>Performs lids tacking on the packages</div>'>
@@ -91,7 +91,7 @@ get_header(); ?>
             </a>
           </div>
           <div class="lineup__item">
-            <a data-fancybox href="<?php echo AKIM_IMG_URI; ?>products/line-slider-5-modal.png"
+            <a data-fancybox href="<?php echo AKIM_LOCALIMG_URI; ?>products/line-slider-5-modal.png"
               data-caption='<div class="fancybox-caption__index">
                                 Vacuum annealing machine
                             </div><div class="fancybox-caption__description">W1100☓D1300☓H1700<br>Performs vacuum annealing on the packages prior to sealing process</div>'>
@@ -102,7 +102,7 @@ get_header(); ?>
             </a>
           </div>
           <div class="lineup__item">
-            <a data-fancybox href="<?php echo AKIM_IMG_URI; ?>products/line-slider-6-modal.png"
+            <a data-fancybox href="<?php echo AKIM_LOCALIMG_URI; ?>products/line-slider-6-modal.png"
               data-caption='<div class="fancybox-caption__index">
                                 Dual axis vacuum seam welding machine
                             </div><div class="fancybox-caption__description">W1700☓D1200☓H1700<br>Performs vacuum seam welding on the both sides of the packages under vacuum condition.</div>'>
@@ -113,7 +113,7 @@ get_header(); ?>
             </a>
           </div>
           <div class="lineup__item">
-            <a data-fancybox href="<?php echo AKIM_IMG_URI; ?>products/line-slider-7-modal.png"
+            <a data-fancybox href="<?php echo AKIM_LOCALIMG_URI; ?>products/line-slider-7-modal.png"
               data-caption='<div class="fancybox-caption__index">
                                 Pick up machine
                             </div><div class="fancybox-caption__description">W800☓D900☓H1700<br>Extracts products from transfer jig and sorts good quality products or defective products</div>'>
@@ -124,7 +124,7 @@ get_header(); ?>
             </a>
           </div>
           <div class="lineup__item">
-            <a data-fancybox href="<?php echo AKIM_IMG_URI; ?>products/line-slider-9-modal.png"
+            <a data-fancybox href="<?php echo AKIM_LOCALIMG_URI; ?>products/line-slider-9-modal.png"
               data-caption='<div class="fancybox-caption__index">
                                 Temperature characteristics inspection machine
                             </div><div class="fancybox-caption__description">W1000☓D1000☓H1700<br>Inspects temperature characteristics and performs laser marking, and emboss taping for crystals</div>'>
@@ -135,7 +135,7 @@ get_header(); ?>
             </a>
           </div>
           <div class="lineup__item">
-            <a data-fancybox href="<?php echo AKIM_IMG_URI; ?>products/line-slider-10-modal.png"
+            <a data-fancybox href="<?php echo AKIM_LOCALIMG_URI; ?>products/line-slider-10-modal.png"
               data-caption='<div class="fancybox-caption__index">
                                 Inspection / marking / taping machine
                             </div><div class="fancybox-caption__description">W1200☓D1000☓H1700<br>Inspects temperature characteristics and performs laser marking, and emboss taping for crystals</div>'>
