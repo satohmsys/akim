@@ -24,6 +24,11 @@ TOp
 ******************************/
 
 @media screen and (min-width: 781px){
+
+  .home .mv__copy__ja{
+    font-size: 0.9em;
+  }
+
   .home .section:nth-child(odd) .section__detail {
     padding-right: calc(30vw + 10%);
     padding-left: 7.5vw;

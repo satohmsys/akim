@@ -63,7 +63,7 @@ get_header(); ?>
 						<div class="section__detail__content">
 							We provide customers with production equipment for producing electronics components such as camera module, crystal, and sensor devices.  Our total solution systems cover inception to completion, including support from planning and development through management, leveraging our engineering capability and expert oversight.
 						</div>
-						<div class="button"><a href="<?php echo AKIM_URI; ?>/company/profile/">회사 개요</a></div>
+						<div class="button"><a href="<?php echo AKIM_URI; ?>/company/profile/">Company overview</a></div>
 					</div>
 				</div>
 				<i class="triangle"></i>
