@@ -52,7 +52,7 @@
             $selectedLang = $akimLang['lang'];
             $selectedLang_display = 'JPN';
             
-            if($selectedLang == 'ko'||$selectedLang == 'kr'){
+            if($selectedLang == 'kr'){
               $selectedLang_display = 'KOREAN';
             } elseif ($selectedLang == 'ch') {
               $selectedLang_display = 'CHINESE';
@@ -73,7 +73,7 @@
                   foreach ($langlist as $key => $value) {
                     $prefix = $key == 'ja' ? "" : '/' . $key;
                     $isCurrentLang = $selectedLang == $key ? true : false;
-                    $currentPagePath = preg_replace("/\/(ko|kr|en|ch)/", "", $akimLang['currenturl'], 1 );
+                    $currentPagePath = preg_replace("/\/(kr|en|ch)/", "", $akimLang['currenturl'], 1 );
                 ?>                  
                 <li <?php if( $isCurrentLang ){ echo 'class="selected"'; }?>>
                   <?php 

@@ -9,15 +9,22 @@
  *                        wordpressマルチサイトURL変更時にはリンク出力しているheader-main.phpに影響。
  */
 function akim_lang(){
-  $siteUrl = (empty($_SERVER["HTTPS"]) ? "http://" : "https://" ) . $_SERVER["HTTP_HOST"];
+  $domain =  $_SERVER["HTTP_HOST"];
+  $siteUrl = (empty($_SERVER["HTTPS"]) ? "http://" : "https://" ) . $domain;
   $currentPageUrl = $_SERVER["REQUEST_URI"];
   $returns = array();
 
-  preg_match("/ko|kr|en|ch/",$currentPageUrl, $result);
-  $selectedLang = $result ? $result[0] : 'ja';
+  // ドメイン以下のリクエストURLでマッチ
+  // preg_match("/kr|en|ch/",$currentPageUrl, $result);
+  // $selectedLang = $result ? $result[0] : 'ja';
+  
+  // リクエストURLフルで正規表現
+  preg_match("/.*" . $do . "\/(kr|en|ch)/", $siteUrl . $currentPageUrl, $result);            
+  $selectedLang = $result ? $result[1] : 'ja';
+
   
   $prefix = $selectedLang == 'ja' ? "" : '/' . $key;
-  $currentPagePath = preg_replace("/\/(ko|kr|en|ch)/", "", $currentPageUrl, 1 );
+  $currentPagePath = preg_replace("/\/(kr|en|ch)/", "", $currentPageUrl, 1 );
   
   $returns['siteurl'] = $siteUrl;
   $returns['currenturl'] = $currentPageUrl;
