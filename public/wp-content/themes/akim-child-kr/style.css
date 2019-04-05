@@ -23,8 +23,12 @@ TOP
 製品情報
 
 ******************************/
+
+@media screen and (min-width: 415px) {
+.archive .productBanner__item__index ,
 .single-products .productBanner__item__index {
-  font-size: 1em;
+  font-size: 1.1em;
+}
 }
 
 @media screen and (max-width: 414px) {
